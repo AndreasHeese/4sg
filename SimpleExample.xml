@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="4sg.xsl"?>
+<root font-family="Verdana" font-size="3pt">
+	<title>Simple Sankey Diagram Example</title>
+	<piles gap="5">
+		<pile top="20" left="10" width="50" color="firebrick">
+			<box id="here">here</box>
+			<box id="around">around</box>
+		</pile>
+		<pile top="20" left="120" width="50" color="forestgreen">
+			<box id="4">over there</box>
+			<box id="there">there</box>
+		</pile>
+	</piles>
+	<flows bend="25" opacity="0.7" color="silver">
+		<flow value="50" from="here" to="there"/>
+		<flow value="10" from="around" to="4"/>
+		<flow value="40" from="around" to="there"/>
+	</flows>
+</root>

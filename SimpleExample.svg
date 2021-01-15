@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with 4sg.xsl - Small and Simple SVG Sankey Generator - Andreas Heese -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140" preserveAspectRatio="xMidYMin meet">
+	<title>Simple Sankey Diagram Example</title>
+	<path d="M 60,45 L 61,45 C 85,45 95,60 119,60 L 120,60" style="stroke:silver; stroke-width:50; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<rect x="10" y="20" width="50" height="50" style="fill:firebrick"/>
+	<text x="35" y="45" style="font-family:Verdana; font-size:3pt; fill:black; text-anchor:middle;" dominant-baseline="central">here</text>
+	<path d="M 60,80 L 61,80 C 85,80 95,25 119,25 L 120,25" style="stroke:silver; stroke-width:10; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path d="M 60,105 L 61,105 C 85,105 95,105 119,105 L 120,105" style="stroke:silver; stroke-width:40; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<rect x="10" y="75" width="50" height="50" style="fill:firebrick"/>
+	<text x="35" y="100" style="font-family:Verdana; font-size:3pt; fill:black; text-anchor:middle;" dominant-baseline="central">around</text>
+	<rect x="120" y="20" width="50" height="10" style="fill:forestgreen"/>
+	<text x="145" y="25" style="font-family:Verdana; font-size:3pt; fill:black; text-anchor:middle;" dominant-baseline="central">over there</text>
+	<rect x="120" y="35" width="50" height="90" style="fill:forestgreen"/>
+	<text x="145" y="80" style="font-family:Verdana; font-size:3pt; fill:black; text-anchor:middle;" dominant-baseline="central">there</text>
+	<text x="90" y="10" style="font-family:Verdana; font-size:3pt; fill:black; text-anchor:middle;" dominant-baseline="hanging">Simple Sankey Diagram Example</text>
+</svg>
