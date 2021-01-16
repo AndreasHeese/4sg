@@ -4,10 +4,12 @@
 	<title>Simple Sankey Diagram Example</title>
 	<piles gap="5">
 		<pile top="20" left="10" width="50" color="firebrick">
+			<title>from</title>
 			<box id="here">here</box>
 			<box id="around">around</box>
 		</pile>
 		<pile top="20" left="120" width="50" color="forestgreen">
+			<title>to</title>
 			<box id="4">over there</box>
 			<box id="there">there</box>
 		</pile>
