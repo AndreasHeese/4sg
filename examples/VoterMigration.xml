@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="4sg.xsl"?>
+<root text-color="gainsboro">
+	<title text-color="black" font-size="24">Voter migration Niedersachsen state election</title>
+	<text y="70" text-color="black" font-size="9">Source: https://wahl.tagesschau.de/wahlen/2017-10-15-LT-DE-NI/wanderung_embed.shtml</text>
+	<piles>
+		<pile>
+			<title text-color="black">2013</title>
+			<box id="Union13" color="black"><text align="start">Union</text><text align="end"><value/></text></box>
+			<box id="SPD13" color="red"><text align="start">SPD</text><text align="end"><value/></text></box>
+			<box id="Linke13" color="purple"><text align="start">Linke</text><text align="end"><value/></text></box>
+			<box id="Grüne13" color="green"><text align="start">Grüne</text><text align="end"><value/></text></box>
+			<box id="FDP13" color="yellow"><text align="start">FDP</text><text align="end"><value/></text></box>
+			<box id="AFD13" color="blue"><text align="start">AFD</text><text align="end"><value/></text></box>
+			<box id="And13" color="dimgray"><text align="start">Other</text><text align="end"><value/></text></box>
+			<box id="Nicht13" color="darkgray"><text align="start">Non-voters</text><text align="end"><value/></text></box>
+			<box id="Zu" color="silver"><text align="start">Influx</text><text align="end"><value/></text></box>
+			<box id="Neu" color="gray"><text align="start">New voters</text><text align="end"><value/></text></box>
+		</pile>
+		<pile x="1000">
+			<title text-color="black">2017</title>
+			<box id="Union17" color="black"><text align="start">Union</text><text align="end"><value/></text></box>
+			<box id="SPD17" color="red"><text align="start">SPD</text><text align="end"><value/></text></box>
+			<box id="Linke17" color="purple"><text align="start">Linke</text><text align="end"><value/></text></box>
+			<box id="Grüne17" color="green"><text align="start">Grüne</text><text align="end"><value/></text></box>
+			<box id="FDP17" color="yellow"><text align="start">FDP</text><text align="end"><value/></text></box>
+			<box id="AFD17" color="blue"><text align="start">AFD</text><text align="end"><value/></text></box>
+			<box id="And17" color="dimgray"><text align="start">Other</text><text align="end"><value/></text></box>
+			<box id="Nicht17" color="darkgray"><text align="start">Non-voters</text><text align="end"><value/></text></box>
+			<box id="Weg" color="silver"><text align="start">Move away</text><text align="end"><value/></text></box>
+			<box id="Verst" color="gray"><text align="start">Deceased</text><text align="end"><value/></text></box>
+		</pile>
+	</piles>
+	<flows bend="250">
+		<flow value="11090000" from="Union13" to="Union17"><value/></flow>
+		<flow value="800000" from="Union13" to="SPD17"></flow>
+		<flow value="200000" from="Union13" to="Linke17"></flow>
+		<flow value="330000" from="Union13" to="Grüne17"></flow>
+		<flow value="1620000" from="Union13" to="FDP17"></flow>
+		<flow value="1040000" from="Union13" to="AFD17"></flow>
+		<flow value="200000" from="Union13" to="And17"></flow>
+		<flow value="1610000" from="Union13" to="Nicht17"></flow>
+		<flow value="0" from="Union13" to="Weg"></flow>
+		<flow value="1290000" from="Union13" to="Verst"></flow>
+		<flow value="820000" from="SPD13" to="Union17"></flow>
+		<flow value="5920000" from="SPD13" to="SPD17" text-color="black"><value/></flow>
+		<flow value="700000" from="SPD13" to="Linke17"></flow>
+		<flow value="760000" from="SPD13" to="Grüne17"></flow>
+		<flow value="550000" from="SPD13" to="FDP17"></flow>
+		<flow value="510000" from="SPD13" to="AFD17"></flow>
+		<flow value="200000" from="SPD13" to="And17"></flow>
+		<flow value="1030000" from="SPD13" to="Nicht17"></flow>
+		<flow value="0" from="SPD13" to="Weg"></flow>
+		<flow value="760000" from="SPD13" to="Verst"></flow>
+		<flow value="110000" from="Linke13" to="Union17"></flow>
+		<flow value="270000" from="Linke13" to="SPD17"></flow>
+		<flow value="1980000" from="Linke13" to="Linke17" text-color="black"><value/></flow>
+		<flow value="160000" from="Linke13" to="Grüne17"></flow>
+		<flow value="90000" from="Linke13" to="FDP17"></flow>
+		<flow value="420000" from="Linke13" to="AFD17"></flow>
+		<flow value="220000" from="Linke13" to="And17"></flow>
+		<flow value="290000" from="Linke13" to="Nicht17"></flow>
+		<flow value="0" from="Linke13" to="Weg"></flow>
+		<flow value="220000" from="Linke13" to="Verst"></flow>
+		<flow value="300000" from="Grüne13" to="Union17"></flow>
+		<flow value="380000" from="Grüne13" to="SPD17"></flow>
+		<flow value="330000" from="Grüne13" to="Linke17"></flow>
+		<flow value="1870000" from="Grüne13" to="Grüne17" text-color="black"><value/></flow>
+		<flow value="160000" from="Grüne13" to="FDP17"></flow>
+		<flow value="50000" from="Grüne13" to="AFD17"></flow>
+		<flow value="130000" from="Grüne13" to="And17"></flow>
+		<flow value="330000" from="Grüne13" to="Nicht17"></flow>
+		<flow value="0" from="Grüne13" to="Weg"></flow>
+		<flow value="140000" from="Grüne13" to="Verst"></flow>
+		<flow value="260000" from="FDP13" to="Union17"></flow>
+		<flow value="100000" from="FDP13" to="SPD17"></flow>
+		<flow value="30000" from="FDP13" to="Linke17"></flow>
+		<flow value="50000" from="FDP13" to="Grüne17"></flow>
+		<flow value="1220000" from="FDP13" to="FDP17" text-color="black"><value/></flow>
+		<flow value="120000" from="FDP13" to="AFD17"></flow>
+		<flow value="40000" from="FDP13" to="And17"></flow>
+		<flow value="130000" from="FDP13" to="Nicht17"></flow>
+		<flow value="0" from="FDP13" to="Weg"></flow>
+		<flow value="130000" from="FDP13" to="Verst"></flow>
+		<flow value="60000" from="AFD13" to="Union17"></flow>
+		<flow value="40000" from="AFD13" to="SPD17"></flow>
+		<flow value="20000" from="AFD13" to="Linke17"></flow>
+		<flow value="10000" from="AFD13" to="Grüne17"></flow>
+		<flow value="80000" from="AFD13" to="FDP17"></flow>
+		<flow value="1430000" from="AFD13" to="AFD17" text-color="black"><value/></flow>
+		<flow value="40000" from="AFD13" to="And17"></flow>
+		<flow value="270000" from="AFD13" to="Nicht17"></flow>
+		<flow value="0" from="AFD13" to="Weg"></flow>
+		<flow value="100000" from="AFD13" to="Verst"></flow>
+		<flow value="140000" from="And13" to="Union17"></flow>
+		<flow value="190000" from="And13" to="SPD17"></flow>
+		<flow value="170000" from="And13" to="Linke17"></flow>
+		<flow value="90000" from="And13" to="Grüne17"></flow>
+		<flow value="180000" from="And13" to="FDP17"></flow>
+		<flow value="730000" from="And13" to="AFD17"></flow>
+		<flow value="870000" from="And13" to="And17" text-color="black"><value/></flow>
+		<flow value="270000" from="And13" to="Nicht17"></flow>
+		<flow value="0" from="And13" to="Weg"></flow>
+		<flow value="80000" from="And13" to="Verst"></flow>
+		<flow value="1990000" from="Nicht13" to="Union17"></flow>
+		<flow value="1390000" from="Nicht13" to="SPD17"></flow>
+		<flow value="560000" from="Nicht13" to="Linke17"></flow>
+		<flow value="560000" from="Nicht13" to="Grüne17"></flow>
+		<flow value="830000" from="Nicht13" to="FDP17"></flow>
+		<flow value="1470000" from="Nicht13" to="AFD17"></flow>
+		<flow value="430000" from="Nicht13" to="And17"></flow>
+		<flow value="10200000" from="Nicht13" to="Nicht17" text-color="black"><value/></flow>
+		<flow value="0" from="Nicht13" to="Weg"></flow>
+		<flow value="790000" from="Nicht13" to="Verst"></flow>
+		<flow value="70000" from="Zu" to="Union17"></flow>
+		<flow value="30000" from="Zu" to="SPD17"></flow>
+		<flow value="10000" from="Zu" to="Linke17"></flow>
+		<flow value="10000" from="Zu" to="Grüne17"></flow>
+		<flow value="30000" from="Zu" to="FDP17"></flow>
+		<flow value="20000" from="Zu" to="AFD17"></flow>
+		<flow value="10000" from="Zu" to="And17"></flow>
+		<flow value="60000" from="Zu" to="Nicht17"></flow>
+		<flow value="0" from="Zu" to="Weg"></flow>
+		<flow value="0" from="Zu" to="Verst"></flow>
+		<flow value="480000" from="Neu" to="Union17"></flow>
+		<flow value="380000" from="Neu" to="SPD17"></flow>
+		<flow value="220000" from="Neu" to="Linke17"></flow>
+		<flow value="320000" from="Neu" to="Grüne17"></flow>
+		<flow value="240000" from="Neu" to="FDP17"></flow>
+		<flow value="130000" from="Neu" to="AFD17"></flow>
+		<flow value="190000" from="Neu" to="And17"></flow>
+		<flow value="1000000" from="Neu" to="Nicht17"></flow>
+		<flow value="0" from="Neu" to="Weg"></flow>
+		<flow value="0" from="Neu" to="Verst"></flow>
+	</flows>
+</root>
