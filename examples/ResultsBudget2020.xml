@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="4sg.xsl"?>
+<!-- Erstellt am 30.07.19 17:34 von HES aus Infoma NewSystem newsystem 7 [Release 18.1.1.5] mit Bericht 50065 (c) EKD Finanzabteilung Andreas Heese -->
+<root gkz="20" bez="EKD" ebene="Handlungsbereich" ebenenfilter="20*" stand="30.07.2019" font="Calibri">
+	<title font-size="20">Results Budget 2020</title>
+	<text y="60" text-color="black" font-size="9">Source: https://www.kirchenfinanzen.de/download/haushaltsplan_2020_ekd.pdf</text>
+	<piles font-size="14">
+		<pile y="70" width="230" gap="25.2" color="lawngreen" align="start">
+			<box id="020">
+				<id/> Erträge kirchlicher Tätigkeit</box>
+			<box id="030">
+				<id/> Erträge Kirchensteuern u.Zuweis.</box>
+			<box id="035">
+				<id/> Erträge aus Umlagen</box>
+			<box id="040">
+				<id/> Zuschüsse von Dritten</box>
+			<box id="050">
+				<id/> Kollekten und Spenden</box>
+			<box id="070">
+				<id/> Erträge Auflösung v. Sonderposten</box>
+			<box id="080">
+				<id/> Sonstige ordentliche Erträge</box>
+			<box id="190">
+				<id/> Finanzerträge</box>
+			<box id="281" color="silver">
+				<id/> Entlastung Personalkosten</box>
+			<box id="282" color="silver">
+				<id/> Entlastung sonst.budgetwirks.ILV</box>
+			<box id="320">
+				<id/> Entnahmen aus Rücklagen</box>
+			<box id="321">
+				<id/> Entnahmen aus Kollekten</box>
+		</pile>
+		<pile y="90" width="140" gap="12" color="silver">
+			<box id="2001">Leitung und Verwaltung</box>
+			<box id="2002">Recht</box>
+			<box id="2003">Finanzen</box>
+			<box id="2004">Kirchliche Handlungsfelder</box>
+			<box id="2005">Bildung</box>
+			<box id="2006">Öffentliche Verantwortung</box>
+			<box id="2007">Ökumene</box>
+			<box id="2008">Auslandsarbeit</box>
+			<box id="2009">Presse und Öffentlichkeitsarbeit</box>
+			<box id="2010">Rechnungsprüfung, Datenschutz und Arbeitsrechtsregelung</box>
+			<box id="2011">Bevollmächtigter des Rates der EKD</box>
+			<box id="2012">Evangelische Seelsorge in der Bundeswehr</box>
+		</pile>
+		<pile y="70" width="230" gap="18.5" color="LightCoral" align="end">
+			<box id="110">Personalaufwendungen <id/>
+			</box>
+			<box id="120">Zuweisungen <id/>
+			</box>
+			<box id="130">Zuschüsse an Dritte <id/>
+			</box>
+			<box id="140">Sach- und Dienstaufwendungen <id/>
+			</box>
+			<box id="141">Verfügungsmittel <id/>
+			</box>
+			<box id="150">Abschreibungen <id/>
+			</box>
+			<box id="160">Sonstige ordentl. Aufwendungen <id/>
+			</box>
+			<box id="161">Verstärkungsmittel <id/>
+			</box>
+			<box id="200">Finanzaufwendungen <id/>
+			</box>
+			<box id="201">Aufwendungen aus Beteiligungen <id/>
+			</box>
+			<box id="250">Außerordentliche Aufwendungen <id/>
+			</box>
+			<box id="284" color="silver">Belastung Personalkosten <id/>
+			</box>
+			<box id="285" color="silver">Belastung sonst.budgetwirks.ILV <id/>
+			</box>
+			<box id="310">Zuführungen zu Rücklagen <id/>
+			</box>
+			<box id="311">Zuführungen zu Kollekten <id/>
+			</box>
+			<box id="325">Finanz.anteil für Investitionen <id/>
+			</box>
+		</pile>
+	</piles>
+	<flows bend="150" opacity="0.7">
+		<flow value="4142440" from="020" to="2001" color="lawngreen"/>
+		<flow value="6375130" from="080" to="2001" color="lawngreen"/>
+		<flow value="41811550" from="2001" to="110" color="LightCoral"/>
+		<flow value="327000" from="2001" to="120" color="LightCoral"/>
+		<flow value="43000" from="2001" to="130" color="LightCoral"/>
+		<flow value="9880600" from="2001" to="140" color="LightCoral"/>
+		<flow value="7000" from="2001" to="141" color="LightCoral"/>
+		<flow value="575310" from="2001" to="150" color="LightCoral"/>
+		<flow value="782400" from="2001" to="160" color="LightCoral"/>
+		<flow value="100" from="190" to="2001" color="lawngreen"/>
+		<flow value="500" from="2001" to="250" color="LightCoral"/>
+		<flow value="27270900" from="281" to="2001" color="silver"/>
+		<flow value="149600" from="282" to="2001" color="silver"/>
+		<flow value="4854700" from="2001" to="284" color="silver"/>
+		<flow value="20400" from="2001" to="285" color="silver"/>
+		<flow value="490000" from="320" to="2001" color="lawngreen"/>
+		<flow value="20448200" from="020" to="2002" color="lawngreen"/>
+		<flow value="130800" from="070" to="2002" color="lawngreen"/>
+		<flow value="7500" from="080" to="2002" color="lawngreen"/>
+		<flow value="62200" from="2002" to="110" color="LightCoral"/>
+		<flow value="28300" from="2002" to="120" color="LightCoral"/>
+		<flow value="15800" from="2002" to="130" color="LightCoral"/>
+		<flow value="25161670" from="2002" to="140" color="LightCoral"/>
+		<flow value="3880" from="2002" to="150" color="LightCoral"/>
+		<flow value="165800" from="2002" to="160" color="LightCoral"/>
+		<flow value="28500" from="190" to="2002" color="lawngreen"/>
+		<flow value="13000" from="281" to="2002" color="silver"/>
+		<flow value="92800" from="282" to="2002" color="silver"/>
+		<flow value="3264700" from="2002" to="284" color="silver"/>
+		<flow value="25000" from="2002" to="285" color="silver"/>
+		<flow value="88500" from="2002" to="310" color="LightCoral"/>
+		<flow value="1368600" from="320" to="2002" color="lawngreen"/>
+		<flow value="466600" from="020" to="2003" color="lawngreen"/>
+		<flow value="160" from="030" to="2003" color="lawngreen"/>
+		<flow value="97988300" from="035" to="2003" color="lawngreen"/>
+		<flow value="1800000" from="050" to="2003" color="lawngreen"/>
+		<flow value="484000" from="080" to="2003" color="lawngreen"/>
+		<flow value="600000" from="2003" to="120" color="LightCoral"/>
+		<flow value="1475350" from="2003" to="140" color="LightCoral"/>
+		<flow value="336150" from="2003" to="150" color="LightCoral"/>
+		<flow value="10250" from="2003" to="160" color="LightCoral"/>
+		<flow value="1490000" from="2003" to="161" color="LightCoral"/>
+		<flow value="6019800" from="190" to="2003" color="lawngreen"/>
+		<flow value="187700" from="282" to="2003" color="silver"/>
+		<flow value="3718500" from="2003" to="284" color="silver"/>
+		<flow value="350000" from="2003" to="285" color="silver"/>
+		<flow value="1961229" from="2003" to="310" color="LightCoral"/>
+		<flow value="1200000" from="2003" to="311" color="LightCoral"/>
+		<flow value="152500" from="320" to="2003" color="lawngreen"/>
+		<flow value="5000" from="2003" to="325" color="LightCoral"/>
+		<flow value="440000" from="020" to="2004" color="lawngreen"/>
+		<flow value="16000" from="030" to="2004" color="lawngreen"/>
+		<flow value="47000" from="050" to="2004" color="lawngreen"/>
+		<flow value="1300" from="070" to="2004" color="lawngreen"/>
+		<flow value="21300" from="080" to="2004" color="lawngreen"/>
+		<flow value="7800" from="2004" to="110" color="LightCoral"/>
+		<flow value="9294200" from="2004" to="120" color="LightCoral"/>
+		<flow value="265500" from="2004" to="130" color="LightCoral"/>
+		<flow value="2224250" from="2004" to="140" color="LightCoral"/>
+		<flow value="2000" from="2004" to="141" color="LightCoral"/>
+		<flow value="545700" from="2004" to="150" color="LightCoral"/>
+		<flow value="231900" from="2004" to="160" color="LightCoral"/>
+		<flow value="200" from="282" to="2004" color="silver"/>
+		<flow value="2660100" from="2004" to="284" color="silver"/>
+		<flow value="106800" from="2004" to="285" color="silver"/>
+		<flow value="169200" from="2004" to="310" color="LightCoral"/>
+		<flow value="814300" from="320" to="2004" color="lawngreen"/>
+		<flow value="87000" from="321" to="2004" color="lawngreen"/>
+		<flow value="78000" from="020" to="2005" color="lawngreen"/>
+		<flow value="16000" from="070" to="2005" color="lawngreen"/>
+		<flow value="6056400" from="2005" to="120" color="LightCoral"/>
+		<flow value="628500" from="2005" to="140" color="LightCoral"/>
+		<flow value="90600" from="2005" to="150" color="LightCoral"/>
+		<flow value="800" from="2005" to="160" color="LightCoral"/>
+		<flow value="858700" from="2005" to="284" color="silver"/>
+		<flow value="15100" from="2005" to="285" color="silver"/>
+		<flow value="14000" from="2005" to="310" color="LightCoral"/>
+		<flow value="183000" from="320" to="2005" color="lawngreen"/>
+		<flow value="220000" from="321" to="2005" color="lawngreen"/>
+		<flow value="202500" from="020" to="2006" color="lawngreen"/>
+		<flow value="106100" from="030" to="2006" color="lawngreen"/>
+		<flow value="67500" from="040" to="2006" color="lawngreen"/>
+		<flow value="12200" from="070" to="2006" color="lawngreen"/>
+		<flow value="9900" from="080" to="2006" color="lawngreen"/>
+		<flow value="117900" from="2006" to="110" color="LightCoral"/>
+		<flow value="3786400" from="2006" to="120" color="LightCoral"/>
+		<flow value="264900" from="2006" to="130" color="LightCoral"/>
+		<flow value="1142600" from="2006" to="140" color="LightCoral"/>
+		<flow value="1000" from="2006" to="141" color="LightCoral"/>
+		<flow value="30600" from="2006" to="150" color="LightCoral"/>
+		<flow value="117200" from="2006" to="160" color="LightCoral"/>
+		<flow value="97200" from="281" to="2006" color="silver"/>
+		<flow value="2007000" from="2006" to="284" color="silver"/>
+		<flow value="50000" from="2006" to="285" color="silver"/>
+		<flow value="1197100" from="2006" to="310" color="LightCoral"/>
+		<flow value="383200" from="320" to="2006" color="lawngreen"/>
+		<flow value="220000" from="321" to="2006" color="lawngreen"/>
+		<flow value="67310500" from="035" to="2007" color="lawngreen"/>
+		<flow value="220000" from="040" to="2007" color="lawngreen"/>
+		<flow value="72303800" from="2007" to="120" color="LightCoral"/>
+		<flow value="355900" from="2007" to="130" color="LightCoral"/>
+		<flow value="2679400" from="2007" to="140" color="LightCoral"/>
+		<flow value="2000" from="2007" to="141" color="LightCoral"/>
+		<flow value="50000" from="2007" to="160" color="LightCoral"/>
+		<flow value="205000" from="282" to="2007" color="silver"/>
+		<flow value="1437000" from="2007" to="284" color="silver"/>
+		<flow value="225000" from="2007" to="310" color="LightCoral"/>
+		<flow value="115000" from="320" to="2007" color="lawngreen"/>
+		<flow value="514300" from="321" to="2007" color="lawngreen"/>
+		<flow value="3891800" from="2007" to="325" color="LightCoral"/>
+		<flow value="646260" from="020" to="2008" color="lawngreen"/>
+		<flow value="60000" from="030" to="2008" color="lawngreen"/>
+		<flow value="387000" from="040" to="2008" color="lawngreen"/>
+		<flow value="128000" from="050" to="2008" color="lawngreen"/>
+		<flow value="3500" from="080" to="2008" color="lawngreen"/>
+		<flow value="3322000" from="2008" to="110" color="LightCoral"/>
+		<flow value="3647340" from="2008" to="120" color="LightCoral"/>
+		<flow value="2436950" from="2008" to="140" color="LightCoral"/>
+		<flow value="54200" from="2008" to="150" color="LightCoral"/>
+		<flow value="373200" from="2008" to="160" color="LightCoral"/>
+		<flow value="20013" from="190" to="2008" color="lawngreen"/>
+		<flow value="1387400" from="2008" to="284" color="silver"/>
+		<flow value="15184" from="2008" to="310" color="LightCoral"/>
+		<flow value="200000" from="320" to="2008" color="lawngreen"/>
+		<flow value="329080" from="321" to="2008" color="lawngreen"/>
+		<flow value="55000" from="020" to="2009" color="lawngreen"/>
+		<flow value="469500" from="2009" to="120" color="LightCoral"/>
+		<flow value="1053300" from="2009" to="140" color="LightCoral"/>
+		<flow value="86500" from="2009" to="150" color="LightCoral"/>
+		<flow value="12746795" from="2009" to="201" color="LightCoral"/>
+		<flow value="722295" from="282" to="2009" color="silver"/>
+		<flow value="1503000" from="2009" to="284" color="silver"/>
+		<flow value="128300" from="2009" to="285" color="silver"/>
+		<flow value="50000" from="320" to="2009" color="lawngreen"/>
+		<flow value="2506230" from="020" to="2010" color="lawngreen"/>
+		<flow value="55300" from="080" to="2010" color="lawngreen"/>
+		<flow value="660680" from="2010" to="140" color="LightCoral"/>
+		<flow value="8700" from="2010" to="150" color="LightCoral"/>
+		<flow value="188800" from="2010" to="160" color="LightCoral"/>
+		<flow value="82000" from="282" to="2010" color="silver"/>
+		<flow value="2617700" from="2010" to="284" color="silver"/>
+		<flow value="59500" from="2010" to="285" color="silver"/>
+		<flow value="88500" from="2010" to="310" color="LightCoral"/>
+		<flow value="46080" from="320" to="2010" color="lawngreen"/>
+		<flow value="485900" from="020" to="2011" color="lawngreen"/>
+		<flow value="130000" from="2011" to="120" color="LightCoral"/>
+		<flow value="427100" from="2011" to="140" color="LightCoral"/>
+		<flow value="3300" from="2011" to="141" color="LightCoral"/>
+		<flow value="173400" from="2011" to="150" color="LightCoral"/>
+		<flow value="425700" from="2011" to="160" color="LightCoral"/>
+		<flow value="2200" from="2011" to="200" color="LightCoral"/>
+		<flow value="80000" from="281" to="2011" color="silver"/>
+		<flow value="14800" from="282" to="2011" color="silver"/>
+		<flow value="1937200" from="2011" to="284" color="silver"/>
+		<flow value="22000" from="2011" to="285" color="silver"/>
+		<flow value="188800" from="320" to="2011" color="lawngreen"/>
+		<flow value="958500" from="020" to="2012" color="lawngreen"/>
+		<flow value="26000000" from="030" to="2012" color="lawngreen"/>
+		<flow value="7800" from="070" to="2012" color="lawngreen"/>
+		<flow value="5000" from="2012" to="110" color="LightCoral"/>
+		<flow value="17998505" from="2012" to="120" color="LightCoral"/>
+		<flow value="1028000" from="2012" to="130" color="LightCoral"/>
+		<flow value="5135800" from="2012" to="140" color="LightCoral"/>
+		<flow value="3400" from="2012" to="141" color="LightCoral"/>
+		<flow value="587600" from="2012" to="150" color="LightCoral"/>
+		<flow value="889600" from="2012" to="160" color="LightCoral"/>
+		<flow value="10000" from="2012" to="161" color="LightCoral"/>
+		<flow value="100000" from="282" to="2012" color="silver"/>
+		<flow value="1215100" from="2012" to="284" color="silver"/>
+		<flow value="777295" from="2012" to="285" color="silver"/>
+		<flow value="50000" from="2012" to="310" color="LightCoral"/>
+		<flow value="634000" from="320" to="2012" color="lawngreen"/>
+	</flows>
+</root>
