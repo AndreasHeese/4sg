@@ -16,9 +16,15 @@
 	<rect x="10" y="370" width="250" height="250" style="fill:firebrick; fill-opacity:1;"/>
 	<rect x="560" y="100" width="250" height="50" style="fill:forestgreen; fill-opacity:1;"/>
 	<rect x="560" y="170" width="250" height="450" style="fill:forestgreen; fill-opacity:1;"/>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-here-there-1" startOffset="50%">from here to there</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-around-there-3" startOffset="50%">value is 40</textPath>
+	</text>
 	<text x="135" y="225" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">here</text>
 	<text x="135" y="495" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">around</text>
-	<text x="685" y="125" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">over there</text>
+	<text x="685" y="125" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">over there (id 4)</text>
 	<text x="685" y="395" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">there</text>
 	<text x="135" y="90" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="ideographic">from</text>
 	<text x="685" y="90" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="ideographic">to</text>

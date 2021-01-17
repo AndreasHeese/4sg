@@ -10,13 +10,13 @@
 		</pile>
 		<pile>
 			<title>to</title>
-			<box id="4">over there</box>
+			<box id="4">over there (id <id/>)</box>
 			<box id="there">there</box>
 		</pile>
 	</piles>
 	<flows>
-		<flow value="50" from="here" to="there"/>
+		<flow value="50" from="here" to="there">from here to there</flow>
 		<flow value="10" from="around" to="4"/>
-		<flow value="40" from="around" to="there"/>
+		<flow value="40" from="around" to="there">value is <value/></flow>
 	</flows>
 </root>
