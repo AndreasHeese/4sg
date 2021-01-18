@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>4sg - Small and Simple SVG Sankey Generator</title>
+		<style type="text/css">
+					body { font-family: Verdana, Arial, sans-serif; padding: 0 1em 2em 1em; }
+					h1, h2, h3, h4, h5, h6 { font-family: Georgia, serif; color: SteelBlue; }
+					code { font-family: Courier New, monospace; color: Navy; }
+					span.col { display: inline-block; width:20em; }
+					span.c { color: Navy; }
+					span.bold { font-weight: bold; }
+					image { width: 75%; }
+					p.intro { background-color: Gainsboro; color: SteelBlue; padding: 8pt; }
+					p.info { color: SteelBlue; }
+					a.download { background-color: Gainsboro; padding: 1pt 1em 1pt 1em; }
+					div.xml { background-color: WhiteSmoke; overflow-x: auto; overflow-y: hidden; white-space: nowrap; padding: 1em 0 1em 0; }
+					div.iv { padding-left: 2em; font-size: 90%; }
+					.bold { font-weight: bold; }
+					.quote { font-style: italic; }
+					ol { list-style-type: decimal; }
+					li { margin-bottom: 4pt; }
+					.hint1 { background-color: Yellow; }
+					.hint2 { background-color: PowderBlue; }
+					.hint3 { background-color: PaleGreen; }
+					.untertitel { color: Gray; margin-top: 0; }
+					
+					.code { font-family: Courier New, monospace; }
+					.pad { padding-left: 12pt; }
+					.elem { color: Maroon; }
+					.attr { color: Red; }
+					.value { color: DarkSlateGray; }
+					.brace { color: Blue; }
+					.comm { color: Silver; }
+					.proc { color: Green; }
+					.doc { color: Blue; }
+					
+					table { border: 1px solid; border-collapse: collapse; width: 100%; }
+					td { vertical-align: top; padding-left: 4pt; }
+					td.border { border-left: 1px solid black; border-right: 1px solid black; }
+					tr.start td { border-top: 1px solid black; }
+					
+					@media only screen {
+						image { width: 50%; }
+					}
+				</style>
+	</head>
+	<body>
+		<h2>Setup</h2>
+		<p>Although easy to use, 4sg.xsl not a "point-and-click"-solution. There is no user interface. The XML data file must be edited with an editor like Notepad ++ (<a href="https://notepad-plus-plus.org" target="_blank" rel="noopener noreferrer">notepad-plus-plus.org</a>, free) or XMLSpy (<a href="https://www.altova.com/xmlspy-xml-editor" target="_blank" rel="noopener noreferrer">www.altova.com/xmlspy-xml-editor</a>, commercial). The easiest attempt is to adapt an existing example.</p>
+		<p>To run the XSLT script a processor that masters XSLT 3.0 is required. There are two of them: Saxon HE (<a href="https://www.saxonica.com" target="_blank" rel="noopener noreferrer">www.saxonica.com</a>, for Java or .NET, hosted free at Sourceforge, the commercial PE or EE version isn't required) and XMLSpy (<a href="https://www.altova.com/xmlspy-xml-editor" target="_blank" rel="noopener noreferrer">www.altova.com/xmlspy-xml-editor</a>, commercial). The script has been tested with both.</p>
+		<p>Because both the data source and the SVG target are each an XML file, XSLT is ideal as a tool for transformation. This language was designed for transforming XML files and is written in XML format itself. XSLT is a W3C standard, too.</p>
+		<p>With <span class="bold">XMLSpy</span>, the transformation for the displayed XML file is started by pressing the F10 key. The script file 4sg.xsl must be accessible for XMLSpy, ideally in the same directory. XMLSpy supports XSLT 3.0 since version 2018 to the extent required.</p>
+		<p>The easiest way to transform with <span class="bold">Saxon</span> is using a batch file, because Saxon is a command line tool. Saxon supports XSLT 3.0 since version 9.8. The program call differs for the .NET and Java version of Saxon.</p>
+		<p>The batch file for Saxon Java <span class="bold">Saxon Java</span> looks like this:</p>
+		<p class="code">java net.sf.saxon.Transform -s:SimpleExample.xml -xsl:4sg.xsl -o:SimpleExample.svg</p>
+		<p>This batch file is used for <span class="bold">Saxon .NET</span>:</p>
+		<p class="code">Transform -s:SimpleExample.xml -xsl:4sg.xsl -o:SimpleExample.svg</p>
+		<p>The parameters have the following meaning:<br>
+		-s = source file<br>
+		-xsl = script file<br>
+		-o = output file</p>
+		<p>The installation path must be accessible or be specified at the beginning of the command line. „SimpleExample.xml‟ is used here as the data file name.</p>
+		<h3 id="Setup example">Setup example</h3>
+			<p>If Saxon HE 10 for .NET on Windows is used, setup for the example goes like this:</p>
+			<ol>
+				<li>Download the 4sg.xsl script and the example file <span class="code hint2">SimpleExample.xml</span>.</li>
+				<li>Copy both files into any directory. C:\Sankey is used here.</li>
+				<li>Download the Saxon HE 10 setup .exe file from <a href="https://sourceforge.net/projects/saxon/files/Saxon-HE/10/Dotnet/">sourceforge.net/projects/saxon/files/Saxon-HE/10/Dotnet</a>. Please check whether there is a newer version published.</li>
+				<li>Run the setup .exe file</li>
+				<li>Check the path where the Transform.exe file is located. This can be e.g. <span class="code"><span class="hint1">C:\Program&#160;Files\Saxonica\SaxonHE10.3N\bin\</span>Transform.exe</span></li>
+				<li>In the selected directory C:\Sankey, create a new text file SimpleExample.txt. Insert the above batch command as the text and add the installation path:<br>
+					<span class="code"><span class="hint1">C:\Program&#160;Files\Saxonica\SaxonHE10.3N\bin\</span>Transform -s:<span class="hint2">SimpleExample.xml</span> -xsl:4sg.xsl -o:<span class="hint3">SimpleExample.svg</span></span><br>
+					<span class="code">pause</span><br>
+				A second line with the Pause command ensures that the prompt window appears after the execution and isn't closed again immediately.</li>
+				<li>Rename the text file to <span class="code">SimpleExample.bat</span>, making it executable as a batch file.</li>
+				<li>Run the batch file <span class="code">SimpleExample.bat</span> by double-clicking.</li>
+				<li>Open the newly created graphics file <span class="code hint3">SimpleExample.svg</span> with the browser.</li>
+			</ol>
+	</body>
+</html>
