@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>4sg - XML file structure</title>
+		<style type="text/css">
+					body { font-family: Verdana, Arial, sans-serif; padding: 0 1em 2em 1em; }
+					h1, h2, h3, h4, h5, h6 { font-family: Georgia, serif; color: SteelBlue; }
+					code { font-family: Courier New, monospace; color: Navy; }
+					span.col { display: inline-block; width:20em; }
+					span.c { color: Navy; }
+					span.bold { font-weight: bold; }
+					image { width: 75%; }
+					p.intro { background-color: Gainsboro; color: SteelBlue; padding: 8pt; }
+					p.info { color: SteelBlue; }
+					a.download { background-color: Gainsboro; padding: 1pt 1em 1pt 1em; }
+					div.xml { background-color: WhiteSmoke; overflow-x: auto; overflow-y: hidden; white-space: nowrap; padding: 1em 0 1em 0; }
+					div.iv { padding-left: 2em; font-size: 90%; }
+					.bold { font-weight: bold; }
+					.quote { font-style: italic; }
+					ol { list-style-type: decimal; }
+					li { margin-bottom: 4pt; }
+					.hint1 { background-color: Yellow; }
+					.hint2 { background-color: PowderBlue; }
+					.hint3 { background-color: PaleGreen; }
+					.untertitel { color: Gray; margin-top: 0; }
+					
+					.code { font-family: Courier New, monospace; }
+					.pad { padding-left: 12pt; }
+					.elem { color: Maroon; }
+					.attr { color: Red; }
+					.value { color: DarkSlateGray; }
+					.brace { color: Blue; }
+					.comm { color: Silver; }
+					.proc { color: Green; }
+					.doc { color: Blue; }
+					
+					table { border: 1px solid; border-collapse: collapse; width: 100%; }
+					td { vertical-align: top; padding-left: 4pt; }
+					td.border { border-left: 1px solid black; border-right: 1px solid black; }
+					tr.start td { border-top: 1px solid black; }
+					
+					@media only screen {
+						image { width: 50%; }
+					}
+				</style>
+	</head>
+	<body>
+	<h2>XML file structure</h2>
+		<p>The structure of the XML data file embodies left-to-right streaming flows of values between piles of boxes. Flows in other directions are not supported. The <span class="code brace">&lt;</span><span class="code elem">root</span><span class="code brace">&gt;</span> element contains two elements: <span class="code brace">&lt;</span><span class="code elem">piles</span><span class="code brace">&gt;</span> for stacks of rectangular boxes and <span class="code brace">&lt;</span><span class="code elem">flows</span><span class="code brace">&gt;</span> for the values flowing in between. The example diagram contains two stacks in <span class="code brace">&lt;</span><span class="code elem">piles</span><span class="code brace">&gt;</span>, a red and a green one. The colours are assigned automatically, but can be adjusted. Each <span class="code brace">&lt;</span><span class="code elem">pile</span><span class="code brace">&gt;</span> consist of two <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>es. The height of the boxes gets determined by the values to be displayed defined in the <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> elements. The box only needs one attribute <span class="code brace">&lt;</span><span class="code elem">box </span><span class="code attr">id</span><span class="code brace">=""</span><span class="code brace">&gt;</span> with unique content. There can be any number of <span class="code brace">&lt;</span><span class="code elem">pile</span><span class="code brace">&gt;</span> stacks and each <span class="code brace">&lt;</span><span class="code elem">pile</span><span class="code brace">&gt;</span> can contain any number of <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>es. It is recommended not to have too many small values. In that case, summarize data for a meaningful presentation.</p>
+		<p>The connection of the boxes through data values is defined in the element <span class="code brace">&lt;</span><span class="code elem">flows</span><span class="code brace">&gt;</span>. Inside this element, one <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> is created for every connection between two boxes. It defines which data value it represents (attribute <span class="code attr">value</span><span class="code brace">=""</span>), which box it starts with (start box id value in the attribute <span class="code attr">from</span><span class="code brace">=""</span>) and at which it ends (end box id value in the attribute <span class="code attr">to</span><span class="code brace">=""</span>).</p>
+		<p>The respective <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> does not contain its own information about the data values. Its height is only determined by the flows connected to it. The connection is established through the id attribute of the box.</p>
+		<p>Text written into the box or flow elements is shown in the graphic. It is also possible to output the values.</p>
+		<p>In the following table the nodes of the XML tree are listed. Elements are dark red and Attributes are shown in light red in alphabetical order. The text node is also mentioned at the end. He doesn't have a name of his own. The name in the first column is printed bold. The fourth column shows the parent elements the Node can be used in. For the elements, the possible children (nodes contained in the element) are shown. The required children are shows bold, the optional ones are shown normally. Attributes and texts have no child elements.</p>
+		<p>As a rule, attributes cannot only be used in the element to which they refer affect, but also in the elements above. In that case they affect all elements that are included below and for which they are intended. So the colour can be set for a complete <span class="code brace">&lt;</span><span class="code elem">pile </span><span class="code attr">color</span><span class="code brace">=""</span><span class="code brace">&gt;</span> with just one attribute and a different colour can still be used for a single <span class="code brace">&lt;</span><span class="code elem">box </span><span class="code attr">color</span><span class="code brace">=""</span><span class="code brace">&gt;</span>. <span class="code brace">&lt;</span><span class="code elem">root </span><span class="code attr">color</span><span class="code brace">=""</span><span class="code brace">&gt;</span> would set all boxes and flows to the same colour. Despite such a top-level definition different colours can be applied in the levels below, each of which applies to its area.</p>
+		<table>
+			<tr>
+				<td colspan="3">node</td>
+				<td class="border">parents</td>
+				<td colspan="3">children</td>
+			</tr>
+			<tr>
+				<td>name</td>
+				<td>type</td>
+				<td>comment</td>
+				<td class="border">name</td>
+				<td>name</td>
+				<td>type</td>
+				<td>number</td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">align</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Horizontal alignment of the text in a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> or a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>. Permissible values are:<br>
+				• start (left justified)<br>
+				• middle<br>
+				• end (right justified)<br>
+				Default value: middle</td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flows<br></span><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">arrow</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Brings a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> into arrow shape. Specified as numerical value in coordinate units. A meaningful value for arrow display is 10.<br>
+				Default value: 0 (no arrow)</td>
+				<td class="border" rowspan="1"><span class="elem">flows<br></span><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">bend</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Bend of a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>. Specified as numerical value in coordinate units.<br>
+				Default value: 150</td>
+				<td class="border" rowspan="1"><span class="elem">flows<br></span><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="16">box</td>
+				<td class="elem" rowspan="16">element</td>
+				<td rowspan="16">Box as a source and/or target point of the flowing values.</td>
+				<td class="border" rowspan="16"><span class="elem">pile<br></span></td>
+				<td><span class="attr">align</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">dominant-baseline</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-family</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-size</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">gap</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr bold">id</span></td>
+				<td><span class="attr bold">attribute</span></td>
+				<td><span>1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">opacity</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">text-color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit-pattern</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem">value</span></td>
+				<td><span class="elem">element</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">vertical</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">width</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">x</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">y</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">color</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Colour of a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> or a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>. Permissible values are:<br>
+				• Colour names (e.g. Cyan, Orange, ForestGreen, Blue) following <a href="https://www.w3.org/TR/SVG11/types.html#ColorKeywords" target="_blank" rel="noopener noreferrer">SVG specification</a><br>
+				• Hexadecimal notation (#rrggbb)<br>
+				• rgb (r, g, b) each with a value from 0-255 or 0% to 100% for red, green and blue<br>
+				An overview is provided at <a href="https://en.wikipedia.org/wiki/Web_colors" target="_blank" rel="noopener noreferrer">en.wikipedia.org/wiki/Web_colors</a>. CSS3 colour names and HSL notation are partially supported, but not included into the SVG standard.<br><br>
+				Default value for <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>:<br>
+				• 1st pile: firebrick<br>
+				• 2nd pile: forestgreen<br>
+				• 3rd pile: rgb(30,144,255)<br>
+				• 4th pile: #FFD700<br>
+				• 5th pile: rgb(0%,81%,82%)<br>
+				• Repeating from 6th pile on.<br>
+				The default value for <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> is a gradient between the two adjacent piles with their colours. If a colour value is defined, then
+this one colour is used. Gradients can't be defined with divergent self defined colours.</td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flows<br></span><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">dominant-baseline</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Position of the text relative to the coordinate position on the y axis in a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>. Permitted in a <span class="code brace">&lt;</span><span class="code elem">text</span><span class="code brace">&gt;</span> element only if that is located within a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> element.<br><br>
+				The default value is depends on the value of the attribute <span class="code attr">vertical</span><span class="code brace">=""</span>:<br>
+				• hanging on <span class="code attr">vertical</span><span class="code brace">="top"</span> (text below the coordinate)<br>
+				• central on <span class="code attr">vertical</span><span class="code brace">="middle"</span> and if vertical is not defined (text vertical centered on the coordinate)<br>
+				• ideographic on <span class="code attr">vertical</span><span class="code brace">="bottom"</span> (text including typographical descenders above coordinate)<br><br>
+				Problem: not all SVG renderer support this setting. See also chapter problems.</td>
+				<td class="border" rowspan="1"><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">box/text<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">end</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Length of the straight part at the end of the <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> behind the bend. For the straight part at the beginning see attribute <span class="code attr">start</span><span class="code brace">=""</span>, for the strength of the bend see <span class="code attr">bend</span><span class="code brace">=""</span>.<br>
+				Default value: 5</td>
+				<td class="border" rowspan="1"><span class="elem">flows<br></span><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="18">flow</td>
+				<td class="elem" rowspan="18">element</td>
+				<td rowspan="18">Value flow connecting the <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>es.</td>
+				<td class="border" rowspan="18"><span class="elem">flows<br></span></td>
+				<td><span class="attr">align</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">arrow</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">bend</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">end</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-family</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr bold">from</span></td>
+				<td><span class="attr bold">attribute</span></td>
+				<td><span>1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">gradient-stop-from</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">gradient-stop-to</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">opacity</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">start</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">startOffset</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">text-color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr bold">to</span></td>
+				<td><span class="attr bold">attribute</span></td>
+				<td><span>1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit-pattern</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr bold">value</span></td>
+				<td><span class="attr bold">attribute</span></td>
+				<td><span>1</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem">via</span></td>
+				<td><span class="elem">element</span></td>
+				<td><span>0..n</span></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="15">flows</td>
+				<td class="elem" rowspan="15">element</td>
+				<td rowspan="15">This element is only available once. It contains the <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> elements.</td>
+				<td class="border" rowspan="15"><span class="elem">root<br></span></td>
+				<td><span class="attr">align</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">arrow</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">bend</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">end</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem bold">flow</span></td>
+				<td><span class="elem bold">element</span></td>
+				<td><span>1..n</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-family</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">gradient-stop-from</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">gradient-stop-to</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">opacity</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">start</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">startOffset</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">text-color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit-pattern</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">font-family</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Font used for a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>, <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>, <span class="code brace">&lt;</span><span class="code elem">title</span><span class="code brace">&gt;</span> or <span class="code brace">&lt;</span><span class="code elem">text</span><span class="code brace">&gt;</span>. The font must be available on the displaying system. Alternative fonts can be defined through following comma separated font names.<br>
+				Generic fonts can be specified as serif, sans-serif, cursive, fantasy or monospace. With this input the appropriate installed font will be used.<br><br>
+				Default value: sans-serif</td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flows<br></span><span class="elem">flow<br></span><span class="elem">title<br></span><span class="elem">text<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">font-size</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Font size for a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>, <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>, <span class="code brace">&lt;</span><span class="code elem">title</span><span class="code brace">&gt;</span> or <span class="code brace">&lt;</span><span class="code elem">text</span><span class="code brace">&gt;</span>. The expected value is a number without added dimension information, because the value is used for calculations. The unit pt (point) is added automatically.
+				Default value: 16</td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flows<br></span><span class="elem">flow<br></span><span class="elem">title<br></span><span class="elem">text<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">from</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Defines the starting point of a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>, the source <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> on the left side. The value is the id of the relevant <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>.
+The target box is defined with the <span class="code brace">&lt;</span><span class="code elem">flow </span><span class="code attr">to</span><span class="code brace">=""</span><span class="code brace">&gt;</span> attribute.</td>
+				<td class="border" rowspan="1"><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">gap</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Height of the gap above a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> to the one above. Doesn't affect the top <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> of a <span class="code brace">&lt;</span><span class="code elem">pile</span><span class="code brace">&gt;</span>,
+because here the attribute <span class="code brace">&lt;</span><span class="code elem">pile </span><span class="code attr">y</span><span class="code brace">=""</span><span class="code brace">&gt;</span> is authoritative. The vertical position of a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> can't only be specified relative to the one above with <span class="code brace">&lt;</span><span class="code elem">box </span><span class="code attr">gap</span><span class="code brace">=""</span><span class="code brace">&gt;</span>, but also absolutely with <span class="code brace">&lt;</span><span class="code elem">box </span><span class="code attr">y</span><span class="code brace">=""</span><span class="code brace">&gt;</span>.<br>
+				Default value: 20</td>
+				<td class="border" rowspan="1"><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">gradient-stop-from</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Start of the colour gradient in a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> without a defined colour (see also attribute <span class="code attr">color</span><span class="code brace">=""</span>). For the end of the
+colour gradient see attribute<span class="code attr">gradient-stop-to</span><span class="code brace">=""</span>.<br>
+				Default value: 30%</td>
+				<td class="border" rowspan="1"><span class="elem">flows<br></span><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">gradient-stop-to</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">End of the colour gradient in a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> without a defined colour (see also attribute <span class="code attr">color</span><span class="code brace">=""</span>). For the start of the
+colour gradient see attribute<span class="code attr">gradient-stop-from</span><span class="code brace">=""</span>.<br>
+				Default value: 70%</td>
+				<td class="border" rowspan="1"><span class="elem">flows<br></span><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="1">id</td>
+				<td class="elem" rowspan="1">element</td>
+				<td rowspan="1">Displays the id of the <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> the element <span class="code brace">&lt;</span><span class="code elem">id</span><span class="code brace">&gt;</span> is contained in.<br>
+				Warning: not to be confused with with the attribute the id is defined with.</td>
+				<td class="border" rowspan="1"><span class="elem">box<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">id</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Defines the id of the <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>. The id's must be unique and are not allowed for multiple use. The attribute is also used as a reference in the element <span class="code brace">&lt;</span><span class="code elem">via</span><span class="code brace">&gt;</span>. For using there the id must already be defined in a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>. That also applies to the references in the attributes from and to of the element <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>.<br>
+				Warning: not to be confused with with the element id used to display the id value.</td>
+				<td class="border" rowspan="1"><span class="elem">box<br></span><span class="elem">via<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">opacity</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Opacity of a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> or <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>. The value is a number from 0 to 1. While 0 is completely transparent, 1 is completely opaque. For the value <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> being slightly transparent is useful for a better understanding of crossing <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>s.<br><br>
+Default value, depending on the parent element:<br>
+				• 1 with <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span><br>
+				• 0.7 with <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span></td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flows<br></span><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="16">pile</td>
+				<td class="elem" rowspan="16">element</td>
+				<td rowspan="16">A pile contains <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> elements. For a flow of values to be represented, there must be at least two <span class="code brace">&lt;</span><span class="code elem">pile</span><span class="code brace">&gt;</span> elements.</td>
+				<td class="border" rowspan="16"><span class="elem">piles<br></span></td>
+				<td><span class="attr">align</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem bold">box</span></td>
+				<td><span class="elem bold">element</span></td>
+				<td><span>1..n</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">dominant-baseline</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-family</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-size</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">gap</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">opacity</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">text-color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem">title</span></td>
+				<td><span class="elem">element</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit-pattern</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">vertical</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">width</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">x</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">y</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="13">piles</td>
+				<td class="elem" rowspan="13">element</td>
+				<td rowspan="13">This element is only available once. It contains the <span class="code brace">&lt;</span><span class="code elem">pile</span><span class="code brace">&gt;</span> elements.</td>
+				<td class="border" rowspan="13"><span class="elem">root<br></span></td>
+				<td><span class="attr">align</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">dominant-baseline</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-family</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-size</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">gap</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">opacity</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem bold">pile</span></td>
+				<td><span class="elem bold">element</span></td>
+				<td><span>2..n</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">text-color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit-pattern</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">vertical</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">width</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="13">root</td>
+				<td class="elem" rowspan="13">element</td>
+				<td rowspan="13">This element is only available once on top of the node tree. It contains all other elements.</td>
+				<td class="border" rowspan="13"></td>
+				<td><span class="elem bold">piles</span></td>
+				<td><span class="elem bold">element</span></td>
+				<td><span>1</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem bold">flows</span></td>
+				<td><span class="elem bold">element</span></td>
+				<td><span>1</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem">title</span></td>
+				<td><span class="elem">element</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem">text</span></td>
+				<td><span class="elem">element</span></td>
+				<td><span>0..n</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem">svg:*</span></td>
+				<td><span class="elem">element</span></td>
+				<td><span>0..n</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">align</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-family</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-size</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">opacity</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">text-color</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit-pattern</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">start</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Length of the straight part at the beginning of the <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> ahead of the bend. For the straight part at the end see attribute <span class="code attr">end</span><span class="code brace">=""</span>, for the strength of the bend see <span class="code attr">bend</span><span class="code brace">=""</span>.<br>
+				Default value: 5</td>
+				<td class="border" rowspan="1"><span class="elem">flows<br></span><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">startOffset</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Horizontal position of the text in a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>. Inside the <span class="code brace">&lt;</span><span class="code elem">text</span><span class="code brace">&gt;</span> element only permissible if that is located within a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> element. The range of values is 0 to 100 and denotes the percentage of the position on the <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>, where 0 is all the way left and 100 is completely on the right side.<br><br>
+				Tip: a text can also be positioned right even though using <span class="code brace">&lt;</span><span class="code elem">flow </span><span class="code attr">align</span><span class="code brace">="start"</span><span class="code brace">&gt;</span> by setting startOffset to a high value like <span class="code attr">startOffset</span><span class="code brace">="75"</span>. That way the text ist positioned on the right side controlling the start (left side) of the text.<br><br>
+				The default value depends on the value of the attribute <span class="code attr">align</span><span class="code brace">=""</span>:<br>
+				• 1 with <span class="code attr">align</span><span class="code brace">="start"</span><br>
+				• 50 with <span class="code attr">align</span><span class="code brace">="middle"</span> and if align is not defined<br>
+				• 99 with <span class="code attr">align</span><span class="code brace">="end"</span></td>
+				<td class="border" rowspan="1"><span class="elem">flows<br></span><span class="elem">flow<br></span><span class="elem">flow/text<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="1">svg:*</td>
+				<td class="elem" rowspan="1">element</td>
+				<td rowspan="1">In the <span class="code brace">&lt;</span><span class="code elem">root</span><span class="code brace">&gt;</span> element any SVG elements be included. These are copied into the generated SVG file without changes. A good knowledge of the <a href="https://www.w3.org/TR/SVG11/" target="_blank" rel="noopener noreferrer">SVG standard</a> is helpful. The used coordinates must be positioned inside the generated graphic to be visible. The SVG elements must be in the svg namespace. It is recommended to put these elements together inside a group. This way e.g. a logo can be inserted into the graphic automatically.<br><br>
+				svg:* means all elements in the namespace svg.</td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span></td>
+				<td><span class="elem">svg:*</span></td>
+				<td><span class="elem">element</span></td>
+				<td><span></span></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="10">text</td>
+				<td class="elem" rowspan="10">element</td>
+				<td rowspan="10">Contains text to be displayed. Not required inside <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> and <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>, but useful if the text position is to be defined more precisely. This element is required to insert text inside the <span class="code brace">&lt;</span><span class="code elem">root</span><span class="code brace">&gt;</span> element. So <span class="code brace">&lt;</span><span class="code elem">text </span><span class="code attr">x</span><span class="code brace">=""</span><span class="code attr">y</span><span class="code brace">=""</span><span class="code brace">&gt;</span> is required for absolut positioned text.<br><br>
+				The attributes <span class="code attr">dominant-baseline</span><span class="code brace">=""</span> and <span class="code attr">vertical</span><span class="code brace">=""</span> are only allowed inside the <span class="code brace">&lt;</span><span class="code elem">text</span><span class="code brace">&gt;</span> element, if the parent element of that is a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>.<br><br>
+				The attribute <span class="code attr">startOffset</span><span class="code brace">=""</span> is only allowed inside the <span class="code brace">&lt;</span><span class="code elem">text</span><span class="code brace">&gt;</span> element, if the parent element is a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>.</td>
+				<td class="border" rowspan="10"><span class="elem">root<br></span><span class="elem">box<br></span><span class="elem">flow<br></span></td>
+				<td><span class="attr">align</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">dominant-baseline (*unter box)</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0|0..1*</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-family</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-size</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">startOffset (*unter flow)</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0|0..1*</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem">value</span></td>
+				<td><span class="elem">element</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">vertical (*unter box)</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0|0..1*</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">x</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">y</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class=""></span></td>
+				<td><span class="">Text</span></td>
+				<td><span></span></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">text-color</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Text colour of an element. Possible values:<br>
+				• Color names (e.g. Cyan, Orange, ForestGreen, Blue) following SVG specification<br>
+				• Hexadecimal notation (#rrggbb)<br>
+				• rgb (r, g, b) each with a value from 0-255 or 0% to 100% for red, green and blue<br>
+				An overview is provided at <a href="https://en.wikipedia.org/wiki/Web_colors" target="_blank" rel="noopener noreferrer">en.wikipedia.org/wiki/Web_colors</a>. CSS3 colour names and HSL notation are partially supported, but not included into the SVG standard.<br><br>
+				If no individual setting is made, black is used as default text colour.</td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flows<br></span><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="6">title</td>
+				<td class="elem" rowspan="6">element</td>
+				<td rowspan="6">Title text.</td>
+				<td class="border" rowspan="6"><span class="elem">root<br></span><span class="elem">pile<br></span></td>
+				<td><span class="attr">font-family</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">font-size</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="elem">value</span></td>
+				<td><span class="elem">element</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">x</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">y</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class=""></span></td>
+				<td><span class="">Text</span></td>
+				<td><span></span></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">to</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Defines the end point of a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span>, the target <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> on the right side. The value is the id of the relevant <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>.
+The source box is defined with the <span class="code brace">&lt;</span><span class="code elem">flow </span><span class="code attr">from</span><span class="code brace">=""</span><span class="code brace">&gt;</span> attribute.</td>
+				<td class="border" rowspan="1"><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">type</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">If the element <span class="code brace">&lt;</span><span class="code elem">value</span><span class="code brace">&gt;</span> is used within the elements <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> or <span class="code brace">&lt;</span><span class="code elem">pile</span><span class="code brace">&gt;</span>, the values flowing in and out can differ. In that case the attribute <span class="code attr">type</span><span class="code brace">=""</span> is used to define which values to display. If the attribute is omitted, the bigger sum resulting is processed. Within a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> there is only one value, so that attribute is not applicable.<br>
+				Possible values: <span class="code attr">type</span><span class="code brace">="from"</span> or <span class="code attr">type</span><span class="code brace">="to"</span>.</td>
+				<td class="border" rowspan="1"><span class="elem">value<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">unit</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Displayed values can have a unit name attached. This attribute defines that unit name, e.g. <span class="code brace">&lt;</span><span class="code elem">root </span><span class="code attr">unit</span><span class="code brace">=" M €"</span><span class="code brace">&gt;</span> for million Euro. The characters defined are appended right to the value. If a space character is intended, this must be included into the attribute. Display on the left side is not yet supported.<br>
+				Default value: <span class="code attr">unit</span><span class="code brace">=""</span> (empty)</td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flows<br></span><span class="elem">flow<br></span><span class="elem">value<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">unit-pattern</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Pattern for value display. Decimal places and thousands separators are defined here.<br>
+				Default value: #.##0 (german style with thousands points and without decimal places)</td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flows<br></span><span class="elem">flow<br></span><span class="elem">value<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="3">value</td>
+				<td class="elem" rowspan="3">element</td>
+				<td rowspan="3">Displays a value, depending on parent element:<br>
+				• With <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> its value<br>
+				• With <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> its value sum<br>
+				• With <span class="code brace">&lt;</span><span class="code elem">pile</span><span class="code brace">&gt;</span> its value sum<br>
+				With different from and to values within a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> the side to be processed can be controlled with the attribute <span class="code attr">type</span><span class="code brace">="from|to"</span>. Within a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> there are no different values and thus no need for the type attribute.<br>
+				Warning: not to be confused with the <span class="code attr">value</span><span class="code brace">=""</span> attribute that values are defined with and that is used only in the <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> element.</td>
+				<td class="border" rowspan="3"><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flow<br></span></td>
+				<td><span class="attr">type</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr>
+				<td><span class="attr">unit-pattern</span></td>
+				<td><span class="attr">attribute</span></td>
+				<td><span>0..1</span></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">value</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Defines the value represented by a <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> element. Exclusively used here.<br>
+				Warning: not to be confused with the <span class="code brace">&lt;</span><span class="code elem">value</span><span class="code brace">&gt;</span> element that values are displayed with.</td>
+				<td class="border" rowspan="1"><span class="elem">flow<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">vertical</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Vertical alignment of the text in a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>. Permitted values:<br>
+				• top<br>
+				• middle<br>
+				• bottom<br>
+				Default value: middle<br><br>
+				In combination with the attribute <span class="code attr">align</span><span class="code brace">=""</span> positions like top left are possible. With older browsers the value top can lead to a position above the box instead of top within the box. In the <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> element the vertical change is not supported.</td>
+				<td class="border" rowspan="1"><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold elem" rowspan="1">via</td>
+				<td class="elem" rowspan="1">element</td>
+				<td rowspan="1">Directs a value <span class="code brace">&lt;</span><span class="code elem">flow</span><span class="code brace">&gt;</span> through a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> without interrupting it there. Usefull if there are other piles between the source and the target of the value flow and in that pile(s) in between a gap is generated by a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> defined for this purpose. If a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span> is used just for a <span class="code brace">&lt;</span><span class="code elem">via</span><span class="code brace">&gt;</span>, it's recommended to use <span class="code brace">&lt;</span><span class="code elem">box </span><span class="code attr">color</span><span class="code brace">="none"</span><span class="code brace">&gt;</span> to make it invisible.</td>
+				<td class="border" rowspan="1"><span class="elem">flow<br></span></td>
+				<td><span class="attr bold">id</span></td>
+				<td><span class="attr bold">attribute</span></td>
+				<td><span>1</span></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">x</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Fixed horizontal position. Specified as a numerical value in coordinate units. Overrides the automatic positioning.</td>
+				<td class="border" rowspan="1"><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">title<br></span><span class="elem">text<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">y</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Fixed vertical position. Specified as a numerical value in coordinate units. Overrides the automatic positioning.</td>
+				<td class="border" rowspan="1"><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">title<br></span><span class="elem">text<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">width</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Width of a <span class="code brace">&lt;</span><span class="code elem">box</span><span class="code brace">&gt;</span>.<br>
+				Default value: 300</td>
+				<td class="border" rowspan="1"><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold " rowspan="1"></td>
+				<td class="" rowspan="1">Text</td>
+				<td rowspan="1">Only the permitted parent elements contain displayed text. This includes suitable SVG elements.</td>
+				<td class="border" rowspan="1"><span class="elem">box<br></span><span class="elem">flow<br></span><span class="elem">title<br></span><span class="elem">text<br></span><span class="elem">svg:*<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+		</table>
+	</body>
+</html>
