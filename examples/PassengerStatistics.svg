@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2470 1010" preserveAspectRatio="xMidYMin meet">
+	<!--SVG sankey graphic file generated using 4sg.xsl version 1.0 - conversion factor from values to coordinates is 5-->
+	<title>Munich airport departure passenger statistics 2019</title>
+	<path id="i-car-enter-1" d="M 270,148 L 275,148 C 425,148 395,208 545,208 L 550,208" style="stroke:Silver; stroke-width:96; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="270,148 260,100 270,100 270,196 260,196" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="550,160 560,208 550,256" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-rent-enter-2" d="M 270,228.5 L 275,228.5 C 425,228.5 395,268.5 545,268.5 L 550,268.5" style="stroke:Silver; stroke-width:25; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="270,228.5 260,216 270,216 270,241 260,241" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="550,256 560,268.5 550,281" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-taxi-enter-3" d="M 270,278 L 275,278 C 425,278 395,298 545,298 L 550,298" style="stroke:Silver; stroke-width:34; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="270,278 260,261 270,261 270,295 260,295" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="550,281 560,298 550,315" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-bus-enter-4" d="M 270,338.25 L 275,338.25 C 425,338.25 395,338.25 545,338.25 L 550,338.25" style="stroke:Silver; stroke-width:46.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="270,338.25 260,315 270,315 270,361.5 260,361.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="550,315 560,338.25 550,361.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-train-enter-5" d="M 270,435.75 L 275,435.75 C 425,435.75 395,415.75 545,415.75 L 550,415.75" style="stroke:Silver; stroke-width:108.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="270,435.75 260,381.5 270,381.5 270,490 260,490" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="550,361.5 560,415.75 550,470" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-arr-dom-switch-6" d="M 270,526.25 L 275,526.25 C 425,526.25 395,506.25 545,506.25 L 550,506.25" style="stroke:Silver; stroke-width:32.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="270,526.25 260,510 270,510 270,542.5 260,542.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="550,490 560,506.25 550,522.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-arr-int-switch-7" d="M 270,641.25 L 275,641.25 C 425,641.25 395,601.25 545,601.25 L 550,601.25" style="stroke:Silver; stroke-width:157.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="270,641.25 260,562.5 270,562.5 270,720 260,720" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="550,522.5 560,601.25 550,680" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-enter-a-8" d="M 820,315 L 825,315 C 975,315 945,325 1095,325 L 1100,325" style="stroke:Silver; stroke-width:310; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="820,315 810,160 820,160 820,470 810,470" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="1100,170 1110,325 1100,480" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-switch-a-9" d="M 820,585 L 825,585 C 975,585 945,575 1095,575 L 1100,575" style="stroke:Silver; stroke-width:190; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="820,585 810,490 820,490 820,680 810,680" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="1100,480 1110,575 1100,670" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-a-dom-10" d="M 1370,216.75 L 1375,216.75 C 1525,216.75 1495,196.75 1645,196.75 L 1650,196.75" style="stroke:Silver; stroke-width:93.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1370,216.75 1360,170 1370,170 1370,263.5 1360,263.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="1650,150 1660,196.75 1650,243.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-a-eur-11" d="M 1370,407.25 L 1375,407.25 C 1525,407.25 1495,407.25 1645,407.25 L 1650,407.25" style="stroke:Silver; stroke-width:287.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1370,407.25 1360,263.5 1370,263.5 1370,551 1360,551" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="1650,263.5 1660,407.25 1650,551" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-a-o-12" d="M 1370,610.5 L 1375,610.5 C 1525,610.5 1495,630.5 1645,630.5 L 1650,630.5" style="stroke:Silver; stroke-width:119; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1370,610.5 1360,551 1370,551 1370,670 1360,670" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="1650,571 1660,630.5 1650,690" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-eur-es-13" d="M 1920,285 L 1925,285 C 2075,285 2045,241.5 2195,241.5 L 2200,241.5" style="stroke:Silver; stroke-width:43; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,285 1910,263.5 1920,263.5 1920,306.5 1910,306.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,220 2210,241.5 2200,263" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-eur-it-14" d="M 1920,324.75 L 1925,324.75 C 2075,324.75 2045,301.25 2195,301.25 L 2200,301.25" style="stroke:Silver; stroke-width:36.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,324.75 1910,306.5 1920,306.5 1920,343 1910,343" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,283 2210,301.25 2200,319.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-eur-uk-15" d="M 1920,356.5 L 1925,356.5 C 2075,356.5 2045,353 2195,353 L 2200,353" style="stroke:Silver; stroke-width:27; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,356.5 1910,343 1920,343 1920,370 1910,370" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,339.5 2210,353 2200,366.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-eur-fr-16" d="M 1920,380.25 L 1925,380.25 C 2075,380.25 2045,396.75 2195,396.75 L 2200,396.75" style="stroke:Silver; stroke-width:20.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,380.25 1910,370 1920,370 1920,390.5 1910,390.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,386.5 2210,396.75 2200,407" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-eur-gr-17" d="M 1920,398.5 L 1925,398.5 C 2075,398.5 2045,435 2195,435 L 2200,435" style="stroke:Silver; stroke-width:16; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,398.5 1910,390.5 1920,390.5 1920,406.5 1910,406.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,427 2210,435 2200,443" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-eur-tr-18" d="M 1920,414 L 1925,414 C 2075,414 2045,470.5 2195,470.5 L 2200,470.5" style="stroke:Silver; stroke-width:15; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,414 1910,406.5 1920,406.5 1920,421.5 1910,421.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,463 2210,470.5 2200,478" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-o-nam-19" d="M 1920,592 L 1925,592 C 2075,592 2045,559 2195,559 L 2200,559" style="stroke:Silver; stroke-width:42; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,592 1910,571 1920,571 1920,613 1910,613" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,538 2210,559 2200,580" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-o-lam-20" d="M 1920,617.25 L 1925,617.25 C 2075,617.25 2045,604.25 2195,604.25 L 2200,604.25" style="stroke:Silver; stroke-width:8.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,617.25 1910,613 1920,613 1920,621.5 1910,621.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,600 2210,604.25 2200,608.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-o-ap-21" d="M 1920,642.25 L 1925,642.25 C 2075,642.25 2045,649.25 2195,649.25 L 2200,649.25" style="stroke:Silver; stroke-width:41.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,642.25 1910,621.5 1920,621.5 1920,663 1910,663" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,628.5 2210,649.25 2200,670" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-o-me-22" d="M 1920,669.5 L 1925,669.5 C 2075,669.5 2045,696.5 2195,696.5 L 2200,696.5" style="stroke:Silver; stroke-width:13; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,669.5 1910,663 1920,663 1920,676 1910,676" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,690 2210,696.5 2200,703" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-o-naf-23" d="M 1920,680.25 L 1925,680.25 C 2075,680.25 2045,727.25 2195,727.25 L 2200,727.25" style="stroke:Silver; stroke-width:8.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,680.25 1910,676 1920,676 1920,684.5 1910,684.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,723 2210,727.25 2200,731.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-o-oaf-24" d="M 1920,687 L 1925,687 C 2075,687 2045,754 2195,754 L 2200,754" style="stroke:Silver; stroke-width:5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1920,687 1910,684.5 1920,684.5 1920,689.5 1910,689.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="2200,751.5 2210,754 2200,756.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<rect x="10" y="100" width="250" height="96" style="fill:LightskyBlue; fill-opacity:1;"/>
+	<rect x="10" y="216" width="250" height="25" style="fill:LightskyBlue; fill-opacity:1;"/>
+	<rect x="10" y="261" width="250" height="34" style="fill:LightskyBlue; fill-opacity:1;"/>
+	<rect x="10" y="315" width="250" height="46.5" style="fill:LightskyBlue; fill-opacity:1;"/>
+	<rect x="10" y="381.5" width="250" height="108.5" style="fill:LightskyBlue; fill-opacity:1;"/>
+	<rect x="10" y="510" width="250" height="32.5" style="fill:LightCyan; fill-opacity:1;"/>
+	<rect x="10" y="562.5" width="250" height="157.5" style="fill:PaleTurquoise; fill-opacity:1;"/>
+	<rect x="560" y="160" width="250" height="310" style="fill:LightskyBlue; fill-opacity:1;"/>
+	<rect x="560" y="490" width="250" height="190" style="fill:PaleTurquoise; fill-opacity:1;"/>
+	<rect x="1110" y="170" width="250" height="500" style="fill:LightSlateGray; fill-opacity:1;"/>
+	<rect x="1660" y="150" width="250" height="93.5" style="fill:PaleGreen; fill-opacity:1;"/>
+	<rect x="1660" y="263.5" width="250" height="287.5" style="fill:MediumSeaGreen; fill-opacity:1;"/>
+	<rect x="1660" y="571" width="250" height="119" style="fill:SeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="220" width="250" height="43" style="fill:MediumSeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="283" width="250" height="36.5" style="fill:MediumSeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="339.5" width="250" height="27" style="fill:MediumSeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="386.5" width="250" height="20.5" style="fill:MediumSeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="427" width="250" height="16" style="fill:MediumSeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="463" width="250" height="15" style="fill:MediumSeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="538" width="250" height="42" style="fill:SeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="600" width="250" height="8.5" style="fill:SeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="628.5" width="250" height="41.5" style="fill:SeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="690" width="250" height="13" style="fill:SeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="723" width="250" height="8.5" style="fill:SeaGreen; fill-opacity:1;"/>
+	<rect x="2210" y="751.5" width="250" height="5" style="fill:SeaGreen; fill-opacity:1;"/>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-car-enter-1" startOffset="50%">19,2%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-rent-enter-2" startOffset="50%">5,0%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-taxi-enter-3" startOffset="50%">6,8%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-bus-enter-4" startOffset="50%">9,3%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-train-enter-5" startOffset="50%">21,7%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-arr-dom-switch-6" startOffset="50%">6,5%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-arr-int-switch-7" startOffset="50%">31,5%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-enter-a-8" startOffset="50%">62,0%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-switch-a-9" startOffset="50%">38,0%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-a-dom-10" startOffset="50%">18,7%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-a-eur-11" startOffset="50%">57,5%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-a-o-12" startOffset="50%">23,8%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-eur-es-13" startOffset="50%">8,6%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-eur-it-14" startOffset="50%">7,3%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-eur-uk-15" startOffset="50%">5,4%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-eur-fr-16" startOffset="50%">4,1%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-eur-gr-17" startOffset="50%">3,2%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-eur-tr-18" startOffset="50%">3,0%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-o-nam-19" startOffset="50%">8,4%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-o-lam-20" startOffset="50%">1,7%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-o-ap-21" startOffset="50%">8,3%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-o-me-22" startOffset="50%">2,6%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-o-naf-23" startOffset="50%">1,7%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-o-oaf-24" startOffset="50%">1,0%</textPath>
+	</text>
+	<text x="135" y="148" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Car</text>
+	<text x="135" y="228.5" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Rental car</text>
+	<text x="135" y="278" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Taxi</text>
+	<text x="135" y="338.25" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Bus + Transfer</text>
+	<text x="135" y="435.75" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Train</text>
+	<text x="135" y="526.25" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Domestic</text>
+	<text x="135" y="641.25" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">International</text>
+	<text x="685" y="315" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Entering</text>
+	<text x="685" y="585" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Switching</text>
+	<text x="1235" y="420" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">23.858.696 passengers</text>
+	<text x="1785" y="196.75" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Domestic</text>
+	<text x="1785" y="407.25" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Europe</text>
+	<text x="1785" y="630.5" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Intercontinental</text>
+	<text x="2335" y="241.5" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Spain</text>
+	<text x="2335" y="301.25" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Italy</text>
+	<text x="2335" y="353" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">United Kingdom</text>
+	<text x="2335" y="396.75" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">France</text>
+	<text x="2335" y="435" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Greece</text>
+	<text x="2335" y="470.5" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Turkey</text>
+	<text x="2335" y="559" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">North America</text>
+	<text x="2335" y="604.25" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Latin America</text>
+	<text x="2335" y="649.25" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Asia and Pacific</text>
+	<text x="2335" y="696.5" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Middle East</text>
+	<text x="2335" y="727.25" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">North Africa</text>
+	<text x="2335" y="754" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Other Africa</text>
+	<text x="1235" y="70" style="font-family:sans-serif; font-size:9pt; fill:black;" text-anchor="middle" dominant-baseline="hanging">Source: https://www.munich-airport.de/_b/0000000000000008934700bb5e9eb9ac/statistischer-jahresbericht-2019-kompr.pdf</text>
+	<text x="1235" y="10" style="font-family:sans-serif; font-size:24pt; fill:black;" text-anchor="middle" dominant-baseline="hanging">Munich airport departure passenger statistics 2019</text>
+</svg>
