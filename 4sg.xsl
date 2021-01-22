@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2019-2020 - 4sg.xsl - Small and Simple SVG Sankey Generator - Andreas Heese - Version 1.0 - MIT-License -->
+<!-- Copyright 2019-2021 - 4sg.xsl - Small and Simple SVG Sankey Generator - Andreas Heese - Version 1.1 - MIT-License -->
 <xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://own.functions" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:map="http://www.w3.org/2005/xpath-functions/map" exclude-result-prefixes="svg xs fn map">
 	<xsl:output method="xml" indent="yes" standalone="no" doctype-public="-//W3C//DTD SVG 1.1//EN" doctype-system="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" media-type="image/svg" />
 	<xsl:decimal-format name="units" decimal-separator="," grouping-separator="."/>
@@ -16,13 +16,15 @@
 		'end':'5',
 		'arrow':'0',
 		'padding':'10',
+		'box_padding_top':'8',
+		'box_padding_bottom':'4',
 		'box_width':'250',
 		'width':'300',
 		'bend':'150',
 		'flow_opacity':'0.7',
 		'opacity':'1',
-		'gradient-stop-from':'30%',
-		'gradient-stop-to':'70%',
+		'gradient-stop-from':'20%',
+		'gradient-stop-to':'80%',
 		'start_startOffset':'1',
 		'middle_startOffset':'50',
 		'end_startOffset':'99',
@@ -163,7 +165,7 @@
 			<xsl:message terminate="yes">MESSAGE: TERMINATED flow/via/@id values not contained in box/@id</xsl:message>
 		</xsl:if>
 		<svg viewBox="0 0 {$width} {$value-height + max(for $p in $piles/pile return fn:y($p) + sum(for $b in $p/box return fn:get($b,'gap'))) + number(map:get($defaults,'padding'))}" preserveAspectRatio="xMidYMin meet">
-			<xsl:comment>SVG sankey graphic file generated using 4sg.xsl version 1.0 - conversion factor from values to coordinates is <xsl:value-of select="$factor"/></xsl:comment>
+			<xsl:comment>SVG sankey graphic file generated using 4sg.xsl version 1.1 - conversion factor from values to coordinates is <xsl:value-of select="$factor"/></xsl:comment>
 			<title>
 				<xsl:value-of select="title"/>
 			</title>
@@ -178,7 +180,7 @@
 				</xsl:variable> 
 				<defs>
 					<xsl:for-each-group select="$gradients/*" group-by=".">
-						<linearGradient id="g-{current-grouping-key()}" gradientUnits="userSpaceOnUse">
+						<linearGradient id="g-{current-grouping-key()}">
 							<stop offset="{fn:get(.,'gradient-stop-from')}" stop-color="{@from}"/>
 							<stop offset="{fn:get(.,'gradient-stop-to')}" stop-color="{@to}"/>
 						</linearGradient>
@@ -204,6 +206,7 @@
 		<xsl:variable name="boxto" select="$piles/pile/box[@id = $this/@to]"/>
 		<xsl:variable name="ly" select="fn:y($boxfrom) + (sum(preceding-sibling::flow[@from = $this/@from]/@value) * $factor) + (@value * $factor div 2)"/>
 		<xsl:variable name="ry" select="fn:y($boxto) + (sum(preceding-sibling::flow[@to = $this/@to]/@value) * $factor) + (@value * $factor div 2)"/>
+		
 		<xsl:variable name="lx" select="fn:x($boxfrom) + fn:get($boxfrom,'width') + fn:get($this,'arrow')"/>
 		<xsl:variable name="rx" select="fn:x($boxto) - fn:get($this,'arrow')"/>
 		<xsl:variable name="path">
@@ -225,10 +228,21 @@
 			<xsl:value-of select="$rx - fn:get($this,'end')||','||$ry||' '"/>
 			<xsl:value-of select="'L '||$rx||','||$ry"/>
 		</xsl:variable>
-		<path id="i-{@from}-{@to}-{position()}" d="{$path}" style="stroke:{fn:get(.,'color')}; stroke-width:{@value * $factor}; fill:none; stroke-opacity:{fn:get(.,'opacity')}; stroke-linejoin:round;"/>
+		<xsl:choose><!-- output as path or rect -->
+			<xsl:when test="($ly = $ry) and not(via)"><!-- with a straight horizontal path, gradient backgrounds are not visible, therefore display as rect - no via necessary even if spanning several piles -->
+				<rect x="{$lx}" y="{fn:y($boxfrom) + sum(preceding-sibling::flow[@from = $this/@from]/@value) * $factor}" width="{$rx - $lx}" height="{@value * $factor}" style="fill:{fn:get(.,'color')}; fill-opacity:{fn:get(.,'opacity')}; stroke:none;"/> 
+				<path id="i-{@from}-{@to}-{position()}" d="M {$lx},{$ly} L {$rx},{$ly}" style="stroke:none; fill:none;"/><!-- for lettering -->
+			</xsl:when>
+			<xsl:otherwise><!-- path -->
+				<path id="i-{@from}-{@to}-{position()}" d="{$path}" style="stroke:{fn:get(.,'color')}; stroke-width:{@value * $factor}; fill:none; stroke-opacity:{fn:get(.,'opacity')}; stroke-linejoin:round;"/>
+			</xsl:otherwise>
+		</xsl:choose>
 		<xsl:if test="fn:get($this,'arrow') != 0">
-			<polygon points="{$lx},{$ly} {$lx - fn:get($this,'arrow')},{$ly - (@value * $factor div 2)} {$lx},{$ly - (@value * $factor div 2)} {$lx},{$ly + (@value * $factor div 2)} {$lx - fn:get($this,'arrow')},{$ly + (@value * $factor div 2)}" style="fill:{fn:get(.,'color')}; fill-opacity:{fn:get(.,'opacity')}; stroke:none;"/>
-			<polygon points="{$rx},{$ry - (@value * $factor div 2)} {$rx + fn:get($this,'arrow')},{$ry} {$rx},{$ry + (@value * $factor div 2)}" style="fill:{fn:get(.,'color')}; fill-opacity:{fn:get(.,'opacity')}; stroke:none;"/>
+			<!-- color must be of flow when defined, but of adjacent boxes when gradient -->
+			<xsl:variable name="colorfrom" select="if (ancestor-or-self::*[@color]) then (fn:get(.,'color')) else (fn:get($boxfrom,'color'))"/>
+			<xsl:variable name="colorto" select="if (ancestor-or-self::*[@color]) then (fn:get(.,'color')) else (fn:get($boxto,'color'))"/>
+			<polygon points="{$lx},{$ly} {$lx - fn:get($this,'arrow')},{$ly - (@value * $factor div 2)} {$lx},{$ly - (@value * $factor div 2)} {$lx},{$ly + (@value * $factor div 2)} {$lx - fn:get($this,'arrow')},{$ly + (@value * $factor div 2)}" style="fill:{$colorfrom}; fill-opacity:{fn:get(.,'opacity')}; stroke:none;"/>
+			<polygon points="{$rx},{$ry - (@value * $factor div 2)} {$rx + fn:get($this,'arrow')},{$ry} {$rx},{$ry + (@value * $factor div 2)}" style="fill:{$colorto}; fill-opacity:{fn:get(.,'opacity')}; stroke:none;"/>
 		</xsl:if>
 	</xsl:template>
 	<!-- ===== output texts ===== -->
@@ -236,6 +250,9 @@
 		<xsl:variable name="element" select="(ancestor-or-self::box[1]|.)[1]"/>
 		<xsl:variable name="x">
 			<xsl:choose>
+				<xsl:when test="self::text and @x"><!-- text with x value -->
+					<xsl:value-of select="@x"/>
+				</xsl:when>
 				<xsl:when test="fn:get(.,'align') = 'start'">
 					<xsl:value-of select="fn:x($element) + number(map:get($defaults,'start'))"/>
 				</xsl:when>
@@ -250,10 +267,10 @@
 		<xsl:variable name="y">
 			<xsl:choose>
 				<xsl:when test="fn:get(.,'vertical') = 'top'">
-					<xsl:value-of select="fn:y($element)"/>
+					<xsl:value-of select="fn:y($element) + fn:get(.,'box_padding_top')"/>
 				</xsl:when>
 				<xsl:when test="fn:get(.,'vertical') = 'bottom'">
-					<xsl:value-of select="fn:y($element) + fn:boxheight(ancestor-or-self::box[1]/@id)"/>
+					<xsl:value-of select="fn:y($element) + fn:boxheight(ancestor-or-self::box[1]/@id) - fn:get(.,'box_padding_bottom')"/>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:value-of select="fn:y($element) + (fn:boxheight(ancestor-or-self::box[1]/@id) div 2)"/>
@@ -268,7 +285,7 @@
 	<xsl:template match="flow[text()|value]|flow/text">
 		<text style="font-family:{fn:get(.,'font-family')}; font-size:{fn:get(.,'font-size')}pt; fill:{fn:get(./text()|.,'text-color')};" text-anchor="{fn:get(.,'align')}" dominant-baseline="{fn:get(.,'dominant-baseline')}">
 			<textPath xlink:href="#i-{ancestor-or-self::flow[1]/@from}-{ancestor-or-self::flow[1]/@to}-{count(ancestor-or-self::flow[1]/preceding-sibling::flow)+1}" startOffset="{fn:get(.,'startOffset')}%">
-				<xsl:apply-templates/>
+				<xsl:apply-templates select="text()|value"/>
 			</textPath>
 		</text>
 	</xsl:template>
