@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="4sg.xsl"?>
+<root>
+	<title>Extended Sankey Diagram Example</title>
+	<text x="1400" y="510">text with absolute position of center x="1400" y="510"</text>
+	<text x="1400" y="530" align="start">text with absolute position of start x="1400" y="530"</text>
+	<piles>
+		<pile>
+			<title>from</title>
+			<box id="here">here</box>
+			<box id="around" gap="40">around</box>
+			<box id="special" x="1400" y="550" width="450" color="rgb(20%,70%,80%)">box position x="1400" y="550", width="450"</box>
+		</pile>
+		<pile>
+			<title>to</title>
+			<box id="4">over there</box>
+			<box id="via1" color="none"/>
+			<box id="there">
+				<text vertical="top" align="start">box value in is <value type="to"/></text>
+				there
+				<text vertical="bottom" align="end">box value out is <value type="from"/></text>
+			</box>
+		</pile>
+		<pile color="#4169E1">
+			<title>even further</title>
+			<box id="5">box value is <value/>
+			</box>
+			<box id="3-2">
+				<text vertical="top" align="start">&#x2B09;</text>
+				<text vertical="top">top</text>
+				<text vertical="top" align="end">&#x2B08;</text>
+				<text align="start">start</text>
+				middle
+				<text align="end">end</text>
+				<text vertical="bottom" align="start">&#x2B0B;</text>
+				<text vertical="bottom">bottom</text>
+				<text vertical="bottom" align="end">&#x2B0A;</text>
+			</box>
+			<box id="6" color="firebrick">box id is <id/>
+			</box>
+		</pile>
+		<pile y="120">
+			<title>top y="120"</title>
+			<box id="प्रथम" color="Turquoise">
+				<text align="start">प्रथम</text>
+				<text align="end">(1st in Hindi)</text>
+			</box>
+			<box id="第二" color="MediumTurquoise">
+				<text align="start">第二</text>
+				<text align="end">(2nd in Chinese)</text>
+			</box>
+			<box id="الثالث" color="DarkTurquoise">
+				<text align="start">(3rd in Arabic)</text>
+				<text align="end">الثالث</text>
+			</box>
+			<box id="last" color="forestgreen"/>
+		</pile>
+	</piles>
+	<flows>
+		<flow value="20" from="here" to="there">flow value <value/> from here to there</flow>
+		<flow value="10" from="around" to="4"/>
+		<flow value="10" from="around" to="5" start="50">
+			<via id="via1"/>straighter start with start="50" instead default 5</flow>
+		<flow value="40" from="around" to="there">flow value <value/>
+		</flow>
+		<flow value="10" from="there" to="6"/>
+		<flow value="25" from="there" to="3-2">
+			<text startOffset="25">default</text>
+			<text startOffset="80">bend="150"</text>
+		</flow>
+		<flow value="10" from="there" to="6" opacity="1" startOffset="25">opacity="1"</flow>
+		<flow value="10" from="4" to="6" color="#00BFFF" bend="300">this flow has bend="300"</flow>
+		<flow value="10" from="3-2" to="प्रथम" arrow="10" color="Turquoise">
+			<text align="start">start</text>
+			middle
+			<text align="end">end</text>
+		</flow>
+		<flow value="10" from="5" to="第二" arrow="10" color="MediumTurquoise"/>
+		<flow value="10" from="3-2" to="الثالث" arrow="10" color="DarkTurquoise">
+			<text startOffset="30">position 30%</text>
+			<text startOffset="75">75%</text>
+		</flow>
+		<flow value="5" from="3-2" to="last" arrow="10">arrow="10"</flow>
+		<flow value="20" from="6" to="last" arrow="10">same gradient as left</flow>
+		<flow value="10" from="there" to="special" color="silver" arrow="20" font-size="10" font-family="serif">technically, the target box isn't in a following pile, but it has an absolute position</flow>
+	</flows>
+	<!-- some raw SVG code being inserted, e.g. for logos -->
+	<svg:defs  xmlns:svg="http://www.w3.org/2000/svg">
+		<svg:filter id="blur" >
+			<svg:feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+		</svg:filter>
+		<svg:filter id="spot">
+			<svg:feGaussianBlur in="SourceAlpha" stdDeviation="4" result="spotblur"/>
+			<svg:feSpecularLighting result="light" in="spotblur" specularExponent="20" lighting-color="LightGray">
+				<svg:fePointLight x="1390" y="20" z="20"/>
+			</svg:feSpecularLighting>
+			<svg:feComposite in="SourceGraphic" in2="light" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+		</svg:filter>
+	</svg:defs>
+	<svg:g xmlns:svg="http://www.w3.org/2000/svg">
+		<svg:ellipse cx="1402" cy="32" rx="38" ry="20" style="filter:url(#blur)"/>
+		<svg:ellipse cx="1400" cy="30" rx="38" ry="20" fill="Red" style="filter:url(#spot)"/>
+		<svg:text x="1400" y="30" style="font-family:Arial,sans-serif; font-weight:bolder; font-size:24pt; fill:LightGray; filter:url(#spot);" text-anchor="middle" dominant-baseline="central">SVG</svg:text>
+	</svg:g>
+</root>
