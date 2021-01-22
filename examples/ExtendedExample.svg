@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 710" preserveAspectRatio="xMidYMin meet">
+	<!--SVG sankey graphic file generated using 4sg.xsl version 1.1 - conversion factor from values to coordinates is 5.55555555555556-->
+	<title>Extended Sankey Diagram Example</title>
+	<defs>
+		<linearGradient id="g-firebrick-forestgreen">
+			<stop offset="20%" stop-color="firebrick"/>
+			<stop offset="80%" stop-color="forestgreen"/>
+		</linearGradient>
+		<linearGradient id="g-firebrick-4169E1">
+			<stop offset="20%" stop-color="firebrick"/>
+			<stop offset="80%" stop-color="#4169E1"/>
+		</linearGradient>
+		<linearGradient id="g-forestgreen-firebrick">
+			<stop offset="20%" stop-color="forestgreen"/>
+			<stop offset="80%" stop-color="firebrick"/>
+		</linearGradient>
+		<linearGradient id="g-forestgreen-4169E1">
+			<stop offset="20%" stop-color="forestgreen"/>
+			<stop offset="80%" stop-color="#4169E1"/>
+		</linearGradient>
+		<linearGradient id="g-4169E1-forestgreen">
+			<stop offset="20%" stop-color="#4169E1"/>
+			<stop offset="80%" stop-color="forestgreen"/>
+		</linearGradient>
+	</defs>
+	<path id="i-here-there-1" d="M 260,155.555555555556 L 265,155.555555555556 C 415,155.555555555556 405,306.666666666667 555,306.666666666667 L 560,306.666666666667" style="stroke:url(#g-firebrick-forestgreen); stroke-width:111.111111111111; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-around-4-2" d="M 260,278.888888888889 L 265,278.888888888889 C 415,278.888888888889 405,127.777777777778 555,127.777777777778 L 560,127.777777777778" style="stroke:url(#g-firebrick-forestgreen); stroke-width:55.5555555555556; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-around-5-3" d="M 260,334.444444444444 L 310,334.444444444444 C 460,334.444444444444 405,203.333333333334 555,203.333333333334 L 810,203.333333333334L 815,203.333333333334 C 965,203.333333333334 955,127.777777777778 1105,127.777777777778 L 1110,127.777777777778" style="stroke:url(#g-firebrick-4169E1); stroke-width:55.5555555555556; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<rect x="260" y="362.222222222222" width="300" height="222.222222222222" style="fill:url(#g-firebrick-forestgreen); fill-opacity:0.7; stroke:none;"/>
+	<path id="i-around-there-4" d="M 260,473.333333333333 L 560,473.333333333333" style="stroke:none; fill:none;"/>
+	<path id="i-there-6-5" d="M 810,278.888888888889 L 815,278.888888888889 C 965,278.888888888889 955,362.222222222223 1105,362.222222222223 L 1110,362.222222222223" style="stroke:url(#g-forestgreen-firebrick); stroke-width:55.5555555555556; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-there-3-2-6" d="M 810,376.111111111111 L 815,376.111111111111 C 965,376.111111111111 955,245 1105,245 L 1110,245" style="stroke:url(#g-forestgreen-4169E1); stroke-width:138.888888888889; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-there-6-7" d="M 810,473.333333333333 L 815,473.333333333333 C 965,473.333333333333 955,417.777777777778 1105,417.777777777778 L 1110,417.777777777778" style="stroke:url(#g-forestgreen-firebrick); stroke-width:55.5555555555556; fill:none; stroke-opacity:1; stroke-linejoin:round;"/>
+	<path id="i-4-6-8" d="M 810,127.777777777778 L 815,127.777777777778 C 1115,127.777777777778 805,473.333333333334 1105,473.333333333334 L 1110,473.333333333334" style="stroke:#00BFFF; stroke-width:55.5555555555556; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-3-2-प्रथम-9" d="M 1370,203.333333333334 L 1375,203.333333333334 C 1525,203.333333333334 1495,147.777777777778 1645,147.777777777778 L 1650,147.777777777778" style="stroke:Turquoise; stroke-width:55.5555555555556; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1370,203.333333333334 1360,175.555555555556 1370,175.555555555556 1370,231.111111111112 1360,231.111111111112" style="fill:Turquoise; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="1650,120 1660,147.777777777778 1650,175.555555555556" style="fill:Turquoise; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-5-第二-10" d="M 1370,127.777777777778 L 1375,127.777777777778 C 1525,127.777777777778 1495,223.333333333334 1645,223.333333333334 L 1650,223.333333333334" style="stroke:MediumTurquoise; stroke-width:55.5555555555556; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1370,127.777777777778 1360,100 1370,100 1370,155.555555555556 1360,155.555555555556" style="fill:MediumTurquoise; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="1650,195.555555555556 1660,223.333333333334 1650,251.111111111112" style="fill:MediumTurquoise; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-3-2-الثالث-11" d="M 1370,258.888888888889 L 1375,258.888888888889 C 1525,258.888888888889 1495,298.888888888889 1645,298.888888888889 L 1650,298.888888888889" style="stroke:DarkTurquoise; stroke-width:55.5555555555556; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1370,258.888888888889 1360,231.111111111112 1370,231.111111111112 1370,286.666666666667 1360,286.666666666667" style="fill:DarkTurquoise; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="1650,271.111111111111 1660,298.888888888889 1650,326.666666666667" style="fill:DarkTurquoise; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-3-2-last-12" d="M 1370,300.555555555556 L 1375,300.555555555556 C 1525,300.555555555556 1495,360.555555555556 1645,360.555555555556 L 1650,360.555555555556" style="stroke:url(#g-4169E1-forestgreen); stroke-width:27.7777777777778; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1370,300.555555555556 1360,286.666666666667 1370,286.666666666667 1370,314.444444444445 1360,314.444444444445" style="fill:#4169E1; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="1650,346.666666666667 1660,360.555555555556 1650,374.444444444445" style="fill:forestgreen; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-6-last-13" d="M 1370,390.000000000001 L 1375,390.000000000001 C 1525,390.000000000001 1495,430 1645,430 L 1650,430" style="stroke:url(#g-firebrick-forestgreen); stroke-width:111.111111111111; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="1370,390.000000000001 1360,334.444444444445 1370,334.444444444445 1370,445.555555555556 1360,445.555555555556" style="fill:firebrick; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="1650,374.444444444445 1660,430 1650,485.555555555556" style="fill:forestgreen; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-there-special-14" d="M 830,528.888888888889 L 835,528.888888888889 C 985,528.888888888889 1225,577.777777777778 1375,577.777777777778 L 1380,577.777777777778" style="stroke:silver; stroke-width:55.5555555555556; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<polygon points="830,528.888888888889 810,501.111111111111 830,501.111111111111 830,556.666666666667 810,556.666666666667" style="fill:silver; fill-opacity:0.7; stroke:none;"/>
+	<polygon points="1380,550 1400,577.777777777778 1380,605.555555555556" style="fill:silver; fill-opacity:0.7; stroke:none;"/>
+	<rect x="10" y="100" width="250" height="111.111111111111" style="fill:firebrick; fill-opacity:1;"/>
+	<rect x="10" y="251.111111111111" width="250" height="333.333333333333" style="fill:firebrick; fill-opacity:1;"/>
+	<rect x="1400" y="550" width="450" height="55.5555555555556" style="fill:rgb(20%,70%,80%); fill-opacity:1;"/>
+	<rect x="560" y="100" width="250" height="55.5555555555556" style="fill:forestgreen; fill-opacity:1;"/>
+	<rect x="560" y="251.111111111111" width="250" height="333.333333333333" style="fill:forestgreen; fill-opacity:1;"/>
+	<rect x="1110" y="100" width="250" height="55.5555555555556" style="fill:#4169E1; fill-opacity:1;"/>
+	<rect x="1110" y="175.555555555556" width="250" height="138.888888888889" style="fill:#4169E1; fill-opacity:1;"/>
+	<rect x="1110" y="334.444444444445" width="250" height="166.666666666667" style="fill:firebrick; fill-opacity:1;"/>
+	<rect x="1660" y="120" width="250" height="55.5555555555556" style="fill:Turquoise; fill-opacity:1;"/>
+	<rect x="1660" y="195.555555555556" width="250" height="55.5555555555556" style="fill:MediumTurquoise; fill-opacity:1;"/>
+	<rect x="1660" y="271.111111111111" width="250" height="55.5555555555556" style="fill:DarkTurquoise; fill-opacity:1;"/>
+	<rect x="1660" y="346.666666666667" width="250" height="138.888888888889" style="fill:forestgreen; fill-opacity:1;"/>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-here-there-1" startOffset="50%">flow value 20 from here to there</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-around-5-3" startOffset="50%">straighter start with start="50" instead default 5</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-around-there-4" startOffset="50%">flow value 40</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-there-3-2-6" startOffset="25%">default</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-there-3-2-6" startOffset="80%">bend="150"</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-there-6-7" startOffset="25%">opacity="1"</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-4-6-8" startOffset="50%">this flow has bend="300"</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-3-2-प्रथम-9" startOffset="50%">
+			middle
+			</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">
+		<textPath xlink:href="#i-3-2-प्रथम-9" startOffset="1%">start</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">
+		<textPath xlink:href="#i-3-2-प्रथम-9" startOffset="99%">end</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-3-2-الثالث-11" startOffset="30%">position 30%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-3-2-الثالث-11" startOffset="75%">75%</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-3-2-last-12" startOffset="50%">arrow="10"</textPath>
+	</text>
+	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-6-last-13" startOffset="50%">same gradient as left</textPath>
+	</text>
+	<text style="font-family:serif; font-size:10pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-there-special-14" startOffset="50%">technically, the target box isn't in a following pile, but it has an absolute position</textPath>
+	</text>
+	<text x="135" y="155.555555555555" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">here</text>
+	<text x="135" y="417.777777777777" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">around</text>
+	<text x="1625" y="577.777777777778" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">box position x="1400" y="550", width="450"</text>
+	<text x="685" y="127.777777777778" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">over there</text>
+	<text x="685" y="417.777777777777" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+				there
+				</text>
+	<text x="565" y="259.111111111111" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="hanging">box value in is 60</text>
+	<text x="805" y="580.444444444444" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="ideographic">box value out is 55</text>
+	<text x="1235" y="127.777777777778" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">box value is 10</text>
+	<text x="1235" y="245.000000000001" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
+				middle
+				</text>
+	<text x="1115" y="183.555555555556" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="hanging">⬉</text>
+	<text x="1235" y="183.555555555556" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="hanging">top</text>
+	<text x="1355" y="183.555555555556" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="hanging">⬈</text>
+	<text x="1115" y="245.000000000001" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">start</text>
+	<text x="1355" y="245.000000000001" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">end</text>
+	<text x="1115" y="310.444444444445" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="ideographic">⬋</text>
+	<text x="1235" y="310.444444444445" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="ideographic">bottom</text>
+	<text x="1355" y="310.444444444445" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="ideographic">⬊</text>
+	<text x="1235" y="417.777777777779" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">box id is 6</text>
+	<text x="1785" y="147.777777777778" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1665" y="147.777777777778" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">प्रथम</text>
+	<text x="1905" y="147.777777777778" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">(1st in Hindi)</text>
+	<text x="1785" y="223.333333333334" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1665" y="223.333333333334" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">第二</text>
+	<text x="1905" y="223.333333333334" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">(2nd in Chinese)</text>
+	<text x="1785" y="298.888888888889" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1665" y="298.888888888889" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">(3rd in Arabic)</text>
+	<text x="1905" y="298.888888888889" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">الثالث</text>
+	<text x="135" y="90" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="ideographic">from</text>
+	<text x="685" y="90" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="ideographic">to</text>
+	<text x="1235" y="90" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="ideographic">even further</text>
+	<text x="1785" y="110" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="ideographic">top y="120"</text>
+	<text x="1400" y="510" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="hanging">text with absolute position of center x="1400" y="510"</text>
+	<text x="1400" y="530" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="hanging">text with absolute position of start x="1400" y="530"</text>
+	<text x="960" y="10" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="hanging">Extended Sankey Diagram Example</text>
+	<defs>
+		<filter id="blur">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+		</filter>
+		<filter id="spot">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="4" result="spotblur"/>
+			<feSpecularLighting result="light" in="spotblur" specularExponent="20" lighting-color="LightGray">
+				<fePointLight x="1390" y="20" z="20"/>
+			</feSpecularLighting>
+			<feComposite in="SourceGraphic" in2="light" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+		</filter>
+	</defs>
+	<g>
+		<ellipse cx="1402" cy="32" rx="38" ry="20" style="filter:url(#blur)"/>
+		<ellipse cx="1400" cy="30" rx="38" ry="20" fill="Red" style="filter:url(#spot)"/>
+		<text x="1400" y="30" style="font-family:Arial,sans-serif; font-weight:bolder; font-size:24pt; fill:LightGray; filter:url(#spot);" text-anchor="middle" dominant-baseline="central">SVG</text>
+	</g>
+</svg>
