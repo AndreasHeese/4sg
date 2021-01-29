@@ -4,7 +4,7 @@
 
 The common standards of conduct apply for this project as well. This should not be unexpected, just reminding briefly.
 
-## Bug reports
+### Bug reports
 
 If you notice a bug, please raise an issue and label it as bug.  
 
