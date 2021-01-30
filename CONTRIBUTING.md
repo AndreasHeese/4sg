@@ -25,7 +25,7 @@ To contribute code changes (like fixes) or examples files, submit a pull request
      - add your example files in the example folder
  3. Create a [pull request](https://github.com/AndreasHeese/4sg/pulls) to merge and integrate your changes into the original 4sg repository
  
-Although contributing is valued, be aware that your contribution might not be choosen to be incorporated into the 4sg repository.
+Although contributing is valued, be aware that your submitted contribution might not be choosen to be merged into the 4sg repository.
 
 ## Discussing
 For discussing the code or features (missing ones as well as how to use existing ones) use [discussions](https://github.com/AndreasHeese/4sg/discussions).
