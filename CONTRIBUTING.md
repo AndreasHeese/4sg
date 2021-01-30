@@ -1,5 +1,5 @@
 # Contributing to 4sg
-Contributing to this project can be
+Contributing to 4sg can be
 
 - Reporting bugs
 - Submitting fixes
@@ -21,8 +21,8 @@ To contribute code changes (like fixes) or examples files, submit a pull request
 
  1. Create a copy of the code repository by forking the original
  2. In your new forked repository
-   - change the code file 4sg.xsl or
-   - add your example files in the example folder
+     - change the code file 4sg.xsl or
+     - add your example files in the example folder
  3. Create a [pull request](https://github.com/AndreasHeese/4sg/pulls) to merge and integrate your changes into the original 4sg repository
 
 ## Discussing
