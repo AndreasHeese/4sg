@@ -16,14 +16,17 @@ Describe the bug clear and concise. Note which XSLT processor (e.g. Saxon HE 10.
 
 Attach the XML data file and the SVG image file to the issue. To attach a file to an issue, drag and drop it into the comment box. Alternatively, you can click the bar at the bottom of the comment box to browse, select, and add a file from your computer.
 
-## Pull Requests
+## Submitting
 To contribute code changes (like fixes) or examples files, submit a pull request:
 
  1. Create a copy of the code repository by forking the original
  2. In your new forked repository
    - change the code file 4sg.xsl or
    - add your example files in the example folder
- 3. Create a pull request to merge and integrate your changes into the original 4sg repository
+ 3. Create a [pull request](https://github.com/AndreasHeese/4sg/pulls) to merge and integrate your changes into the original 4sg repository
+
+## Discussing
+For discussing the code or features (missing ones as well as how to use existing ones) use [discussions](https://github.com/AndreasHeese/4sg/discussions).
 
 ## License
 By contributing, you agree that your contributions will be licensed under the MIT License.
