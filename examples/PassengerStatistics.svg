@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2470 1010" preserveAspectRatio="xMidYMin meet">
-	<!--SVG sankey graphic file generated using 4sg.xsl version 1.0 - conversion factor from values to coordinates is 5-->
+	<!--SVG sankey graphic file generated using 4sg.xsl version 1.2 - conversion factor from values to coordinates is 5-->
 	<title>Munich airport departure passenger statistics 2019</title>
 	<path id="i-car-enter-1" d="M 270,148 L 275,148 C 425,148 395,208 545,208 L 550,208" style="stroke:Silver; stroke-width:96; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
 	<polygon points="270,148 260,100 270,100 270,196 260,196" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
@@ -12,7 +12,8 @@
 	<path id="i-taxi-enter-3" d="M 270,278 L 275,278 C 425,278 395,298 545,298 L 550,298" style="stroke:Silver; stroke-width:34; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
 	<polygon points="270,278 260,261 270,261 270,295 260,295" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
 	<polygon points="550,281 560,298 550,315" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
-	<path id="i-bus-enter-4" d="M 270,338.25 L 275,338.25 C 425,338.25 395,338.25 545,338.25 L 550,338.25" style="stroke:Silver; stroke-width:46.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<rect x="270" y="315" width="280" height="46.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-bus-enter-4" d="M 270,338.25 L 550,338.25" style="stroke:none; fill:none;"/>
 	<polygon points="270,338.25 260,315 270,315 270,361.5 260,361.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
 	<polygon points="550,315 560,338.25 550,361.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
 	<path id="i-train-enter-5" d="M 270,435.75 L 275,435.75 C 425,435.75 395,415.75 545,415.75 L 550,415.75" style="stroke:Silver; stroke-width:108.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
@@ -33,7 +34,8 @@
 	<path id="i-a-dom-10" d="M 1370,216.75 L 1375,216.75 C 1525,216.75 1495,196.75 1645,196.75 L 1650,196.75" style="stroke:Silver; stroke-width:93.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
 	<polygon points="1370,216.75 1360,170 1370,170 1370,263.5 1360,263.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
 	<polygon points="1650,150 1660,196.75 1650,243.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
-	<path id="i-a-eur-11" d="M 1370,407.25 L 1375,407.25 C 1525,407.25 1495,407.25 1645,407.25 L 1650,407.25" style="stroke:Silver; stroke-width:287.5; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<rect x="1370" y="263.5" width="280" height="287.5" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
+	<path id="i-a-eur-11" d="M 1370,407.25 L 1650,407.25" style="stroke:none; fill:none;"/>
 	<polygon points="1370,407.25 1360,263.5 1370,263.5 1370,551 1360,551" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
 	<polygon points="1650,263.5 1660,407.25 1650,551" style="fill:Silver; fill-opacity:0.7; stroke:none;"/>
 	<path id="i-a-o-12" d="M 1370,610.5 L 1375,610.5 C 1525,610.5 1495,630.5 1645,630.5 L 1650,630.5" style="stroke:Silver; stroke-width:119; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
@@ -101,76 +103,76 @@
 	<rect x="2210" y="723" width="250" height="8.5" style="fill:SeaGreen; fill-opacity:1;"/>
 	<rect x="2210" y="751.5" width="250" height="5" style="fill:SeaGreen; fill-opacity:1;"/>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-car-enter-1" startOffset="50%">19,2%</textPath>
+		<textPath xlink:href="#i-car-enter-1" startOffset="50%">19.2%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-rent-enter-2" startOffset="50%">5,0%</textPath>
+		<textPath xlink:href="#i-rent-enter-2" startOffset="50%">5.0%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-taxi-enter-3" startOffset="50%">6,8%</textPath>
+		<textPath xlink:href="#i-taxi-enter-3" startOffset="50%">6.8%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-bus-enter-4" startOffset="50%">9,3%</textPath>
+		<textPath xlink:href="#i-bus-enter-4" startOffset="50%">9.3%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-train-enter-5" startOffset="50%">21,7%</textPath>
+		<textPath xlink:href="#i-train-enter-5" startOffset="50%">21.7%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-arr-dom-switch-6" startOffset="50%">6,5%</textPath>
+		<textPath xlink:href="#i-arr-dom-switch-6" startOffset="50%">6.5%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-arr-int-switch-7" startOffset="50%">31,5%</textPath>
+		<textPath xlink:href="#i-arr-int-switch-7" startOffset="50%">31.5%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-enter-a-8" startOffset="50%">62,0%</textPath>
+		<textPath xlink:href="#i-enter-a-8" startOffset="50%">62.0%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-switch-a-9" startOffset="50%">38,0%</textPath>
+		<textPath xlink:href="#i-switch-a-9" startOffset="50%">38.0%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-a-dom-10" startOffset="50%">18,7%</textPath>
+		<textPath xlink:href="#i-a-dom-10" startOffset="50%">18.7%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-a-eur-11" startOffset="50%">57,5%</textPath>
+		<textPath xlink:href="#i-a-eur-11" startOffset="50%">57.5%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-a-o-12" startOffset="50%">23,8%</textPath>
+		<textPath xlink:href="#i-a-o-12" startOffset="50%">23.8%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-eur-es-13" startOffset="50%">8,6%</textPath>
+		<textPath xlink:href="#i-eur-es-13" startOffset="50%">8.6%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-eur-it-14" startOffset="50%">7,3%</textPath>
+		<textPath xlink:href="#i-eur-it-14" startOffset="50%">7.3%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-eur-uk-15" startOffset="50%">5,4%</textPath>
+		<textPath xlink:href="#i-eur-uk-15" startOffset="50%">5.4%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-eur-fr-16" startOffset="50%">4,1%</textPath>
+		<textPath xlink:href="#i-eur-fr-16" startOffset="50%">4.1%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-eur-gr-17" startOffset="50%">3,2%</textPath>
+		<textPath xlink:href="#i-eur-gr-17" startOffset="50%">3.2%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-eur-tr-18" startOffset="50%">3,0%</textPath>
+		<textPath xlink:href="#i-eur-tr-18" startOffset="50%">3.0%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-o-nam-19" startOffset="50%">8,4%</textPath>
+		<textPath xlink:href="#i-o-nam-19" startOffset="50%">8.4%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-o-lam-20" startOffset="50%">1,7%</textPath>
+		<textPath xlink:href="#i-o-lam-20" startOffset="50%">1.7%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-o-ap-21" startOffset="50%">8,3%</textPath>
+		<textPath xlink:href="#i-o-ap-21" startOffset="50%">8.3%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-o-me-22" startOffset="50%">2,6%</textPath>
+		<textPath xlink:href="#i-o-me-22" startOffset="50%">2.6%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-o-naf-23" startOffset="50%">1,7%</textPath>
+		<textPath xlink:href="#i-o-naf-23" startOffset="50%">1.7%</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-o-oaf-24" startOffset="50%">1,0%</textPath>
+		<textPath xlink:href="#i-o-oaf-24" startOffset="50%">1.0%</textPath>
 	</text>
 	<text x="135" y="148" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Car</text>
 	<text x="135" y="228.5" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Rental car</text>
@@ -181,7 +183,7 @@
 	<text x="135" y="641.25" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">International</text>
 	<text x="685" y="315" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Entering</text>
 	<text x="685" y="585" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Switching</text>
-	<text x="1235" y="420" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">23.858.696 passengers</text>
+	<text x="1235" y="420" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">23 858 696 passengers</text>
 	<text x="1785" y="196.75" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Domestic</text>
 	<text x="1785" y="407.25" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Europe</text>
 	<text x="1785" y="630.5" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">Intercontinental</text>

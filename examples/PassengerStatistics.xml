@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="4sg.xsl"?>
-<root unit="%" unit-pattern="0,0">
+<root unit="%" unit-pattern="0.0">
 	<title font-size="24">Munich airport departure passenger statistics 2019</title>
 	<text y="70" text-color="black" font-size="9">Source: https://www.munich-airport.de/_b/0000000000000008934700bb5e9eb9ac/statistischer-jahresbericht-2019-kompr.pdf</text>
 	<piles>
@@ -18,7 +18,7 @@
 			<box id="switch" color="PaleTurquoise">Switching</box>
 		</pile>
 		<pile y="170">
-			<box id="a" color="LightSlateGray">23.858.696 passengers</box>
+			<box id="a" color="LightSlateGray">23 858 696 passengers</box>
 		</pile>
 		<pile y="150">
 			<box id="dom" color="PaleGreen">Domestic</box>
