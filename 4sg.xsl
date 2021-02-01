@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2019-2021 - 4sg.xsl - Small and Simple SVG Sankey Generator - Andreas Heese - Version 1.1 - MIT-License -->
+<!-- Copyright 2019-2021 - 4sg.xsl - Small and Simple SVG Sankey Generator - Andreas Heese - Version 1.2 - MIT-License -->
 <xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://own.functions" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:map="http://www.w3.org/2005/xpath-functions/map" exclude-result-prefixes="svg xs fn map">
 	<xsl:output method="xml" indent="yes" standalone="no" doctype-public="-//W3C//DTD SVG 1.1//EN" doctype-system="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" media-type="image/svg" />
-	<xsl:decimal-format name="units" decimal-separator="," grouping-separator="."/>
+	
+	<xsl:decimal-format name="eu" grouping-separator="." decimal-separator=","/>
+	<xsl:decimal-format name="en" grouping-separator="," decimal-separator="."/>
+	<xsl:decimal-format name="space-eu" grouping-separator=" " decimal-separator=","/>
+	<xsl:decimal-format name="space-en" grouping-separator=" " decimal-separator="."/>
+	<xsl:decimal-format name="ap-eu" grouping-separator="´" decimal-separator=","/>
+	<xsl:decimal-format name="ap-en" grouping-separator="´" decimal-separator="."/>
+	
 	<xsl:strip-space elements="*"/>
+	
 	<!-- ===== default values ===== -->
 	<xsl:variable name="defaults" select="map { 
 		'font-family':'sans-serif', 
@@ -32,33 +40,45 @@
 		'middle_dominant-baseline':'central',
 		'bottom_dominant-baseline':'ideographic',
 		'unit':'',
-		'unit-pattern':'#.##0',
+		'unit-pattern':'# ##0',
+		'unit-prefix':'',
 		'title_y':'10',
 		'x':'0',
 		'y':'100' }">
 	</xsl:variable>
-	<xsl:variable name="colors" select="'firebrick','forestgreen','rgb(30,144,255)','#FFD700','rgb(0%,81%,82%)'"/><!-- different formats for color definition are available -->
-	<xsl:variable name="value-height">500</xsl:variable><!-- height of the values as coordinates -->
+	
+	<!-- different formats for color definition are available -->
+	<xsl:variable name="colors" select="'firebrick','forestgreen','rgb(30,144,255)','#FFD700','rgb(0%,81%,82%)'"/>
+	<!-- height of the values as coordinates -->
+	<xsl:variable name="value-height">500</xsl:variable>
+	
 	<!-- ===== initialization ===== -->
 	<xsl:variable name="factor" select="$value-height div max(for $p in /root/piles/pile return sum(for $b in $p/box return max((fn:boxsum('from',$b/@id), fn:boxsum('to',$b/@id)))))"/>
 	<xsl:variable name="piles" select="/root/piles"/>
 	<xsl:variable name="flows" select="/root/flows"/>
-	<xsl:variable name="width" select="fn:x(/root/piles/pile[last()]) + fn:get(/root/piles/pile[last()],'width') + number(map:get($defaults,'padding'))"/><!-- overall width -->
-	<!-- ===== funktions ===== -->
+	<!-- overall width -->
+	<xsl:variable name="width" select="fn:x(/root/piles/pile[last()]) + fn:get(/root/piles/pile[last()],'width') + number(map:get($defaults,'padding'))"/>
+	
+	<!-- ===== functions ===== -->
 	<xsl:function name="fn:boxsum"><!-- adds the values ​​of a box with a specific id for the specific side, even when using via -->
 		<xsl:param name="attr"/>
 		<xsl:param name="id"/>
 		<xsl:value-of select="sum($flows/flow[@*[name() = $attr] = $id]/@value) + sum($flows/flow[via/@id = $id]/@value)"/>
 	</xsl:function>
-	<xsl:function name="fn:boxheight"><!-- determines the total value of the larger side of a box and applies the conversion factor from values ​​to coordinates -->
+	
+	<xsl:function name="fn:boxheight">
+		<!-- determines the total value of the larger side of a box and applies the conversion factor from values ​​to coordinates -->
 		<xsl:param name="id"/>
 		<xsl:value-of select="max((fn:boxsum('from',$id), fn:boxsum('to',$id))) * $factor"/>
 	</xsl:function>
+	
 	<xsl:function name="fn:boxheight-before"><!-- determines the height of the previous boxes -->
 		<xsl:param name="id"/>
 		<xsl:value-of select="sum(for $b in $piles/pile/box[@id = $id]/preceding-sibling::box return fn:boxheight($b/@id)) + sum(for $b in ($piles/pile/box[@id = $id]|$piles/pile/box[@id = $id]/preceding-sibling::box)[preceding-sibling::box] return fn:get($b,'gap'))"/>
 	</xsl:function>
-	<xsl:function name="fn:x"><!-- read x attribute from ancestor-or-self, if not available process special case, otherwise return default value -->
+	
+	<xsl:function name="fn:x">
+		<!-- read x attribute from ancestor-or-self, if not available process special case, otherwise return default value -->
 		<xsl:param name="element"/>
 		<xsl:choose>
 			<xsl:when test="$element/ancestor-or-self::*[@x]">
@@ -73,7 +93,9 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:function>
-	<xsl:function name="fn:y"><!-- read the y attribute of the element, process special cases if not available, otherwise return the default value -->
+	
+	<xsl:function name="fn:y">
+		<!-- read the y attribute of the element, process special cases if not available, otherwise return the default value -->
 		<xsl:param name="element"/>
 		<xsl:choose>
 			<xsl:when test="$element[@y]">
@@ -93,7 +115,9 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:function>
-	<xsl:function name="fn:get"><!-- read attribute values ​​from ancestor-or-self, process special cases if value doesn't exist, otherwise return default value -->
+	
+	<xsl:function name="fn:get">
+		<!-- read attribute values ​​from ancestor-or-self, process special cases if value doesn't exist, otherwise return default value -->
 		<xsl:param name="element"/>
 		<xsl:param name="value"/>
 		<xsl:choose>
@@ -138,10 +162,13 @@
 			</xsl:otherwise>
 		</xsl:choose>		
 	</xsl:function>
-	<xsl:function name="fn:default"><!-- return existing default value -->
+	
+	<xsl:function name="fn:default">
+		<!-- return existing default value -->
 		<xsl:param name="element"/>
 		<xsl:param name="value"/>
-		<xsl:choose><!-- first element-specific, otherwise general default value -->
+		<xsl:choose>
+			<!-- first element-specific, otherwise general default value -->
 			<xsl:when test="map:contains($defaults,concat($element[1]/local-name(),'_',$value))">
 				<xsl:value-of select="map:get($defaults,concat($element[1]/local-name(),'_',$value))"/>
 			</xsl:when>
@@ -150,6 +177,41 @@
 			</xsl:when>
 		</xsl:choose>		
 	</xsl:function>
+	
+	<xsl:function name="fn:format-value">
+		<!-- use unit-pattern and append unit text -->
+		<xsl:param name="value"/>
+		<xsl:param name="element"/>
+		<xsl:variable name="pattern" select="fn:get($element,'unit-pattern')"/>
+		<xsl:variable name="nr">
+			<xsl:choose>
+				<xsl:when test="matches($pattern,'# #.*\.0')">
+					<xsl:value-of select="format-number($value, $pattern, 'space-en')"/>
+				</xsl:when>
+				<xsl:when test="matches($pattern,'# #')">
+					<xsl:value-of select="format-number($value, $pattern, 'space-eu')"/>
+				</xsl:when>
+				<xsl:when test="matches($pattern,'#´#.*\.0')">
+					<xsl:value-of select="format-number($value, $pattern, 'ap-en')"/>
+				</xsl:when>
+				<xsl:when test="matches($pattern,'#´#')">
+					<xsl:value-of select="format-number($value, $pattern, 'ap-eu')"/>
+				</xsl:when>
+				<xsl:when test="matches($pattern,',#|\.0')">
+					<xsl:value-of select="format-number($value, $pattern, 'en')"/>
+				</xsl:when>
+				<xsl:when test="matches($pattern,'.#')">
+					<xsl:value-of select="format-number($value, $pattern, 'eu')"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<!-- without number format -->
+					<xsl:value-of select="$value"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:value-of select="fn:get($element,'unit-prefix')||$nr||fn:get($element,'unit')"/>
+	</xsl:function>
+	
 	<!-- ===== root template ===== -->
 	<xsl:template match="root">
 		<xsl:if test="count($piles/pile/box/@id) != count(distinct-values($piles/pile/box/@id))">
@@ -165,7 +227,7 @@
 			<xsl:message terminate="yes">MESSAGE: TERMINATED flow/via/@id values not contained in box/@id</xsl:message>
 		</xsl:if>
 		<svg viewBox="0 0 {$width} {$value-height + max(for $p in $piles/pile return fn:y($p) + sum(for $b in $p/box return fn:get($b,'gap'))) + number(map:get($defaults,'padding'))}" preserveAspectRatio="xMidYMin meet">
-			<xsl:comment>SVG sankey graphic file generated using 4sg.xsl version 1.1 - conversion factor from values to coordinates is <xsl:value-of select="$factor"/></xsl:comment>
+			<xsl:comment>SVG sankey graphic file generated using 4sg.xsl version 1.2 - conversion factor from values to coordinates is <xsl:value-of select="$factor"/></xsl:comment>
 			<title>
 				<xsl:value-of select="title"/>
 			</title>
@@ -195,10 +257,12 @@
 			<xsl:apply-templates select="svg:*"/>
 		</svg>
 	</xsl:template>
+	
 	<!-- ===== create box ===== -->
 	<xsl:template match="box[not(@color = 'none')]" mode="draw"><!-- show box only if visible, texts are independent -->
 		<rect x="{fn:x(.)}" y="{fn:y(.)}" width="{fn:get(.,'width')}" height="{fn:boxheight(@id)}" style="fill:{fn:get(.,'color')}; fill-opacity:{fn:get(.,'opacity')};"/>
 	</xsl:template>
+	
 	<!-- ===== create flow ===== -->
 	<xsl:template match="flow[@value and @from and @to]" mode="draw"><!-- show path only if the flow is complete and should not just create a gap -->
 		<xsl:variable name="this" select="."/>
@@ -245,6 +309,7 @@
 			<polygon points="{$rx},{$ry - (@value * $factor div 2)} {$rx + fn:get($this,'arrow')},{$ry} {$rx},{$ry + (@value * $factor div 2)}" style="fill:{$colorto}; fill-opacity:{fn:get(.,'opacity')}; stroke:none;"/>
 		</xsl:if>
 	</xsl:template>
+	
 	<!-- ===== output texts ===== -->
 	<xsl:template match="title|text|box[text()|*]">
 		<xsl:variable name="element" select="(ancestor-or-self::box[1]|.)[1]"/>
@@ -282,6 +347,7 @@
 		</text>
 		<xsl:apply-templates select="text"/>
 	</xsl:template>
+	
 	<xsl:template match="flow[text()|value]|flow/text">
 		<text style="font-family:{fn:get(.,'font-family')}; font-size:{fn:get(.,'font-size')}pt; fill:{fn:get(./text()|.,'text-color')};" text-anchor="{fn:get(.,'align')}" dominant-baseline="{fn:get(.,'dominant-baseline')}">
 			<textPath xlink:href="#i-{ancestor-or-self::flow[1]/@from}-{ancestor-or-self::flow[1]/@to}-{count(ancestor-or-self::flow[1]/preceding-sibling::flow)+1}" startOffset="{fn:get(.,'startOffset')}%">
@@ -289,29 +355,37 @@
 			</textPath>
 		</text>
 	</xsl:template>
+	
 	<!-- ===== output values ===== -->
 	<xsl:template match="id[ancestor::box]">
 		<xsl:value-of select="ancestor::box[1]/@id"/>
 	</xsl:template>
+	
 	<xsl:template match="id[ancestor::flow and (@type = 'from' or @type = 'to')]">
 		<xsl:variable name="type" select="@type"/>
 		<xsl:value-of select="ancestor::flow/[@*[local-name() = $type]]"/>
 	</xsl:template>
+	
 	<xsl:template match="value[ancestor::flow]">
-		<xsl:value-of select="format-number(ancestor::flow[@value][1]/@value,fn:get(.,'unit-pattern'),'units')||fn:get(.,'unit')"/>
+		<xsl:value-of select="fn:format-value(ancestor::flow[@value][1]/@value,.)"/>
 	</xsl:template>
+	
 	<xsl:template match="value[ancestor::box and (@type = 'from' or @type = 'to')]">
-		<xsl:value-of select="format-number(fn:boxsum(@type,ancestor::box[1]/@id),fn:get(.,'unit-pattern'),'units')||fn:get(.,'unit')"/>
+		<xsl:value-of select="fn:format-value(fn:boxsum(@type,ancestor::box[1]/@id),.)"/>
 	</xsl:template>
+	
 	<xsl:template match="value[ancestor::box and not(@type = 'from' or @type = 'to')]">
-		<xsl:value-of select="format-number(max((fn:boxsum('from',ancestor::box[1]/@id), fn:boxsum('to',ancestor::box[1]/@id))),fn:get(.,'unit-pattern'),'units')||fn:get(.,'unit')"/>
+		<xsl:value-of select="fn:format-value(max((fn:boxsum('from',ancestor::box[1]/@id), fn:boxsum('to',ancestor::box[1]/@id))),.)"/>
 	</xsl:template>
+	
 	<xsl:template match="value[ancestor::pile and not(ancestor::box) and (@type = 'from' or @type = 'to')]">
-		<xsl:value-of select="format-number(fn:boxsum(@type,ancestor::pile[1]/box/@id),fn:get(.,'unit-pattern'),'units')||fn:get(.,'unit')"/>
+		<xsl:value-of select="fn:format-value(fn:boxsum(@type,ancestor::pile[1]/box/@id),.)"/>
 	</xsl:template>
+	
 	<xsl:template match="value[ancestor::pile and not(ancestor::box) and not(@type = 'from' or @type = 'to')]">
-		<xsl:value-of select="format-number(max((fn:boxsum('from',ancestor::pile[1]/box/@id), fn:boxsum('to',ancestor::pile[1]/box/@id))),fn:get(.,'unit-pattern'),'units')||fn:get(.,'unit')"/>
+		<xsl:value-of select="fn:format-value(max((fn:boxsum('from',ancestor::pile[1]/box/@id), fn:boxsum('to',ancestor::pile[1]/box/@id))),.)"/>
 	</xsl:template>
+	
 	<!-- ===== special templates ===== -->
 	<xsl:template match="svg:*">
 		<xsl:element name="{local-name()}">
@@ -319,5 +393,7 @@
 			<xsl:apply-templates select="svg:*"/>
 		</xsl:element>
 	</xsl:template>
+	
 	<xsl:template match="*"/>
+	
 </xsl:stylesheet>
