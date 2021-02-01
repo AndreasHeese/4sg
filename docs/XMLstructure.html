@@ -699,6 +699,44 @@ Default value, depending on the parent element:<br>
 				<td><span class="attr">attribute</span></td>
 				<td><span>0..1</span></td>
 			</tr>
+			
+			<tr class="start">
+				<td class="bold attr" rowspan="1">unit</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Displayed values can have a unit name attached. This attribute defines that unit name, e.g. <span class="code brace">&lt;</span><span class="code elem">root </span><span class="code attr">unit</span><span class="code brace">=" M €"</span><span class="code brace">&gt;</span> for million Euro. The characters defined are appended right to the value. If a space character is intended, this must be included into the attribute. For display on the left side see <span class="code attr">unit-prefix</span><span class="code brace">=""</span>.<br>
+				Default value: <span class="code attr">unit</span><span class="code brace">=""</span> (empty)</td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flows<br></span><span class="elem">flow<br></span><span class="elem">value<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">unit-pattern</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Pattern for value display. Decimal places, decimal separator and thousands separator are defined here.<br>
+				Available characters are<br>
+				as thousands separator: space <span class="spot">&nbsp;</span>, point <span class="spot">.</span>, acute <span class="spot">´</span> and comma <span class="spot">,</span><br>
+				as decimal separator: point <span class="spot">.</span> and comma <span class="spot">,</span><br>
+				as placeholder: Hash <span class="spot">#</span> for optional digits and Null <span class="spot">0</span> for required digits<br><br>
+				A number input of 1234567.89 in the XML file can be displayed as follows:<br>
+				<span class="code attr">unit-pattern</span><span class="code brace">="# ##0"</span> 1 234 568<br>
+				<span class="code attr">unit-pattern</span><span class="code brace">="#.##0"</span> 1.234.568<br>
+				<span class="code attr">unit-pattern</span><span class="code brace">="#.##0,0"</span> 1.234.567,9<br>
+				<span class="code attr">unit-pattern</span><span class="code brace">="#,##0"</span> 1,234,568<br>
+				<span class="code attr">unit-pattern</span><span class="code brace">="#,##0.0000"</span> 1,234,567.8900<br>
+				<span class="code attr">unit-pattern</span><span class="code brace">="#´##0"</span> 1´234´568<br>
+				<span class="code attr">unit-pattern</span><span class="code brace">="#´##´##0"</span> 12´34´568<br><br>
+				Default value: <span class="code attr">unit-pattern</span><span class="code brace">="# ##0"</span> (with thousands spaces and without decimal places)</td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flows<br></span><span class="elem">flow<br></span><span class="elem">value<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+			<tr class="start">
+				<td class="bold attr" rowspan="1">unit-prefix</td>
+				<td class="attr" rowspan="1">attribute</td>
+				<td rowspan="1">Displayed values can have a unit name attached. This attribute defines that unit name, e.g. <span class="code brace">&lt;</span><span class="code elem">root </span><span class="code attr">unit</span><span class="code brace">="$"</span><span class="code brace">&gt;</span> for Dollar. The characters defined are appended left to the value. If a space character is intended, this must be included into the attribute. For display on the right side see <span class="code attr">unit</span><span class="code brace">=""</span>.<br>
+				Default value: <span class="code attr">unit-prefix</span><span class="code brace">=""</span> (empty)</td>
+				<td class="border" rowspan="1"><span class="elem">root<br></span><span class="elem">piles<br></span><span class="elem">pile<br></span><span class="elem">box<br></span><span class="elem">flows<br></span><span class="elem">flow<br></span><span class="elem">value<br></span></td>
+				<td colspan="3"></td>
+			</tr>
+<!--
 			<tr>
 				<td><span class="attr">unit</span></td>
 				<td><span class="attr">attribute</span></td>
@@ -709,6 +747,7 @@ Default value, depending on the parent element:<br>
 				<td><span class="attr">attribute</span></td>
 				<td><span>0..1</span></td>
 			</tr>
+-->
 			<tr class="start">
 				<td class="bold attr" rowspan="1">start</td>
 				<td class="attr" rowspan="1">attribute</td>
