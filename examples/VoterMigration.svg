@@ -1,616 +1,535 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1260 810" preserveAspectRatio="xMidYMin meet">
-	<!--SVG sankey graphic file generated using 4sg.xsl version 1.0 - conversion factor from values to coordinates is 0.00000767459708365311-->
+	<!--SVG sankey graphic file generated using 4sg.xsl version 1.2 - conversion factor from values to coordinates is 0.0000726005517641934-->
 	<title>Voter migration Niedersachsen state election</title>
 	<defs>
-		<linearGradient id="g-black-black" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="black"/>
-			<stop offset="70%" stop-color="black"/>
-		</linearGradient>
-		<linearGradient id="g-black-red" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="black"/>
-			<stop offset="70%" stop-color="red"/>
-		</linearGradient>
-		<linearGradient id="g-black-purple" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="black"/>
-			<stop offset="70%" stop-color="purple"/>
-		</linearGradient>
-		<linearGradient id="g-black-green" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="black"/>
-			<stop offset="70%" stop-color="green"/>
-		</linearGradient>
-		<linearGradient id="g-black-yellow" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="black"/>
-			<stop offset="70%" stop-color="yellow"/>
-		</linearGradient>
-		<linearGradient id="g-black-blue" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="black"/>
-			<stop offset="70%" stop-color="blue"/>
-		</linearGradient>
-		<linearGradient id="g-black-dimgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="black"/>
-			<stop offset="70%" stop-color="dimgray"/>
-		</linearGradient>
-		<linearGradient id="g-black-darkgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="black"/>
-			<stop offset="70%" stop-color="darkgray"/>
-		</linearGradient>
-		<linearGradient id="g-black-silver" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="black"/>
-			<stop offset="70%" stop-color="silver"/>
-		</linearGradient>
-		<linearGradient id="g-black-gray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="black"/>
-			<stop offset="70%" stop-color="gray"/>
-		</linearGradient>
-		<linearGradient id="g-red-black" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="red"/>
-			<stop offset="70%" stop-color="black"/>
-		</linearGradient>
-		<linearGradient id="g-red-red" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="red"/>
-			<stop offset="70%" stop-color="red"/>
-		</linearGradient>
-		<linearGradient id="g-red-purple" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="red"/>
-			<stop offset="70%" stop-color="purple"/>
-		</linearGradient>
-		<linearGradient id="g-red-green" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="red"/>
-			<stop offset="70%" stop-color="green"/>
-		</linearGradient>
-		<linearGradient id="g-red-yellow" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="red"/>
-			<stop offset="70%" stop-color="yellow"/>
-		</linearGradient>
-		<linearGradient id="g-red-blue" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="red"/>
-			<stop offset="70%" stop-color="blue"/>
-		</linearGradient>
-		<linearGradient id="g-red-dimgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="red"/>
-			<stop offset="70%" stop-color="dimgray"/>
-		</linearGradient>
-		<linearGradient id="g-red-darkgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="red"/>
-			<stop offset="70%" stop-color="darkgray"/>
-		</linearGradient>
-		<linearGradient id="g-red-silver" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="red"/>
-			<stop offset="70%" stop-color="silver"/>
-		</linearGradient>
-		<linearGradient id="g-red-gray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="red"/>
-			<stop offset="70%" stop-color="gray"/>
-		</linearGradient>
-		<linearGradient id="g-purple-black" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="purple"/>
-			<stop offset="70%" stop-color="black"/>
-		</linearGradient>
-		<linearGradient id="g-purple-red" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="purple"/>
-			<stop offset="70%" stop-color="red"/>
-		</linearGradient>
-		<linearGradient id="g-purple-purple" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="purple"/>
-			<stop offset="70%" stop-color="purple"/>
-		</linearGradient>
-		<linearGradient id="g-purple-green" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="purple"/>
-			<stop offset="70%" stop-color="green"/>
-		</linearGradient>
-		<linearGradient id="g-purple-yellow" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="purple"/>
-			<stop offset="70%" stop-color="yellow"/>
-		</linearGradient>
-		<linearGradient id="g-purple-blue" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="purple"/>
-			<stop offset="70%" stop-color="blue"/>
-		</linearGradient>
-		<linearGradient id="g-purple-dimgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="purple"/>
-			<stop offset="70%" stop-color="dimgray"/>
-		</linearGradient>
-		<linearGradient id="g-purple-darkgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="purple"/>
-			<stop offset="70%" stop-color="darkgray"/>
-		</linearGradient>
-		<linearGradient id="g-purple-silver" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="purple"/>
-			<stop offset="70%" stop-color="silver"/>
-		</linearGradient>
-		<linearGradient id="g-purple-gray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="purple"/>
-			<stop offset="70%" stop-color="gray"/>
-		</linearGradient>
-		<linearGradient id="g-green-black" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="green"/>
-			<stop offset="70%" stop-color="black"/>
-		</linearGradient>
-		<linearGradient id="g-green-red" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="green"/>
-			<stop offset="70%" stop-color="red"/>
-		</linearGradient>
-		<linearGradient id="g-green-purple" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="green"/>
-			<stop offset="70%" stop-color="purple"/>
-		</linearGradient>
-		<linearGradient id="g-green-green" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="green"/>
-			<stop offset="70%" stop-color="green"/>
-		</linearGradient>
-		<linearGradient id="g-green-yellow" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="green"/>
-			<stop offset="70%" stop-color="yellow"/>
-		</linearGradient>
-		<linearGradient id="g-green-blue" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="green"/>
-			<stop offset="70%" stop-color="blue"/>
-		</linearGradient>
-		<linearGradient id="g-green-dimgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="green"/>
-			<stop offset="70%" stop-color="dimgray"/>
-		</linearGradient>
-		<linearGradient id="g-green-darkgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="green"/>
-			<stop offset="70%" stop-color="darkgray"/>
-		</linearGradient>
-		<linearGradient id="g-green-silver" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="green"/>
-			<stop offset="70%" stop-color="silver"/>
-		</linearGradient>
-		<linearGradient id="g-green-gray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="green"/>
-			<stop offset="70%" stop-color="gray"/>
-		</linearGradient>
-		<linearGradient id="g-yellow-black" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="yellow"/>
-			<stop offset="70%" stop-color="black"/>
-		</linearGradient>
-		<linearGradient id="g-yellow-red" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="yellow"/>
-			<stop offset="70%" stop-color="red"/>
-		</linearGradient>
-		<linearGradient id="g-yellow-purple" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="yellow"/>
-			<stop offset="70%" stop-color="purple"/>
-		</linearGradient>
-		<linearGradient id="g-yellow-green" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="yellow"/>
-			<stop offset="70%" stop-color="green"/>
-		</linearGradient>
-		<linearGradient id="g-yellow-yellow" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="yellow"/>
-			<stop offset="70%" stop-color="yellow"/>
-		</linearGradient>
-		<linearGradient id="g-yellow-blue" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="yellow"/>
-			<stop offset="70%" stop-color="blue"/>
-		</linearGradient>
-		<linearGradient id="g-yellow-dimgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="yellow"/>
-			<stop offset="70%" stop-color="dimgray"/>
-		</linearGradient>
-		<linearGradient id="g-yellow-darkgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="yellow"/>
-			<stop offset="70%" stop-color="darkgray"/>
-		</linearGradient>
-		<linearGradient id="g-yellow-silver" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="yellow"/>
-			<stop offset="70%" stop-color="silver"/>
-		</linearGradient>
-		<linearGradient id="g-yellow-gray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="yellow"/>
-			<stop offset="70%" stop-color="gray"/>
-		</linearGradient>
-		<linearGradient id="g-blue-black" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="blue"/>
-			<stop offset="70%" stop-color="black"/>
-		</linearGradient>
-		<linearGradient id="g-blue-red" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="blue"/>
-			<stop offset="70%" stop-color="red"/>
-		</linearGradient>
-		<linearGradient id="g-blue-purple" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="blue"/>
-			<stop offset="70%" stop-color="purple"/>
-		</linearGradient>
-		<linearGradient id="g-blue-green" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="blue"/>
-			<stop offset="70%" stop-color="green"/>
-		</linearGradient>
-		<linearGradient id="g-blue-yellow" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="blue"/>
-			<stop offset="70%" stop-color="yellow"/>
-		</linearGradient>
-		<linearGradient id="g-blue-blue" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="blue"/>
-			<stop offset="70%" stop-color="blue"/>
-		</linearGradient>
-		<linearGradient id="g-blue-dimgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="blue"/>
-			<stop offset="70%" stop-color="dimgray"/>
-		</linearGradient>
-		<linearGradient id="g-blue-darkgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="blue"/>
-			<stop offset="70%" stop-color="darkgray"/>
-		</linearGradient>
-		<linearGradient id="g-blue-silver" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="blue"/>
-			<stop offset="70%" stop-color="silver"/>
-		</linearGradient>
-		<linearGradient id="g-blue-gray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="blue"/>
-			<stop offset="70%" stop-color="gray"/>
-		</linearGradient>
-		<linearGradient id="g-dimgray-black" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="dimgray"/>
-			<stop offset="70%" stop-color="black"/>
-		</linearGradient>
-		<linearGradient id="g-dimgray-red" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="dimgray"/>
-			<stop offset="70%" stop-color="red"/>
-		</linearGradient>
-		<linearGradient id="g-dimgray-purple" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="dimgray"/>
-			<stop offset="70%" stop-color="purple"/>
-		</linearGradient>
-		<linearGradient id="g-dimgray-green" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="dimgray"/>
-			<stop offset="70%" stop-color="green"/>
-		</linearGradient>
-		<linearGradient id="g-dimgray-yellow" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="dimgray"/>
-			<stop offset="70%" stop-color="yellow"/>
-		</linearGradient>
-		<linearGradient id="g-dimgray-blue" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="dimgray"/>
-			<stop offset="70%" stop-color="blue"/>
-		</linearGradient>
-		<linearGradient id="g-dimgray-dimgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="dimgray"/>
-			<stop offset="70%" stop-color="dimgray"/>
-		</linearGradient>
-		<linearGradient id="g-dimgray-darkgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="dimgray"/>
-			<stop offset="70%" stop-color="darkgray"/>
-		</linearGradient>
-		<linearGradient id="g-dimgray-silver" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="dimgray"/>
-			<stop offset="70%" stop-color="silver"/>
-		</linearGradient>
-		<linearGradient id="g-dimgray-gray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="dimgray"/>
-			<stop offset="70%" stop-color="gray"/>
-		</linearGradient>
-		<linearGradient id="g-darkgray-black" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="darkgray"/>
-			<stop offset="70%" stop-color="black"/>
-		</linearGradient>
-		<linearGradient id="g-darkgray-red" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="darkgray"/>
-			<stop offset="70%" stop-color="red"/>
-		</linearGradient>
-		<linearGradient id="g-darkgray-purple" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="darkgray"/>
-			<stop offset="70%" stop-color="purple"/>
-		</linearGradient>
-		<linearGradient id="g-darkgray-green" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="darkgray"/>
-			<stop offset="70%" stop-color="green"/>
-		</linearGradient>
-		<linearGradient id="g-darkgray-yellow" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="darkgray"/>
-			<stop offset="70%" stop-color="yellow"/>
-		</linearGradient>
-		<linearGradient id="g-darkgray-blue" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="darkgray"/>
-			<stop offset="70%" stop-color="blue"/>
-		</linearGradient>
-		<linearGradient id="g-darkgray-dimgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="darkgray"/>
-			<stop offset="70%" stop-color="dimgray"/>
-		</linearGradient>
-		<linearGradient id="g-darkgray-darkgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="darkgray"/>
-			<stop offset="70%" stop-color="darkgray"/>
-		</linearGradient>
-		<linearGradient id="g-darkgray-silver" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="darkgray"/>
-			<stop offset="70%" stop-color="silver"/>
-		</linearGradient>
-		<linearGradient id="g-darkgray-gray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="darkgray"/>
-			<stop offset="70%" stop-color="gray"/>
-		</linearGradient>
-		<linearGradient id="g-silver-black" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="silver"/>
-			<stop offset="70%" stop-color="black"/>
-		</linearGradient>
-		<linearGradient id="g-silver-red" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="silver"/>
-			<stop offset="70%" stop-color="red"/>
-		</linearGradient>
-		<linearGradient id="g-silver-purple" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="silver"/>
-			<stop offset="70%" stop-color="purple"/>
-		</linearGradient>
-		<linearGradient id="g-silver-green" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="silver"/>
-			<stop offset="70%" stop-color="green"/>
-		</linearGradient>
-		<linearGradient id="g-silver-yellow" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="silver"/>
-			<stop offset="70%" stop-color="yellow"/>
-		</linearGradient>
-		<linearGradient id="g-silver-blue" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="silver"/>
-			<stop offset="70%" stop-color="blue"/>
-		</linearGradient>
-		<linearGradient id="g-silver-dimgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="silver"/>
-			<stop offset="70%" stop-color="dimgray"/>
-		</linearGradient>
-		<linearGradient id="g-silver-darkgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="silver"/>
-			<stop offset="70%" stop-color="darkgray"/>
-		</linearGradient>
-		<linearGradient id="g-silver-silver" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="silver"/>
-			<stop offset="70%" stop-color="silver"/>
-		</linearGradient>
-		<linearGradient id="g-silver-gray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="silver"/>
-			<stop offset="70%" stop-color="gray"/>
-		</linearGradient>
-		<linearGradient id="g-gray-black" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="gray"/>
-			<stop offset="70%" stop-color="black"/>
-		</linearGradient>
-		<linearGradient id="g-gray-red" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="gray"/>
-			<stop offset="70%" stop-color="red"/>
-		</linearGradient>
-		<linearGradient id="g-gray-purple" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="gray"/>
-			<stop offset="70%" stop-color="purple"/>
-		</linearGradient>
-		<linearGradient id="g-gray-green" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="gray"/>
-			<stop offset="70%" stop-color="green"/>
-		</linearGradient>
-		<linearGradient id="g-gray-yellow" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="gray"/>
-			<stop offset="70%" stop-color="yellow"/>
-		</linearGradient>
-		<linearGradient id="g-gray-blue" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="gray"/>
-			<stop offset="70%" stop-color="blue"/>
-		</linearGradient>
-		<linearGradient id="g-gray-dimgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="gray"/>
-			<stop offset="70%" stop-color="dimgray"/>
-		</linearGradient>
-		<linearGradient id="g-gray-darkgray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="gray"/>
-			<stop offset="70%" stop-color="darkgray"/>
-		</linearGradient>
-		<linearGradient id="g-gray-silver" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="gray"/>
-			<stop offset="70%" stop-color="silver"/>
-		</linearGradient>
-		<linearGradient id="g-gray-gray" gradientUnits="userSpaceOnUse">
-			<stop offset="30%" stop-color="gray"/>
-			<stop offset="70%" stop-color="gray"/>
+		<linearGradient id="g-black-black">
+			<stop offset="20%" stop-color="black"/>
+			<stop offset="80%" stop-color="black"/>
+		</linearGradient>
+		<linearGradient id="g-black-red">
+			<stop offset="20%" stop-color="black"/>
+			<stop offset="80%" stop-color="red"/>
+		</linearGradient>
+		<linearGradient id="g-black-purple">
+			<stop offset="20%" stop-color="black"/>
+			<stop offset="80%" stop-color="purple"/>
+		</linearGradient>
+		<linearGradient id="g-black-green">
+			<stop offset="20%" stop-color="black"/>
+			<stop offset="80%" stop-color="green"/>
+		</linearGradient>
+		<linearGradient id="g-black-yellow">
+			<stop offset="20%" stop-color="black"/>
+			<stop offset="80%" stop-color="yellow"/>
+		</linearGradient>
+		<linearGradient id="g-black-blue">
+			<stop offset="20%" stop-color="black"/>
+			<stop offset="80%" stop-color="blue"/>
+		</linearGradient>
+		<linearGradient id="g-black-dimgray">
+			<stop offset="20%" stop-color="black"/>
+			<stop offset="80%" stop-color="dimgray"/>
+		</linearGradient>
+		<linearGradient id="g-black-darkgray">
+			<stop offset="20%" stop-color="black"/>
+			<stop offset="80%" stop-color="darkgray"/>
+		</linearGradient>
+		<linearGradient id="g-black-silver">
+			<stop offset="20%" stop-color="black"/>
+			<stop offset="80%" stop-color="silver"/>
+		</linearGradient>
+		<linearGradient id="g-black-gray">
+			<stop offset="20%" stop-color="black"/>
+			<stop offset="80%" stop-color="gray"/>
+		</linearGradient>
+		<linearGradient id="g-red-black">
+			<stop offset="20%" stop-color="red"/>
+			<stop offset="80%" stop-color="black"/>
+		</linearGradient>
+		<linearGradient id="g-red-red">
+			<stop offset="20%" stop-color="red"/>
+			<stop offset="80%" stop-color="red"/>
+		</linearGradient>
+		<linearGradient id="g-red-purple">
+			<stop offset="20%" stop-color="red"/>
+			<stop offset="80%" stop-color="purple"/>
+		</linearGradient>
+		<linearGradient id="g-red-green">
+			<stop offset="20%" stop-color="red"/>
+			<stop offset="80%" stop-color="green"/>
+		</linearGradient>
+		<linearGradient id="g-red-yellow">
+			<stop offset="20%" stop-color="red"/>
+			<stop offset="80%" stop-color="yellow"/>
+		</linearGradient>
+		<linearGradient id="g-red-blue">
+			<stop offset="20%" stop-color="red"/>
+			<stop offset="80%" stop-color="blue"/>
+		</linearGradient>
+		<linearGradient id="g-red-dimgray">
+			<stop offset="20%" stop-color="red"/>
+			<stop offset="80%" stop-color="dimgray"/>
+		</linearGradient>
+		<linearGradient id="g-red-darkgray">
+			<stop offset="20%" stop-color="red"/>
+			<stop offset="80%" stop-color="darkgray"/>
+		</linearGradient>
+		<linearGradient id="g-red-silver">
+			<stop offset="20%" stop-color="red"/>
+			<stop offset="80%" stop-color="silver"/>
+		</linearGradient>
+		<linearGradient id="g-red-gray">
+			<stop offset="20%" stop-color="red"/>
+			<stop offset="80%" stop-color="gray"/>
+		</linearGradient>
+		<linearGradient id="g-purple-black">
+			<stop offset="20%" stop-color="purple"/>
+			<stop offset="80%" stop-color="black"/>
+		</linearGradient>
+		<linearGradient id="g-purple-red">
+			<stop offset="20%" stop-color="purple"/>
+			<stop offset="80%" stop-color="red"/>
+		</linearGradient>
+		<linearGradient id="g-purple-purple">
+			<stop offset="20%" stop-color="purple"/>
+			<stop offset="80%" stop-color="purple"/>
+		</linearGradient>
+		<linearGradient id="g-purple-green">
+			<stop offset="20%" stop-color="purple"/>
+			<stop offset="80%" stop-color="green"/>
+		</linearGradient>
+		<linearGradient id="g-purple-blue">
+			<stop offset="20%" stop-color="purple"/>
+			<stop offset="80%" stop-color="blue"/>
+		</linearGradient>
+		<linearGradient id="g-purple-dimgray">
+			<stop offset="20%" stop-color="purple"/>
+			<stop offset="80%" stop-color="dimgray"/>
+		</linearGradient>
+		<linearGradient id="g-purple-darkgray">
+			<stop offset="20%" stop-color="purple"/>
+			<stop offset="80%" stop-color="darkgray"/>
+		</linearGradient>
+		<linearGradient id="g-purple-silver">
+			<stop offset="20%" stop-color="purple"/>
+			<stop offset="80%" stop-color="silver"/>
+		</linearGradient>
+		<linearGradient id="g-purple-gray">
+			<stop offset="20%" stop-color="purple"/>
+			<stop offset="80%" stop-color="gray"/>
+		</linearGradient>
+		<linearGradient id="g-green-black">
+			<stop offset="20%" stop-color="green"/>
+			<stop offset="80%" stop-color="black"/>
+		</linearGradient>
+		<linearGradient id="g-green-red">
+			<stop offset="20%" stop-color="green"/>
+			<stop offset="80%" stop-color="red"/>
+		</linearGradient>
+		<linearGradient id="g-green-purple">
+			<stop offset="20%" stop-color="green"/>
+			<stop offset="80%" stop-color="purple"/>
+		</linearGradient>
+		<linearGradient id="g-green-green">
+			<stop offset="20%" stop-color="green"/>
+			<stop offset="80%" stop-color="green"/>
+		</linearGradient>
+		<linearGradient id="g-green-yellow">
+			<stop offset="20%" stop-color="green"/>
+			<stop offset="80%" stop-color="yellow"/>
+		</linearGradient>
+		<linearGradient id="g-green-blue">
+			<stop offset="20%" stop-color="green"/>
+			<stop offset="80%" stop-color="blue"/>
+		</linearGradient>
+		<linearGradient id="g-green-dimgray">
+			<stop offset="20%" stop-color="green"/>
+			<stop offset="80%" stop-color="dimgray"/>
+		</linearGradient>
+		<linearGradient id="g-green-darkgray">
+			<stop offset="20%" stop-color="green"/>
+			<stop offset="80%" stop-color="darkgray"/>
+		</linearGradient>
+		<linearGradient id="g-green-silver">
+			<stop offset="20%" stop-color="green"/>
+			<stop offset="80%" stop-color="silver"/>
+		</linearGradient>
+		<linearGradient id="g-green-gray">
+			<stop offset="20%" stop-color="green"/>
+			<stop offset="80%" stop-color="gray"/>
+		</linearGradient>
+		<linearGradient id="g-yellow-black">
+			<stop offset="20%" stop-color="yellow"/>
+			<stop offset="80%" stop-color="black"/>
+		</linearGradient>
+		<linearGradient id="g-yellow-red">
+			<stop offset="20%" stop-color="yellow"/>
+			<stop offset="80%" stop-color="red"/>
+		</linearGradient>
+		<linearGradient id="g-yellow-purple">
+			<stop offset="20%" stop-color="yellow"/>
+			<stop offset="80%" stop-color="purple"/>
+		</linearGradient>
+		<linearGradient id="g-yellow-green">
+			<stop offset="20%" stop-color="yellow"/>
+			<stop offset="80%" stop-color="green"/>
+		</linearGradient>
+		<linearGradient id="g-yellow-yellow">
+			<stop offset="20%" stop-color="yellow"/>
+			<stop offset="80%" stop-color="yellow"/>
+		</linearGradient>
+		<linearGradient id="g-yellow-blue">
+			<stop offset="20%" stop-color="yellow"/>
+			<stop offset="80%" stop-color="blue"/>
+		</linearGradient>
+		<linearGradient id="g-yellow-dimgray">
+			<stop offset="20%" stop-color="yellow"/>
+			<stop offset="80%" stop-color="dimgray"/>
+		</linearGradient>
+		<linearGradient id="g-yellow-darkgray">
+			<stop offset="20%" stop-color="yellow"/>
+			<stop offset="80%" stop-color="darkgray"/>
+		</linearGradient>
+		<linearGradient id="g-yellow-silver">
+			<stop offset="20%" stop-color="yellow"/>
+			<stop offset="80%" stop-color="silver"/>
+		</linearGradient>
+		<linearGradient id="g-yellow-gray">
+			<stop offset="20%" stop-color="yellow"/>
+			<stop offset="80%" stop-color="gray"/>
+		</linearGradient>
+		<linearGradient id="g-dimgray-black">
+			<stop offset="20%" stop-color="dimgray"/>
+			<stop offset="80%" stop-color="black"/>
+		</linearGradient>
+		<linearGradient id="g-dimgray-red">
+			<stop offset="20%" stop-color="dimgray"/>
+			<stop offset="80%" stop-color="red"/>
+		</linearGradient>
+		<linearGradient id="g-dimgray-purple">
+			<stop offset="20%" stop-color="dimgray"/>
+			<stop offset="80%" stop-color="purple"/>
+		</linearGradient>
+		<linearGradient id="g-dimgray-green">
+			<stop offset="20%" stop-color="dimgray"/>
+			<stop offset="80%" stop-color="green"/>
+		</linearGradient>
+		<linearGradient id="g-dimgray-yellow">
+			<stop offset="20%" stop-color="dimgray"/>
+			<stop offset="80%" stop-color="yellow"/>
+		</linearGradient>
+		<linearGradient id="g-dimgray-blue">
+			<stop offset="20%" stop-color="dimgray"/>
+			<stop offset="80%" stop-color="blue"/>
+		</linearGradient>
+		<linearGradient id="g-dimgray-dimgray">
+			<stop offset="20%" stop-color="dimgray"/>
+			<stop offset="80%" stop-color="dimgray"/>
+		</linearGradient>
+		<linearGradient id="g-dimgray-darkgray">
+			<stop offset="20%" stop-color="dimgray"/>
+			<stop offset="80%" stop-color="darkgray"/>
+		</linearGradient>
+		<linearGradient id="g-dimgray-silver">
+			<stop offset="20%" stop-color="dimgray"/>
+			<stop offset="80%" stop-color="silver"/>
+		</linearGradient>
+		<linearGradient id="g-dimgray-gray">
+			<stop offset="20%" stop-color="dimgray"/>
+			<stop offset="80%" stop-color="gray"/>
+		</linearGradient>
+		<linearGradient id="g-darkgray-black">
+			<stop offset="20%" stop-color="darkgray"/>
+			<stop offset="80%" stop-color="black"/>
+		</linearGradient>
+		<linearGradient id="g-darkgray-red">
+			<stop offset="20%" stop-color="darkgray"/>
+			<stop offset="80%" stop-color="red"/>
+		</linearGradient>
+		<linearGradient id="g-darkgray-purple">
+			<stop offset="20%" stop-color="darkgray"/>
+			<stop offset="80%" stop-color="purple"/>
+		</linearGradient>
+		<linearGradient id="g-darkgray-green">
+			<stop offset="20%" stop-color="darkgray"/>
+			<stop offset="80%" stop-color="green"/>
+		</linearGradient>
+		<linearGradient id="g-darkgray-yellow">
+			<stop offset="20%" stop-color="darkgray"/>
+			<stop offset="80%" stop-color="yellow"/>
+		</linearGradient>
+		<linearGradient id="g-darkgray-blue">
+			<stop offset="20%" stop-color="darkgray"/>
+			<stop offset="80%" stop-color="blue"/>
+		</linearGradient>
+		<linearGradient id="g-darkgray-dimgray">
+			<stop offset="20%" stop-color="darkgray"/>
+			<stop offset="80%" stop-color="dimgray"/>
+		</linearGradient>
+		<linearGradient id="g-darkgray-darkgray">
+			<stop offset="20%" stop-color="darkgray"/>
+			<stop offset="80%" stop-color="darkgray"/>
+		</linearGradient>
+		<linearGradient id="g-darkgray-silver">
+			<stop offset="20%" stop-color="darkgray"/>
+			<stop offset="80%" stop-color="silver"/>
+		</linearGradient>
+		<linearGradient id="g-darkgray-gray">
+			<stop offset="20%" stop-color="darkgray"/>
+			<stop offset="80%" stop-color="gray"/>
+		</linearGradient>
+		<linearGradient id="g-silver-black">
+			<stop offset="20%" stop-color="silver"/>
+			<stop offset="80%" stop-color="black"/>
+		</linearGradient>
+		<linearGradient id="g-silver-red">
+			<stop offset="20%" stop-color="silver"/>
+			<stop offset="80%" stop-color="red"/>
+		</linearGradient>
+		<linearGradient id="g-silver-purple">
+			<stop offset="20%" stop-color="silver"/>
+			<stop offset="80%" stop-color="purple"/>
+		</linearGradient>
+		<linearGradient id="g-silver-green">
+			<stop offset="20%" stop-color="silver"/>
+			<stop offset="80%" stop-color="green"/>
+		</linearGradient>
+		<linearGradient id="g-silver-yellow">
+			<stop offset="20%" stop-color="silver"/>
+			<stop offset="80%" stop-color="yellow"/>
+		</linearGradient>
+		<linearGradient id="g-silver-blue">
+			<stop offset="20%" stop-color="silver"/>
+			<stop offset="80%" stop-color="blue"/>
+		</linearGradient>
+		<linearGradient id="g-silver-dimgray">
+			<stop offset="20%" stop-color="silver"/>
+			<stop offset="80%" stop-color="dimgray"/>
+		</linearGradient>
+		<linearGradient id="g-silver-darkgray">
+			<stop offset="20%" stop-color="silver"/>
+			<stop offset="80%" stop-color="darkgray"/>
+		</linearGradient>
+		<linearGradient id="g-gray-black">
+			<stop offset="20%" stop-color="gray"/>
+			<stop offset="80%" stop-color="black"/>
+		</linearGradient>
+		<linearGradient id="g-gray-red">
+			<stop offset="20%" stop-color="gray"/>
+			<stop offset="80%" stop-color="red"/>
+		</linearGradient>
+		<linearGradient id="g-gray-purple">
+			<stop offset="20%" stop-color="gray"/>
+			<stop offset="80%" stop-color="purple"/>
+		</linearGradient>
+		<linearGradient id="g-gray-green">
+			<stop offset="20%" stop-color="gray"/>
+			<stop offset="80%" stop-color="green"/>
+		</linearGradient>
+		<linearGradient id="g-gray-yellow">
+			<stop offset="20%" stop-color="gray"/>
+			<stop offset="80%" stop-color="yellow"/>
+		</linearGradient>
+		<linearGradient id="g-gray-blue">
+			<stop offset="20%" stop-color="gray"/>
+			<stop offset="80%" stop-color="blue"/>
+		</linearGradient>
+		<linearGradient id="g-gray-dimgray">
+			<stop offset="20%" stop-color="gray"/>
+			<stop offset="80%" stop-color="dimgray"/>
+		</linearGradient>
+		<linearGradient id="g-gray-darkgray">
+			<stop offset="20%" stop-color="gray"/>
+			<stop offset="80%" stop-color="darkgray"/>
 		</linearGradient>
 	</defs>
-	<path id="i-Union13-Union17-1" d="M 260,142.555640828856 L 265,142.555640828856 C 515,142.555640828856 745,142.555640828856 995,142.555640828856 L 1000,142.555640828856" style="stroke:url(#g-black-black); stroke-width:85.111281657713; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Union13-SPD17-2" d="M 260,188.181120491174 L 265,188.181120491174 C 515,188.181120491174 745,240.644666155027 995,240.644666155027 L 1000,240.644666155027" style="stroke:url(#g-black-red); stroke-width:6.13967766692249; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Union13-Linke17-3" d="M 260,192.018419033001 L 265,192.018419033001 C 515,192.018419033001 745,331.250959324636 995,331.250959324636 L 1000,331.250959324636" style="stroke:url(#g-black-purple); stroke-width:1.53491941673062; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Union13-Grüne17-4" d="M 260,194.052187260169 L 265,194.052187260169 C 515,194.052187260169 745,384.13660782809 995,384.13660782809 L 1000,384.13660782809" style="stroke:url(#g-black-green); stroke-width:2.53261703760553; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Union13-FDP17-5" d="M 260,201.534919416731 L 265,201.534919416731 C 515,201.534919416731 745,441.013046815043 995,441.013046815043 L 1000,441.013046815043" style="stroke:url(#g-black-yellow); stroke-width:12.432847275518; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Union13-AFD17-6" d="M 260,211.742133537989 L 265,211.742133537989 C 515,211.742133537989 745,497.160399079049 995,497.160399079049 L 1000,497.160399079049" style="stroke:url(#g-black-blue); stroke-width:7.98158096699923; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Union13-And17-7" d="M 260,216.500383729854 L 265,216.500383729854 C 515,216.500383729854 745,559.37068303914 995,559.37068303914 L 1000,559.37068303914" style="stroke:url(#g-black-dimgray); stroke-width:1.53491941673062; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Union13-Nicht17-8" d="M 260,223.44589409056 L 265,223.44589409056 C 515,223.44589409056 745,602.663085188028 995,602.663085188028 L 1000,602.663085188028" style="stroke:url(#g-black-darkgray); stroke-width:12.3561013046815; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Union13-Weg-9" d="M 260,229.623944742901 L 265,229.623944742901 C 515,229.623944742901 745,733.062164236378 995,733.062164236378 L 1000,733.062164236378" style="stroke:url(#g-black-silver); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Union13-Verst-10" d="M 260,234.574059861857 L 265,234.574059861857 C 515,234.574059861857 745,758.012279355334 995,758.012279355334 L 1000,758.012279355334" style="stroke:url(#g-black-gray); stroke-width:9.90023023791251; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-SPD13-Union17-11" d="M 260,262.670759785112 L 265,262.670759785112 C 515,262.670759785112 745,188.257866462011 995,188.257866462011 L 1000,188.257866462011" style="stroke:url(#g-red-black); stroke-width:6.29316960859555; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-SPD13-SPD17-12" d="M 260,288.534151957023 L 265,288.534151957023 C 515,288.534151957023 745,266.431312356102 995,266.431312356102 L 1000,266.431312356102" style="stroke:url(#g-red-red); stroke-width:45.4336147352264; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-SPD13-Linke17-13" d="M 260,313.937068303915 L 265,313.937068303915 C 515,313.937068303915 745,334.70452801228 995,334.70452801228 L 1000,334.70452801228" style="stroke:url(#g-red-purple); stroke-width:5.37221795855718; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-SPD13-Grüne17-14" d="M 260,319.539524174981 L 265,319.539524174981 C 515,319.539524174981 745,388.319263238681 995,388.319263238681 L 1000,388.319263238681" style="stroke:url(#g-red-green); stroke-width:5.83269378357636; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-SPD13-FDP17-15" d="M 260,324.566385264774 L 265,324.566385264774 C 515,324.566385264774 745,449.339984650807 995,449.339984650807 L 1000,449.339984650807" style="stroke:url(#g-red-yellow); stroke-width:4.22102839600921; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-SPD13-AFD17-16" d="M 260,328.63392171911 L 265,328.63392171911 C 515,328.63392171911 745,503.10821181888 995,503.10821181888 L 1000,503.10821181888" style="stroke:url(#g-red-blue); stroke-width:3.91404451266309; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-SPD13-And17-17" d="M 260,331.358403683807 L 265,331.358403683807 C 515,331.358403683807 745,560.905602455871 995,560.905602455871 L 1000,560.905602455871" style="stroke:url(#g-red-dimgray); stroke-width:1.53491941673062; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-SPD13-Nicht17-18" d="M 260,336.078280890254 L 265,336.078280890254 C 515,336.078280890254 745,612.79355333845 995,612.79355333845 L 1000,612.79355333845" style="stroke:url(#g-red-darkgray); stroke-width:7.9048349961627; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-SPD13-Weg-19" d="M 260,340.030698388335 L 265,340.030698388335 C 515,340.030698388335 745,733.062164236378 995,733.062164236378 L 1000,733.062164236378" style="stroke:url(#g-red-silver); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-SPD13-Verst-20" d="M 260,342.947045280123 L 265,342.947045280123 C 515,342.947045280123 745,765.878741366079 995,765.878741366079 L 1000,765.878741366079" style="stroke:url(#g-red-gray); stroke-width:5.83269378357636; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Linke13-Union17-21" d="M 260,366.285495011513 L 265,366.285495011513 C 515,366.285495011513 745,191.826554105909 995,191.826554105909 L 1000,191.826554105909" style="stroke:url(#g-purple-black); stroke-width:0.844205679201842; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Linke13-SPD17-22" d="M 260,367.743668457407 L 265,367.743668457407 C 515,367.743668457407 745,290.184190330008 995,290.184190330008 L 1000,290.184190330008" style="stroke:url(#g-purple-red); stroke-width:2.07214121258634; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Linke13-Linke17-23" d="M 260,376.377590176517 L 265,376.377590176517 C 515,376.377590176517 745,344.988488104375 995,344.988488104375 L 1000,344.988488104375" style="stroke:url(#g-purple-purple); stroke-width:15.1957022256332; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Linke13-Grüne17-24" d="M 260,384.589409056026 L 265,384.589409056026 C 515,384.589409056026 745,391.849577897161 995,391.849577897161 L 1000,391.849577897161" style="stroke:url(#g-purple-green); stroke-width:1.2279355333845; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Linke13-FDP17-25" d="M 260,385.548733691482 L 265,385.548733691482 C 515,385.548733691482 745,451.795855717576 995,451.795855717576 L 1000,451.795855717576" style="stroke:url(#g-purple-yellow); stroke-width:0.69071373752878; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Linke13-AFD17-26" d="M 260,387.505755947814 L 265,387.505755947814 C 515,387.505755947814 745,506.676899462778 995,506.676899462778 L 1000,506.676899462778" style="stroke:url(#g-purple-blue); stroke-width:3.22333077513431; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Linke13-And17-27" d="M 260,389.961627014583 L 265,389.961627014583 C 515,389.961627014583 745,562.517267843438 995,562.517267843438 L 1000,562.517267843438" style="stroke:url(#g-purple-dimgray); stroke-width:1.68841135840368; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Linke13-Nicht17-28" d="M 260,391.918649270914 L 265,391.918649270914 C 515,391.918649270914 745,617.858787413661 995,617.858787413661 L 1000,617.858787413661" style="stroke:url(#g-purple-darkgray); stroke-width:2.2256331542594; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Linke13-Weg-29" d="M 260,393.031465848044 L 265,393.031465848044 C 515,393.031465848044 745,733.062164236378 995,733.062164236378 L 1000,733.062164236378" style="stroke:url(#g-purple-silver); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Linke13-Verst-30" d="M 260,393.875671527246 L 265,393.875671527246 C 515,393.875671527246 745,769.639293937069 995,769.639293937069 L 1000,769.639293937069" style="stroke:url(#g-purple-gray); stroke-width:1.68841135840368; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Grüne13-Union17-31" d="M 260,415.871066768995 L 265,415.871066768995 C 515,415.871066768995 745,193.399846508058 995,193.399846508058 L 1000,193.399846508058" style="stroke:url(#g-green-black); stroke-width:2.30237912509593; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Grüne13-SPD17-32" d="M 260,418.480429777437 L 265,418.480429777437 C 515,418.480429777437 745,292.678434382195 995,292.678434382195 L 1000,292.678434382195" style="stroke:url(#g-green-red); stroke-width:2.91634689178818; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Grüne13-Linke17-33" d="M 260,421.204911742134 L 265,421.204911742134 C 515,421.204911742134 745,353.852647735995 995,353.852647735995 L 1000,353.852647735995" style="stroke:url(#g-green-purple); stroke-width:2.53261703760553; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Grüne13-Grüne17-34" d="M 260,429.646968534152 L 265,429.646968534152 C 515,429.646968534152 745,399.639293937069 995,399.639293937069 L 1000,399.639293937069" style="stroke:url(#g-green-green); stroke-width:14.3514965464313; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Grüne13-FDP17-35" d="M 260,437.43668457406 L 265,437.43668457406 C 515,437.43668457406 745,452.755180353032 995,452.755180353032 L 1000,452.755180353032" style="stroke:url(#g-green-yellow); stroke-width:1.2279355333845; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Grüne13-AFD17-36" d="M 260,438.242517267844 L 265,438.242517267844 C 515,438.242517267844 745,508.480429777437 995,508.480429777437 L 1000,508.480429777437" style="stroke:url(#g-green-blue); stroke-width:0.383729854182655; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Grüne13-And17-37" d="M 260,438.933231005373 L 265,438.933231005373 C 515,438.933231005373 745,563.860322333077 995,563.860322333077 L 1000,563.860322333077" style="stroke:url(#g-green-dimgray); stroke-width:0.997697620874904; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Grüne13-Nicht17-38" d="M 260,440.698388334613 L 265,440.698388334613 C 515,440.698388334613 745,620.237912509593 995,620.237912509593 L 1000,620.237912509593" style="stroke:url(#g-green-darkgray); stroke-width:2.53261703760553; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Grüne13-Weg-39" d="M 260,441.964696853416 L 265,441.964696853416 C 515,441.964696853416 745,733.062164236378 995,733.062164236378 L 1000,733.062164236378" style="stroke:url(#g-green-silver); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Grüne13-Verst-40" d="M 260,442.501918649271 L 265,442.501918649271 C 515,442.501918649271 745,771.020721412126 995,771.020721412126 L 1000,771.020721412126" style="stroke:url(#g-green-gray); stroke-width:1.07444359171144; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-FDP13-Union17-41" d="M 260,464.036838066002 L 265,464.036838066002 C 515,464.036838066002 745,195.548733691481 995,195.548733691481 L 1000,195.548733691481" style="stroke:url(#g-yellow-black); stroke-width:1.99539524174981; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-FDP13-SPD17-42" d="M 260,465.418265541059 L 265,465.418265541059 C 515,465.418265541059 745,294.520337682272 995,294.520337682272 L 1000,294.520337682272" style="stroke:url(#g-yellow-red); stroke-width:0.767459708365311; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-FDP13-Linke17-43" d="M 260,465.917114351497 L 265,465.917114351497 C 515,465.917114351497 745,355.234075211052 995,355.234075211052 L 1000,355.234075211052" style="stroke:url(#g-yellow-purple); stroke-width:0.230237912509593; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-FDP13-Grüne17-44" d="M 260,466.224098234843 L 265,466.224098234843 C 515,466.224098234843 745,407.006907137376 995,407.006907137376 L 1000,407.006907137376" style="stroke:url(#g-yellow-green); stroke-width:0.383729854182655; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-FDP13-FDP17-45" d="M 260,471.097467382963 L 265,471.097467382963 C 515,471.097467382963 745,458.050652340753 995,458.050652340753 L 1000,458.050652340753" style="stroke:url(#g-yellow-yellow); stroke-width:9.36300844205679; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-FDP13-AFD17-46" d="M 260,476.23944742901 L 265,476.23944742901 C 515,476.23944742901 745,509.132770529547 995,509.132770529547 L 1000,509.132770529547" style="stroke:url(#g-yellow-blue); stroke-width:0.920951650038373; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-FDP13-And17-47" d="M 260,476.853415195703 L 265,476.853415195703 C 515,476.853415195703 745,564.512663085188 995,564.512663085188 L 1000,564.512663085188" style="stroke:url(#g-yellow-dimgray); stroke-width:0.306983883346124; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-FDP13-Nicht17-48" d="M 260,477.505755947813 L 265,477.505755947813 C 515,477.505755947813 745,622.003069838834 995,622.003069838834 L 1000,622.003069838834" style="stroke:url(#g-yellow-darkgray); stroke-width:0.997697620874904; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-FDP13-Weg-49" d="M 260,478.004604758251 L 265,478.004604758251 C 515,478.004604758251 745,733.062164236378 995,733.062164236378 L 1000,733.062164236378" style="stroke:url(#g-yellow-silver); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-FDP13-Verst-50" d="M 260,478.503453568688 L 265,478.503453568688 C 515,478.503453568688 745,772.056792018419 995,772.056792018419 L 1000,772.056792018419" style="stroke:url(#g-yellow-gray); stroke-width:0.997697620874904; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-AFD13-Union17-51" d="M 260,499.232540291636 L 265,499.232540291636 C 515,499.232540291636 745,196.776669224866 995,196.776669224866 L 1000,196.776669224866" style="stroke:url(#g-blue-black); stroke-width:0.460475825019187; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-AFD13-SPD17-52" d="M 260,499.616270145818 L 265,499.616270145818 C 515,499.616270145818 745,295.057559478128 995,295.057559478128 L 1000,295.057559478128" style="stroke:url(#g-blue-red); stroke-width:0.306983883346124; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-AFD13-Linke17-53" d="M 260,499.846508058328 L 265,499.846508058328 C 515,499.846508058328 745,355.425940138144 995,355.425940138144 L 1000,355.425940138144" style="stroke:url(#g-blue-purple); stroke-width:0.153491941673062; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-AFD13-Grüne17-54" d="M 260,499.961627014583 L 265,499.961627014583 C 515,499.961627014583 745,407.237145049886 995,407.237145049886 L 1000,407.237145049886" style="stroke:url(#g-blue-green); stroke-width:0.0767459708365311; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-AFD13-FDP17-55" d="M 260,500.306983883347 L 265,500.306983883347 C 515,500.306983883347 745,463.039140445127 995,463.039140445127 L 1000,463.039140445127" style="stroke:url(#g-blue-yellow); stroke-width:0.613967766692249; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-AFD13-AFD17-56" d="M 260,506.101304681505 L 265,506.101304681505 C 515,506.101304681505 745,515.080583269379 995,515.080583269379 L 1000,515.080583269379" style="stroke:url(#g-blue-blue); stroke-width:10.9746738296239; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-AFD13-And17-57" d="M 260,511.74213353799 L 265,511.74213353799 C 515,511.74213353799 745,564.819646968534 995,564.819646968534 L 1000,564.819646968534" style="stroke:url(#g-blue-dimgray); stroke-width:0.306983883346124; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-AFD13-Nicht17-58" d="M 260,512.931696085956 L 265,512.931696085956 C 515,512.931696085956 745,623.537989255564 995,623.537989255564 L 1000,623.537989255564" style="stroke:url(#g-blue-darkgray); stroke-width:2.07214121258634; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-AFD13-Weg-59" d="M 260,513.96776669225 L 265,513.96776669225 C 515,513.96776669225 745,733.062164236378 995,733.062164236378 L 1000,733.062164236378" style="stroke:url(#g-blue-silver); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-AFD13-Verst-60" d="M 260,514.351496546432 L 265,514.351496546432 C 515,514.351496546432 745,772.93937068304 995,772.93937068304 L 1000,772.93937068304" style="stroke:url(#g-blue-gray); stroke-width:0.767459708365311; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-And13-Union17-61" d="M 260,535.272448196471 L 265,535.272448196471 C 515,535.272448196471 745,197.544128933231 995,197.544128933231 L 1000,197.544128933231" style="stroke:url(#g-dimgray-black); stroke-width:1.07444359171144; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-And13-SPD17-62" d="M 260,536.538756715274 L 265,536.538756715274 C 515,536.538756715274 745,295.940138142748 995,295.940138142748 L 1000,295.940138142748" style="stroke:url(#g-dimgray-red); stroke-width:1.45817344589409; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-And13-Linke17-63" d="M 260,537.920184190331 L 265,537.920184190331 C 515,537.920184190331 745,356.155026861091 995,356.155026861091 L 1000,356.155026861091" style="stroke:url(#g-dimgray-purple); stroke-width:1.30468150422103; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-And13-Grüne17-64" d="M 260,538.917881811206 L 265,538.917881811206 C 515,538.917881811206 745,407.620874904068 995,407.620874904068 L 1000,407.620874904068" style="stroke:url(#g-dimgray-green); stroke-width:0.69071373752878; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-And13-FDP17-65" d="M 260,539.953952417499 L 265,539.953952417499 C 515,539.953952417499 745,464.036838066002 995,464.036838066002 L 1000,464.036838066002" style="stroke:url(#g-dimgray-yellow); stroke-width:1.38142747505756; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-And13-AFD17-66" d="M 260,543.445894090561 L 265,543.445894090561 C 515,543.445894090561 745,523.369148119724 995,523.369148119724 L 1000,523.369148119724" style="stroke:url(#g-dimgray-blue); stroke-width:5.60245587106677; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-And13-And17-67" d="M 260,549.585571757484 L 265,549.585571757484 C 515,549.585571757484 745,568.311588641596 995,568.311588641596 L 1000,568.311588641596" style="stroke:url(#g-dimgray-dimgray); stroke-width:6.6768994627782; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-And13-Nicht17-68" d="M 260,553.960092095166 L 265,553.960092095166 C 515,553.960092095166 745,625.61013046815 995,625.61013046815 L 1000,625.61013046815" style="stroke:url(#g-dimgray-darkgray); stroke-width:2.07214121258634; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-And13-Weg-69" d="M 260,554.996162701459 L 265,554.996162701459 C 515,554.996162701459 745,733.062164236378 995,733.062164236378 L 1000,733.062164236378" style="stroke:url(#g-dimgray-silver); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-And13-Verst-70" d="M 260,555.303146584805 L 265,555.303146584805 C 515,555.303146584805 745,773.630084420568 995,773.630084420568 L 1000,773.630084420568" style="stroke:url(#g-dimgray-gray); stroke-width:0.613967766692249; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Nicht13-Union17-71" d="M 260,583.246354566386 L 265,583.246354566386 C 515,583.246354566386 745,205.717574827322 995,205.717574827322 L 1000,205.717574827322" style="stroke:url(#g-darkgray-black); stroke-width:15.2724481964697; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Nicht13-SPD17-72" d="M 260,596.21642363776 L 265,596.21642363776 C 515,596.21642363776 745,302.003069838834 995,302.003069838834 L 1000,302.003069838834" style="stroke:url(#g-darkgray-red); stroke-width:10.6676899462778; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Nicht13-Linke17-73" d="M 260,603.699155794321 L 265,603.699155794321 C 515,603.699155794321 745,358.956254796624 995,358.956254796624 L 1000,358.956254796624" style="stroke:url(#g-darkgray-purple); stroke-width:4.29777436684574; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Nicht13-Grüne17-74" d="M 260,607.996930161167 L 265,607.996930161167 C 515,607.996930161167 745,410.115118956256 995,410.115118956256 L 1000,410.115118956256" style="stroke:url(#g-darkgray-green); stroke-width:4.29777436684574; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Nicht13-FDP17-75" d="M 260,613.330775134306 L 265,613.330775134306 C 515,613.330775134306 745,467.912509593247 995,467.912509593247 L 1000,467.912509593247" style="stroke:url(#g-darkgray-yellow); stroke-width:6.36991557943208; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Nicht13-AFD17-76" d="M 260,622.156561780507 L 265,622.156561780507 C 515,622.156561780507 745,531.811204911742 995,531.811204911742 L 1000,531.811204911742" style="stroke:url(#g-darkgray-blue); stroke-width:11.2816577129701; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Nicht13-And17-77" d="M 260,629.447429009978 L 265,629.447429009978 C 515,629.447429009978 745,573.300076745971 995,573.300076745971 L 1000,573.300076745971" style="stroke:url(#g-darkgray-dimgray); stroke-width:3.30007674597084; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Nicht13-Nicht17-78" d="M 260,670.237912509594 L 265,670.237912509594 C 515,670.237912509594 745,665.786646201075 995,665.786646201075 L 1000,665.786646201075" style="stroke:url(#g-darkgray-darkgray); stroke-width:78.2808902532617; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Nicht13-Weg-79" d="M 260,709.378357636225 L 265,709.378357636225 C 515,709.378357636225 745,733.062164236378 995,733.062164236378 L 1000,733.062164236378" style="stroke:url(#g-darkgray-silver); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Nicht13-Verst-80" d="M 260,712.409823484268 L 265,712.409823484268 C 515,712.409823484268 745,776.968534151957 995,776.968534151957 L 1000,776.968534151957" style="stroke:url(#g-darkgray-gray); stroke-width:6.06293169608596; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Zu-Union17-81" d="M 260,735.709900230239 L 265,735.709900230239 C 515,735.709900230239 745,213.622409823484 995,213.622409823484 L 1000,213.622409823484" style="stroke:url(#g-silver-black); stroke-width:0.537221795855718; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Zu-SPD17-82" d="M 260,736.093630084422 L 265,736.093630084422 C 515,736.093630084422 745,307.452033768228 995,307.452033768228 L 1000,307.452033768228" style="stroke:url(#g-silver-red); stroke-width:0.230237912509593; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Zu-Linke17-83" d="M 260,736.247122026095 L 265,736.247122026095 C 515,736.247122026095 745,361.143514965465 995,361.143514965465 L 1000,361.143514965465" style="stroke:url(#g-silver-purple); stroke-width:0.0767459708365311; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Zu-Grüne17-84" d="M 260,736.323867996931 L 265,736.323867996931 C 515,736.323867996931 745,412.302379125097 995,412.302379125097 L 1000,412.302379125097" style="stroke:url(#g-silver-green); stroke-width:0.0767459708365311; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Zu-FDP17-85" d="M 260,736.477359938604 L 265,736.477359938604 C 515,736.477359938604 745,471.212586339218 995,471.212586339218 L 1000,471.212586339218" style="stroke:url(#g-silver-yellow); stroke-width:0.230237912509593; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Zu-AFD17-86" d="M 260,736.669224865696 L 265,736.669224865696 C 515,736.669224865696 745,537.528779739064 995,537.528779739064 L 1000,537.528779739064" style="stroke:url(#g-silver-blue); stroke-width:0.153491941673062; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Zu-And17-87" d="M 260,736.78434382195 L 265,736.78434382195 C 515,736.78434382195 745,574.988488104374 995,574.988488104374 L 1000,574.988488104374" style="stroke:url(#g-silver-dimgray); stroke-width:0.0767459708365311; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Zu-Nicht17-88" d="M 260,737.052954719878 L 265,737.052954719878 C 515,737.052954719878 745,705.157329240215 995,705.157329240215 L 1000,705.157329240215" style="stroke:url(#g-silver-darkgray); stroke-width:0.460475825019187; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Zu-Weg-89" d="M 260,737.283192632388 L 265,737.283192632388 C 515,737.283192632388 745,733.062164236378 995,733.062164236378 L 1000,733.062164236378" style="stroke:url(#g-silver-silver); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Zu-Verst-90" d="M 260,737.283192632388 L 265,737.283192632388 C 515,737.283192632388 745,780 995,780 L 1000,780" style="stroke:url(#g-silver-gray); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Neu-Union17-91" d="M 260,759.125095932465 L 265,759.125095932465 C 515,759.125095932465 745,215.732924021489 995,215.732924021489 L 1000,215.732924021489" style="stroke:url(#g-gray-black); stroke-width:3.68380660015349; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Neu-SPD17-92" d="M 260,762.425172678436 L 265,762.425172678436 C 515,762.425172678436 745,309.025326170376 995,309.025326170376 L 1000,309.025326170376" style="stroke:url(#g-gray-red); stroke-width:2.91634689178818; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Neu-Linke17-93" d="M 260,764.727551803532 L 265,764.727551803532 C 515,764.727551803532 745,362.026093630085 995,362.026093630085 L 1000,362.026093630085" style="stroke:url(#g-gray-purple); stroke-width:1.68841135840368; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Neu-Grüne17-94" d="M 260,766.799693016118 L 265,766.799693016118 C 515,766.799693016118 745,413.568687643899 995,413.568687643899 L 1000,413.568687643899" style="stroke:url(#g-gray-green); stroke-width:2.45587106676899; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Neu-FDP17-95" d="M 260,768.948580199541 L 265,768.948580199541 C 515,768.948580199541 745,472.248656945511 995,472.248656945511 L 1000,472.248656945511" style="stroke:url(#g-gray-yellow); stroke-width:1.84190330007675; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Neu-AFD17-96" d="M 260,770.368380660017 L 265,770.368380660017 C 515,770.368380660017 745,538.104374520338 995,538.104374520338 L 1000,538.104374520338" style="stroke:url(#g-gray-blue); stroke-width:0.997697620874904; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Neu-And17-97" d="M 260,771.596316193401 L 265,771.596316193401 C 515,771.596316193401 745,575.75594781274 995,575.75594781274 L 1000,575.75594781274" style="stroke:url(#g-gray-dimgray); stroke-width:1.45817344589409; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Neu-Nicht17-98" d="M 260,776.162701458175 L 265,776.162701458175 C 515,776.162701458175 745,709.224865694551 995,709.224865694551 L 1000,709.224865694551" style="stroke:url(#g-gray-darkgray); stroke-width:7.67459708365311; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Neu-Weg-99" d="M 260,780.000000000001 L 265,780.000000000001 C 515,780.000000000001 745,733.062164236378 995,733.062164236378 L 1000,733.062164236378" style="stroke:url(#g-gray-silver); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<path id="i-Neu-Verst-100" d="M 260,780.000000000001 L 265,780.000000000001 C 515,780.000000000001 745,780 995,780 L 1000,780" style="stroke:url(#g-gray-gray); stroke-width:0; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
-	<rect x="10" y="100" width="250" height="139.524174980814" style="fill:black; fill-opacity:1;"/>
-	<rect x="10" y="259.524174980814" width="250" height="86.3392171910975" style="fill:red; fill-opacity:1;"/>
-	<rect x="10" y="365.863392171912" width="250" height="28.8564850345357" style="fill:purple; fill-opacity:1;"/>
-	<rect x="10" y="414.719877206447" width="250" height="28.31926323868" style="fill:green; fill-opacity:1;"/>
-	<rect x="10" y="463.039140445127" width="250" height="15.9631619339985" style="fill:yellow; fill-opacity:1;"/>
-	<rect x="10" y="499.002302379126" width="250" height="15.7329240214889" style="fill:blue; fill-opacity:1;"/>
-	<rect x="10" y="534.735226400615" width="250" height="20.8749040675365" style="fill:dimgray; fill-opacity:1;"/>
-	<rect x="10" y="575.610130468151" width="250" height="139.83115886416" style="fill:darkgray; fill-opacity:1;"/>
-	<rect x="10" y="735.441289332311" width="250" height="1.84190330007675" style="fill:silver; fill-opacity:1;"/>
-	<rect x="10" y="757.283192632388" width="250" height="22.7168073676132" style="fill:gray; fill-opacity:1;"/>
-	<rect x="1000" y="100" width="250" height="117.574827321566" style="fill:black; fill-opacity:1;"/>
-	<rect x="1000" y="237.574827321566" width="250" height="72.9086722947045" style="fill:red; fill-opacity:1;"/>
-	<rect x="1000" y="330.483499616271" width="250" height="32.3867996930161" style="fill:purple; fill-opacity:1;"/>
-	<rect x="1000" y="382.870299309287" width="250" height="31.9263238679969" style="fill:green; fill-opacity:1;"/>
-	<rect x="1000" y="434.796623177284" width="250" height="38.3729854182655" style="fill:yellow; fill-opacity:1;"/>
-	<rect x="1000" y="493.169608595549" width="250" height="45.4336147352264" style="fill:blue; fill-opacity:1;"/>
-	<rect x="1000" y="558.603223330775" width="250" height="17.8818112049117" style="fill:dimgray; fill-opacity:1;"/>
-	<rect x="1000" y="596.485034535687" width="250" height="116.577129700691" style="fill:darkgray; fill-opacity:1;"/>
-	<rect x="1000" y="733.062164236378" width="250" height="0" style="fill:silver; fill-opacity:1;"/>
-	<rect x="1000" y="753.062164236378" width="250" height="26.9378357636224" style="fill:gray; fill-opacity:1;"/>
-	<text style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-Union13-Union17-1" startOffset="50%">11.090.000</textPath>
+	<rect x="260" y="100" width="740" height="59.8228546536954" style="fill:url(#g-black-black); fill-opacity:0.7; stroke:none;"/>
+	<path id="i-Union13-Union17-1" d="M 260,129.911427326848 L 1000,129.911427326848" style="stroke:none; fill:none;"/>
+	<path id="i-Union13-SPD17-2" d="M 260,163.416581966023 L 265,163.416581966023 C 515,163.416581966023 745,217.103237984609 995,217.103237984609 L 1000,217.103237984609" style="stroke:url(#g-black-red); stroke-width:7.18745462465515; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Union13-Linke17-3" d="M 260,167.119210105997 L 265,167.119210105997 C 515,167.119210105997 745,336.275591694496 995,336.275591694496 L 1000,336.275591694496" style="stroke:url(#g-black-purple); stroke-width:0.21780165529258; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Union13-Grüne17-4" d="M 260,167.591113692464 L 265,167.591113692464 C 515,167.591113692464 745,369.452591839698 995,369.452591839698 L 1000,369.452591839698" style="stroke:url(#g-black-green); stroke-width:0.726005517641934; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Union13-FDP17-5" d="M 260,169.623929141861 L 265,169.623929141861 C 515,169.623929141861 745,415.007986060693 995,415.007986060693 L 1000,415.007986060693" style="stroke:url(#g-black-yellow); stroke-width:3.3396253811529; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Union13-AFD17-6" d="M 260,172.927254247132 L 265,172.927254247132 C 515,172.927254247132 745,455.880644692899 995,455.880644692899 L 1000,455.880644692899" style="stroke:url(#g-black-blue); stroke-width:3.2670248293887; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Union13-And17-7" d="M 260,174.814868593001 L 265,174.814868593001 C 515,174.814868593001 745,491.634964425729 995,491.634964425729 L 1000,491.634964425729" style="stroke:url(#g-black-dimgray); stroke-width:0.508203862349354; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Union13-Nicht17-8" d="M 260,177.464788732394 L 265,177.464788732394 C 515,177.464788732394 745,520.455931465078 995,520.455931465078 L 1000,520.455931465078" style="stroke:url(#g-black-darkgray); stroke-width:4.79163641643676; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Union13-Weg-9" d="M 260,181.89342239001 L 265,181.89342239001 C 515,181.89342239001 745,704.896181210976 995,704.896181210976 L 1000,704.896181210976" style="stroke:url(#g-black-silver); stroke-width:4.06563089879483; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Union13-Verst-10" d="M 260,188.754174531726 L 265,188.754174531726 C 515,188.754174531726 745,753.900101640772 995,753.900101640772 L 1000,753.900101640772" style="stroke:url(#g-black-gray); stroke-width:9.65587338463772; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-SPD13-Union17-11" d="M 260,215.215623638739 L 265,215.215623638739 C 515,215.215623638739 745,161.45636706839 995,161.45636706839 L 1000,161.45636706839" style="stroke:url(#g-red-black); stroke-width:3.2670248293887; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-SPD13-SPD17-12" d="M 260,245.34485262088 L 265,245.34485262088 C 515,245.34485262088 745,249.192681864382 995,249.192681864382 L 1000,249.192681864382" style="stroke:url(#g-red-red); stroke-width:56.9914331348918; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-SPD13-Linke17-13" d="M 260,274.820676637142 L 265,274.820676637142 C 515,274.820676637142 745,337.364599970959 995,337.364599970959 L 1000,337.364599970959" style="stroke:url(#g-red-purple); stroke-width:1.96021489763322; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-SPD13-Grüne17-14" d="M 260,276.817191810657 L 265,276.817191810657 C 515,276.817191810657 745,370.832002323218 995,370.832002323218 L 1000,370.832002323218" style="stroke:url(#g-red-green); stroke-width:2.03281544939742; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-SPD13-FDP17-15" d="M 260,278.487004501234 L 265,278.487004501234 C 515,278.487004501234 745,417.331203717148 995,417.331203717148 L 1000,417.331203717148" style="stroke:url(#g-red-yellow); stroke-width:1.30680993175548; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-SPD13-AFD17-16" d="M 260,279.684913605343 L 265,279.684913605343 C 515,279.684913605343 745,458.058661245825 995,458.058661245825 L 1000,458.058661245825" style="stroke:url(#g-red-blue); stroke-width:1.0890082764629; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-SPD13-And17-17" d="M 260,280.519819950631 L 265,280.519819950631 C 515,280.519819950631 745,492.17946856396 995,492.17946856396 L 1000,492.17946856396" style="stroke:url(#g-red-dimgray); stroke-width:0.580804414113547; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-SPD13-Nicht17-18" d="M 260,283.314941193553 L 265,283.314941193553 C 515,283.314941193553 745,525.356468709161 995,525.356468709161 L 1000,525.356468709161" style="stroke:url(#g-red-darkgray); stroke-width:5.00943807172935; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-SPD13-Weg-19" d="M 260,287.816175402933 L 265,287.816175402933 C 515,287.816175402933 745,708.925511833889 995,708.925511833889 L 1000,708.925511833889" style="stroke:url(#g-red-silver); stroke-width:3.99303034703064; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-SPD13-Verst-20" d="M 260,294.023522578771 L 265,294.023522578771 C 515,294.023522578771 745,762.938870335414 995,762.938870335414 L 1000,762.938870335414" style="stroke:url(#g-red-gray); stroke-width:8.42166400464644; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Linke13-Union17-21" d="M 260,318.306955132859 L 265,318.306955132859 C 515,318.306955132859 745,163.162480034848 995,163.162480034848 L 1000,163.162480034848" style="stroke:url(#g-purple-black); stroke-width:0.145201103528387; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Linke13-SPD17-22" d="M 260,318.924059822855 L 265,318.924059822855 C 515,318.924059822855 745,278.232902570059 995,278.232902570059 L 1000,278.232902570059" style="stroke:url(#g-purple-red); stroke-width:1.0890082764629; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Linke13-Linke17-23" d="M 260,321.174676927545 L 265,321.174676927545 C 515,321.174676927545 745,340.050820386234 995,340.050820386234 L 1000,340.050820386234" style="stroke:url(#g-purple-purple); stroke-width:3.41222593291709; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Linke13-Grüne17-24" d="M 260,322.98969072165 L 265,322.98969072165 C 515,322.98969072165 745,371.957310875563 995,371.957310875563 L 1000,371.957310875563" style="stroke:url(#g-purple-green); stroke-width:0.21780165529258; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Linke13-AFD17-25" d="M 260,323.461594308117 L 265,323.461594308117 C 515,323.461594308117 745,458.966168142878 995,458.966168142878 L 1000,458.966168142878" style="stroke:url(#g-purple-blue); stroke-width:0.726005517641934; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Linke13-And17-26" d="M 260,324.04239872223 L 265,324.04239872223 C 515,324.04239872223 745,492.687672426309 995,492.687672426309 L 1000,492.687672426309" style="stroke:url(#g-purple-dimgray); stroke-width:0.43560331058516; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Linke13-Nicht17-27" d="M 260,324.73210396399 L 265,324.73210396399 C 515,324.73210396399 745,528.333091331493 995,528.333091331493 L 1000,528.333091331493" style="stroke:url(#g-purple-darkgray); stroke-width:0.943807172934514; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Linke13-Weg-28" d="M 260,325.42180920575 L 265,325.42180920575 C 515,325.42180920575 745,711.139828662697 995,711.139828662697 L 1000,711.139828662697" style="stroke:url(#g-purple-silver); stroke-width:0.43560331058516; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Linke13-Verst-29" d="M 260,325.966313343982 L 265,325.966313343982 C 515,325.966313343982 745,767.476404820676 995,767.476404820676 L 1000,767.476404820676" style="stroke:url(#g-purple-gray); stroke-width:0.653404965877741; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Grüne13-Union17-30" d="M 260,347.490924931029 L 265,347.490924931029 C 515,347.490924931029 745,164.432989690722 995,164.432989690722 L 1000,164.432989690722" style="stroke:url(#g-green-black); stroke-width:2.39581820821838; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Grüne13-SPD17-31" d="M 260,352.899666037462 L 265,352.899666037462 C 515,352.899666037462 745,282.988238710614 995,282.988238710614 L 1000,282.988238710614" style="stroke:url(#g-green-red); stroke-width:8.42166400464644; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Grüne13-Linke17-32" d="M 260,358.381007695658 L 265,358.381007695658 C 515,358.381007695658 745,343.027443008566 995,343.027443008566 L 1000,343.027443008566" style="stroke:url(#g-green-purple); stroke-width:2.54101931174677; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Grüne13-Grüne17-33" d="M 260,367.129374183243 L 265,367.129374183243 C 515,367.129374183243 745,379.544068534921 995,379.544068534921 L 1000,379.544068534921" style="stroke:url(#g-green-green); stroke-width:14.9557136634238; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Grüne13-FDP17-34" d="M 260,375.006534049658 L 265,375.006534049658 C 515,375.006534049658 745,418.383911717728 995,418.383911717728 L 1000,418.383911717728" style="stroke:url(#g-green-yellow); stroke-width:0.798606069406127; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Grüne13-AFD17-35" d="M 260,375.478437636126 L 265,375.478437636126 C 515,375.478437636126 745,459.401771453463 995,459.401771453463 L 1000,459.401771453463" style="stroke:url(#g-green-blue); stroke-width:0.145201103528387; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Grüne13-And17-36" d="M 260,375.805140119065 L 265,375.805140119065 C 515,375.805140119065 745,493.159576012777 995,493.159576012777 L 1000,493.159576012777" style="stroke:url(#g-green-dimgray); stroke-width:0.508203862349354; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Grüne13-Nicht17-37" d="M 260,376.821547843763 L 265,376.821547843763 C 515,376.821547843763 745,529.567300711485 995,529.567300711485 L 1000,529.567300711485" style="stroke:url(#g-green-darkgray); stroke-width:1.52461158704806; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Grüne13-Weg-38" d="M 260,378.67286191375 L 265,378.67286191375 C 515,378.67286191375 745,712.446638594452 995,712.446638594452 L 1000,712.446638594452" style="stroke:url(#g-green-silver); stroke-width:2.1780165529258; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Grüne13-Verst-39" d="M 260,380.887178742558 L 265,380.887178742558 C 515,380.887178742558 745,768.92841585596 995,768.92841585596 L 1000,768.92841585596" style="stroke:url(#g-green-gray); stroke-width:2.25061710469; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-FDP13-Union17-40" d="M 260,404.735007986061 L 265,404.735007986061 C 515,404.735007986061 745,168.353419485988 995,168.353419485988 L 1000,168.353419485988" style="stroke:url(#g-yellow-black); stroke-width:5.44504138231451; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-FDP13-SPD17-41" d="M 260,408.00203281545 L 265,408.00203281545 C 515,408.00203281545 745,287.743574851169 995,287.743574851169 L 1000,287.743574851169" style="stroke:url(#g-yellow-red); stroke-width:1.0890082764629; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-FDP13-Linke17-42" d="M 260,408.655437781328 L 265,408.655437781328 C 515,408.655437781328 745,344.406853492086 995,344.406853492086 L 1000,344.406853492086" style="stroke:url(#g-yellow-purple); stroke-width:0.21780165529258; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-FDP13-Grüne17-43" d="M 260,408.945839988384 L 265,408.945839988384 C 515,408.945839988384 745,387.203426746043 995,387.203426746043 L 1000,387.203426746043" style="stroke:url(#g-yellow-green); stroke-width:0.363002758820967; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-FDP13-FDP17-44" d="M 260,414.173079715406 L 265,414.173079715406 C 515,414.173079715406 745,423.828953100043 995,423.828953100043 L 1000,423.828953100043" style="stroke:url(#g-yellow-yellow); stroke-width:10.0914766952229; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-FDP13-AFD17-45" d="M 260,419.43661971831 L 265,419.43661971831 C 515,419.43661971831 745,459.69217366052 995,459.69217366052 L 1000,459.69217366052" style="stroke:url(#g-yellow-blue); stroke-width:0.43560331058516; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-FDP13-And17-46" d="M 260,419.835922753014 L 265,419.835922753014 C 515,419.835922753014 745,493.595179323362 995,493.595179323362 L 1000,493.595179323362" style="stroke:url(#g-yellow-dimgray); stroke-width:0.363002758820967; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-FDP13-Nicht17-47" d="M 260,421.832437926529 L 265,421.832437926529 C 515,421.832437926529 745,532.144620299114 995,532.144620299114 L 1000,532.144620299114" style="stroke:url(#g-yellow-darkgray); stroke-width:3.63002758820967; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-FDP13-Weg-48" d="M 260,424.119355307101 L 265,424.119355307101 C 515,424.119355307101 745,714.007550457383 995,714.007550457383 L 1000,714.007550457383" style="stroke:url(#g-yellow-silver); stroke-width:0.943807172934514; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-FDP13-Verst-49" d="M 260,426.152170756498 L 265,426.152170756498 C 515,426.152170756498 745,771.614636271235 995,771.614636271235 L 1000,771.614636271235" style="stroke:url(#g-yellow-gray); stroke-width:3.12182372586032; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-And13-Union17-50" d="M 260,468.039785102367 L 265,468.039785102367 C 515,468.039785102367 745,171.402642660084 995,171.402642660084 L 1000,171.402642660084" style="stroke:url(#g-dimgray-black); stroke-width:0.653404965877741; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-And13-SPD17-51" d="M 260,468.838391171773 L 265,468.838391171773 C 515,468.838391171773 745,288.759982575867 995,288.759982575867 L 1000,288.759982575867" style="stroke:url(#g-dimgray-red); stroke-width:0.943807172934514; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-And13-Linke17-52" d="M 260,469.564396689415 L 265,469.564396689415 C 515,469.564396689415 745,344.769856250907 995,344.769856250907 L 1000,344.769856250907" style="stroke:url(#g-dimgray-purple); stroke-width:0.508203862349354; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-And13-Grüne17-53" d="M 260,469.891099172354 L 265,469.891099172354 C 515,469.891099172354 745,387.457528677218 995,387.457528677218 L 1000,387.457528677218" style="stroke:url(#g-dimgray-green); stroke-width:0.145201103528387; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-And13-FDP17-54" d="M 260,470.108900827646 L 265,470.108900827646 C 515,470.108900827646 745,429.019892551183 995,429.019892551183 L 1000,429.019892551183" style="stroke:url(#g-dimgray-yellow); stroke-width:0.290402207056774; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-And13-AFD17-55" d="M 260,473.12182372586 L 265,473.12182372586 C 515,473.12182372586 745,462.777697110498 995,462.777697110498 L 1000,462.777697110498" style="stroke:url(#g-dimgray-blue); stroke-width:5.73544358937128; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-And13-And17-56" d="M 260,476.497749382895 L 265,476.497749382895 C 515,476.497749382895 745,494.284884565122 995,494.284884565122 L 1000,494.284884565122" style="stroke:url(#g-dimgray-dimgray); stroke-width:1.01640772469871; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-And13-Nicht17-57" d="M 260,477.586757659358 L 265,477.586757659358 C 515,477.586757659358 745,534.540438507332 995,534.540438507332 L 1000,534.540438507332" style="stroke:url(#g-dimgray-darkgray); stroke-width:1.16160882822709; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-And13-Weg-58" d="M 260,478.675765935821 L 265,478.675765935821 C 515,478.675765935821 745,714.987657906199 995,714.987657906199 L 1000,714.987657906199" style="stroke:url(#g-dimgray-silver); stroke-width:1.01640772469871; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-And13-Verst-59" d="M 260,479.438071729345 L 265,479.438071729345 C 515,479.438071729345 745,773.42965006534 995,773.42965006534 L 1000,773.42965006534" style="stroke:url(#g-dimgray-gray); stroke-width:0.508203862349354; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Nicht13-Union17-60" d="M 260,505.718019456948 L 265,505.718019456948 C 515,505.718019456948 745,177.755190939451 995,177.755190939451 L 1000,177.755190939451" style="stroke:url(#g-darkgray-black); stroke-width:12.0516915928561; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Nicht13-SPD17-61" d="M 260,520.383330913315 L 265,520.383330913315 C 515,520.383330913315 745,297.871351822274 995,297.871351822274 L 1000,297.871351822274" style="stroke:url(#g-darkgray-red); stroke-width:17.278931319878; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Nicht13-Linke17-62" d="M 260,529.82140264266 L 265,529.82140264266 C 515,529.82140264266 745,345.822564251488 995,345.822564251488 L 1000,345.822564251488" style="stroke:url(#g-darkgray-purple); stroke-width:1.59721213881225; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Nicht13-Grüne17-63" d="M 260,531.600116160883 L 265,531.600116160883 C 515,531.600116160883 745,388.510236677799 995,388.510236677799 L 1000,388.510236677799" style="stroke:url(#g-darkgray-green); stroke-width:1.96021489763322; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Nicht13-FDP17-64" d="M 260,533.850733265573 L 265,533.850733265573 C 515,533.850733265573 745,430.435603310585 995,430.435603310585 L 1000,430.435603310585" style="stroke:url(#g-darkgray-yellow); stroke-width:2.54101931174677; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Nicht13-AFD17-65" d="M 260,537.408160302018 L 265,537.408160302018 C 515,537.408160302018 745,467.932336285755 995,467.932336285755 L 1000,467.932336285755" style="stroke:url(#g-darkgray-blue); stroke-width:4.57383476114418; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Nicht13-And17-66" d="M 260,540.675185131407 L 265,540.675185131407 C 515,540.675185131407 745,495.773195876288 995,495.773195876288 L 1000,495.773195876288" style="stroke:url(#g-darkgray-dimgray); stroke-width:1.96021489763322; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Nicht13-Nicht17-67" d="M 260,602.349353855089 L 265,602.349353855089 C 515,602.349353855089 745,595.815304196311 995,595.815304196311 L 1000,595.815304196311" style="stroke:url(#g-darkgray-darkgray); stroke-width:121.388122549731; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Nicht13-Weg-68" d="M 260,669.831566719907 L 265,669.831566719907 C 515,669.831566719907 745,722.284013358501 995,722.284013358501 L 1000,722.284013358501" style="stroke:url(#g-darkgray-silver); stroke-width:13.5763031799042; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Nicht13-Verst-69" d="M 260,679.777842311602 L 265,679.777842311602 C 515,679.777842311602 745,776.841875998257 995,776.841875998257 L 1000,776.841875998257" style="stroke:url(#g-darkgray-gray); stroke-width:6.31624800348483; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Zu-Union17-70" d="M 260,705.839988383912 L 265,705.839988383912 C 515,705.839988383912 745,186.685058806447 995,186.685058806447 L 1000,186.685058806447" style="stroke:url(#g-silver-black); stroke-width:5.80804414113547; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Zu-SPD17-71" d="M 260,711.35763031799 L 265,711.35763031799 C 515,711.35763031799 745,309.124437345724 995,309.124437345724 L 1000,309.124437345724" style="stroke:url(#g-silver-red); stroke-width:5.22723972702193; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Zu-Linke17-72" d="M 260,714.552054595615 L 265,714.552054595615 C 515,714.552054595615 745,347.201974735007 995,347.201974735007 L 1000,347.201974735007" style="stroke:url(#g-silver-purple); stroke-width:1.16160882822709; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Zu-Grüne17-73" d="M 260,715.967765355017 L 265,715.967765355017 C 515,715.967765355017 745,390.325250471904 995,390.325250471904 L 1000,390.325250471904" style="stroke:url(#g-silver-green); stroke-width:1.66981269057645; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Zu-FDP17-74" d="M 260,717.347175838536 L 265,717.347175838536 C 515,717.347175838536 745,432.250617104689 995,432.250617104689 L 1000,432.250617104689" style="stroke:url(#g-silver-yellow); stroke-width:1.0890082764629; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Zu-AFD17-75" d="M 260,718.182082183825 L 265,718.182082183825 C 515,718.182082183825 745,470.509655873384 995,470.509655873384 L 1000,470.509655873384" style="stroke:url(#g-silver-blue); stroke-width:0.580804414113547; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Zu-And17-76" d="M 260,718.61768549441 L 265,718.61768549441 C 515,718.61768549441 745,496.898504428633 995,496.898504428633 L 1000,496.898504428633" style="stroke:url(#g-silver-dimgray); stroke-width:0.290402207056774; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Zu-Nicht17-77" d="M 260,725.36953680848 L 265,725.36953680848 C 515,725.36953680848 745,663.116015681718 995,663.116015681718 L 1000,663.116015681718" style="stroke:url(#g-silver-darkgray); stroke-width:13.2133004210832; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Neu-Union17-78" d="M 260,753.936401916654 L 265,753.936401916654 C 515,753.936401916654 745,191.549295774648 995,191.549295774648 L 1000,191.549295774648" style="stroke:url(#g-gray-black); stroke-width:3.92042979526644; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Neu-SPD17-79" d="M 260,758.110933643095 L 265,758.110933643095 C 515,758.110933643095 745,313.952374038043 995,313.952374038043 L 1000,313.952374038043" style="stroke:url(#g-gray-red); stroke-width:4.4286336576158; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Neu-Linke17-80" d="M 260,760.978655437781 L 265,760.978655437781 C 515,760.978655437781 745,348.436184114999 995,348.436184114999 L 1000,348.436184114999" style="stroke:url(#g-gray-purple); stroke-width:1.30680993175548; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Neu-Grüne17-81" d="M 260,762.721068680122 L 265,762.721068680122 C 515,762.721068680122 745,392.249165093655 995,392.249165093655 L 1000,392.249165093655" style="stroke:url(#g-gray-green); stroke-width:2.1780165529258; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Neu-FDP17-82" d="M 260,764.536082474227 L 265,764.536082474227 C 515,764.536082474227 745,433.521126760563 995,433.521126760563 L 1000,433.521126760563" style="stroke:url(#g-gray-yellow); stroke-width:1.45201103528387; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Neu-AFD17-83" d="M 260,765.552490198925 L 265,765.552490198925 C 515,765.552490198925 745,471.090460287498 995,471.090460287498 L 1000,471.090460287498" style="stroke:url(#g-gray-blue); stroke-width:0.580804414113547; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Neu-And17-84" d="M 260,766.351096268331 L 265,766.351096268331 C 515,766.351096268331 745,497.55190939451 995,497.55190939451 L 1000,497.55190939451" style="stroke:url(#g-gray-dimgray); stroke-width:1.01640772469871; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<path id="i-Neu-Nicht17-85" d="M 260,773.42965006534 L 265,773.42965006534 C 515,773.42965006534 745,676.293015826919 995,676.293015826919 L 1000,676.293015826919" style="stroke:url(#g-gray-darkgray); stroke-width:13.140699869319; fill:none; stroke-opacity:0.7; stroke-linejoin:round;"/>
+	<rect x="10" y="100" width="250" height="93.5821112240453" style="fill:black; fill-opacity:1;"/>
+	<rect x="10" y="213.582111224045" width="250" height="84.6522433570495" style="fill:red; fill-opacity:1;"/>
+	<rect x="10" y="318.234354581095" width="250" height="8.05866124582547" style="fill:purple; fill-opacity:1;"/>
+	<rect x="10" y="346.29301582692" width="250" height="35.7194714679832" style="fill:green; fill-opacity:1;"/>
+	<rect x="10" y="402.012487294904" width="250" height="25.7005953245245" style="fill:yellow; fill-opacity:1;"/>
+	<rect x="10" y="467.713082619428" width="250" height="11.9790910410919" style="fill:dimgray; fill-opacity:1;"/>
+	<rect x="10" y="499.69217366052" width="250" height="183.243792652824" style="fill:darkgray; fill-opacity:1;"/>
+	<rect x="10" y="702.935966313344" width="250" height="29.0402207056774" style="fill:silver; fill-opacity:1;"/>
+	<rect x="10" y="751.976187019021" width="250" height="28.0238129809787" style="fill:gray; fill-opacity:1;"/>
+	<rect x="1000" y="100" width="250" height="93.5095106722811" style="fill:black; fill-opacity:1;"/>
+	<rect x="1000" y="213.509510672281" width="250" height="102.657180194569" style="fill:red; fill-opacity:1;"/>
+	<rect x="1000" y="336.16669086685" width="250" height="12.9228982140264" style="fill:purple; fill-opacity:1;"/>
+	<rect x="1000" y="369.089589080877" width="250" height="24.2485842892406" style="fill:green; fill-opacity:1;"/>
+	<rect x="1000" y="413.338173370117" width="250" height="20.9089589080877" style="fill:yellow; fill-opacity:1;"/>
+	<rect x="1000" y="454.247132278205" width="250" height="17.1337302163496" style="fill:blue; fill-opacity:1;"/>
+	<rect x="1000" y="491.380862494554" width="250" height="6.67925076230579" style="fill:dimgray; fill-opacity:1;"/>
+	<rect x="1000" y="518.06011325686" width="250" height="164.803252504719" style="fill:darkgray; fill-opacity:1;"/>
+	<rect x="1000" y="702.863365761579" width="250" height="26.2087991868738" style="fill:silver; fill-opacity:1;"/>
+	<rect x="1000" y="749.072164948453" width="250" height="30.9278350515464" style="fill:gray; fill-opacity:1;"/>
+	<text style="font-family:sans-serif; font-size:16pt; fill:white;" text-anchor="middle" dominant-baseline="central">
+		<textPath xlink:href="#i-Union13-Union17-1" startOffset="50%">824,000</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-SPD13-SPD17-12" startOffset="50%">5.920.000</textPath>
+		<textPath xlink:href="#i-SPD13-SPD17-12" startOffset="50%">785,000</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-Linke13-Linke17-23" startOffset="50%">1.980.000</textPath>
+		<textPath xlink:href="#i-Linke13-Linke17-23" startOffset="50%">47,000</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-Grüne13-Grüne17-34" startOffset="50%">1.870.000</textPath>
+		<textPath xlink:href="#i-Grüne13-Grüne17-33" startOffset="50%">206,000</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-FDP13-FDP17-45" startOffset="50%">1.220.000</textPath>
+		<textPath xlink:href="#i-FDP13-FDP17-44" startOffset="50%">139,000</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-AFD13-AFD17-56" startOffset="50%">1.430.000</textPath>
+		<textPath xlink:href="#i-And13-And17-56" startOffset="50%">14,000</textPath>
 	</text>
 	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-And13-And17-67" startOffset="50%">870.000</textPath>
+		<textPath xlink:href="#i-Nicht13-Nicht17-67" startOffset="50%">1,672,000</textPath>
 	</text>
-	<text style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central">
-		<textPath xlink:href="#i-Nicht13-Nicht17-78" startOffset="50%">10.200.000</textPath>
-	</text>
-	<text x="135" y="169.762087490407" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="15" y="169.762087490407" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Union</text>
-	<text x="255" y="169.762087490407" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">18.180.000</text>
-	<text x="135" y="302.693783576363" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="15" y="302.693783576363" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">SPD</text>
-	<text x="255" y="302.693783576363" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">11.250.000</text>
-	<text x="135" y="380.29163468918" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="15" y="380.29163468918" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Linke</text>
-	<text x="255" y="380.29163468918" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">3.760.000</text>
-	<text x="135" y="428.879508825787" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="15" y="428.879508825787" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Grüne</text>
-	<text x="255" y="428.879508825787" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">3.690.000</text>
-	<text x="135" y="471.020721412126" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="15" y="471.020721412126" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">FDP</text>
-	<text x="255" y="471.020721412126" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">2.080.000</text>
-	<text x="135" y="506.86876438987" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="15" y="506.86876438987" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">AFD</text>
-	<text x="255" y="506.86876438987" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">2.050.000</text>
-	<text x="135" y="545.172678434383" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="15" y="545.172678434383" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Other</text>
-	<text x="255" y="545.172678434383" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">2.720.000</text>
-	<text x="135" y="645.525709900231" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="15" y="645.525709900231" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Non-voters</text>
-	<text x="255" y="645.525709900231" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">18.220.000</text>
-	<text x="135" y="736.362240982349" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="15" y="736.362240982349" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Influx</text>
-	<text x="255" y="736.362240982349" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">240.000</text>
-	<text x="135" y="768.641596316195" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="15" y="768.641596316195" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">New voters</text>
-	<text x="255" y="768.641596316195" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">2.960.000</text>
-	<text x="1125" y="158.787413660783" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="1005" y="158.787413660783" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Union</text>
-	<text x="1245" y="158.787413660783" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">15.320.000</text>
-	<text x="1125" y="274.029163468918" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="1005" y="274.029163468918" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">SPD</text>
-	<text x="1245" y="274.029163468918" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">9.500.000</text>
-	<text x="1125" y="346.676899462779" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="1005" y="346.676899462779" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Linke</text>
-	<text x="1245" y="346.676899462779" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">4.220.000</text>
-	<text x="1125" y="398.833461243285" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="1005" y="398.833461243285" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Grüne</text>
-	<text x="1245" y="398.833461243285" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">4.160.000</text>
-	<text x="1125" y="453.983115886417" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="1005" y="453.983115886417" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">FDP</text>
-	<text x="1245" y="453.983115886417" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">5.000.000</text>
-	<text x="1125" y="515.886415963162" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="1005" y="515.886415963162" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">AFD</text>
-	<text x="1245" y="515.886415963162" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">5.920.000</text>
-	<text x="1125" y="567.544128933231" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="1005" y="567.544128933231" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Other</text>
-	<text x="1245" y="567.544128933231" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">2.330.000</text>
-	<text x="1125" y="654.773599386033" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="1005" y="654.773599386033" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Non-voters</text>
-	<text x="1245" y="654.773599386033" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">15.190.000</text>
-	<text x="1125" y="733.062164236378" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="1005" y="733.062164236378" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Move away</text>
-	<text x="1245" y="733.062164236378" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">0</text>
-	<text x="1125" y="766.531082118189" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="middle" dominant-baseline="central"/>
-	<text x="1005" y="766.531082118189" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="start" dominant-baseline="central">Deceased</text>
-	<text x="1245" y="766.531082118189" style="font-family:sans-serif; font-size:16pt; fill:gainsboro;" text-anchor="end" dominant-baseline="central">3.510.000</text>
+	<text x="135" y="146.791055612023" style="font-family:sans-serif; font-size:16pt; fill:white;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="15" y="146.791055612023" style="font-family:sans-serif; font-size:16pt; fill:white;" text-anchor="start" dominant-baseline="central">Union</text>
+	<text x="255" y="146.791055612023" style="font-family:sans-serif; font-size:16pt; fill:white;" text-anchor="end" dominant-baseline="central">1,289,000</text>
+	<text x="135" y="255.90823290257" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="15" y="255.90823290257" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">SPD</text>
+	<text x="255" y="255.90823290257" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">1,166,000</text>
+	<text x="135" y="322.263685204008" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="15" y="322.263685204008" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">Linke</text>
+	<text x="255" y="322.263685204008" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">111,000</text>
+	<text x="135" y="364.152751560912" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="15" y="364.152751560912" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">Grüne</text>
+	<text x="255" y="364.152751560912" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">492,000</text>
+	<text x="135" y="414.862784957166" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="15" y="414.862784957166" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">FDP</text>
+	<text x="255" y="414.862784957166" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">354,000</text>
+	<text x="135" y="473.702628139974" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="15" y="473.702628139974" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">Other</text>
+	<text x="255" y="473.702628139974" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">165,000</text>
+	<text x="135" y="591.314069986932" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="15" y="591.314069986932" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">Non-voters</text>
+	<text x="255" y="591.314069986932" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">2,524,000</text>
+	<text x="135" y="717.456076666183" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="15" y="717.456076666183" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">Influx</text>
+	<text x="255" y="717.456076666183" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">400,000</text>
+	<text x="135" y="765.98809350951" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="15" y="765.98809350951" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">New voters</text>
+	<text x="255" y="765.98809350951" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">386,000</text>
+	<text x="1125" y="146.754755336141" style="font-family:sans-serif; font-size:16pt; fill:white;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1005" y="146.754755336141" style="font-family:sans-serif; font-size:16pt; fill:white;" text-anchor="start" dominant-baseline="central">Union</text>
+	<text x="1245" y="146.754755336141" style="font-family:sans-serif; font-size:16pt; fill:white;" text-anchor="end" dominant-baseline="central">1,288,000</text>
+	<text x="1125" y="264.838100769566" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1005" y="264.838100769566" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">SPD</text>
+	<text x="1245" y="264.838100769566" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">1,414,000</text>
+	<text x="1125" y="342.628139973863" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1005" y="342.628139973863" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">Linke</text>
+	<text x="1245" y="342.628139973863" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">178,000</text>
+	<text x="1125" y="381.213881225497" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1005" y="381.213881225497" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">Grüne</text>
+	<text x="1245" y="381.213881225497" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">334,000</text>
+	<text x="1125" y="423.792652824161" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1005" y="423.792652824161" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">FDP</text>
+	<text x="1245" y="423.792652824161" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">288,000</text>
+	<text x="1125" y="462.81399738638" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1005" y="462.81399738638" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">AFD</text>
+	<text x="1245" y="462.81399738638" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">236,000</text>
+	<text x="1125" y="494.720487875707" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1005" y="494.720487875707" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">Other</text>
+	<text x="1245" y="494.720487875707" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">92,000</text>
+	<text x="1125" y="600.461739509219" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1005" y="600.461739509219" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">Non-voters</text>
+	<text x="1245" y="600.461739509219" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">2,270,000</text>
+	<text x="1125" y="715.967765355016" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1005" y="715.967765355016" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">Move away</text>
+	<text x="1245" y="715.967765355016" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">361,000</text>
+	<text x="1125" y="764.536082474226" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="central"/>
+	<text x="1005" y="764.536082474226" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="start" dominant-baseline="central">Deceased</text>
+	<text x="1245" y="764.536082474226" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="end" dominant-baseline="central">426,000</text>
 	<text x="135" y="90" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="ideographic">2013</text>
 	<text x="1125" y="90" style="font-family:sans-serif; font-size:16pt; fill:black;" text-anchor="middle" dominant-baseline="ideographic">2017</text>
-	<text x="630" y="70" style="font-family:sans-serif; font-size:9pt; fill:black;" text-anchor="middle" dominant-baseline="hanging">Source: https://wahl.tagesschau.de/wahlen/2017-10-15-LT-DE-NI/wanderung_embed.shtml</text>
+	<text x="630" y="790" style="font-family:sans-serif; font-size:9pt; fill:black;" text-anchor="middle" dominant-baseline="hanging">Source: https://wahl.tagesschau.de/wahlen/2017-10-15-LT-DE-NI/wanderung_embed.shtml</text>
 	<text x="630" y="10" style="font-family:sans-serif; font-size:24pt; fill:black;" text-anchor="middle" dominant-baseline="hanging">Voter migration Niedersachsen state election</text>
 </svg>
