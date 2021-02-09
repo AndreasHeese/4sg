@@ -3,6 +3,8 @@
 
 4sg is an XSLT script that converts data stored in an XML file into a [Sankey diagram](https://en.wikipedia.org/wiki/Sankey_diagram) generated as SVG file.  
 
+<img src="./SimpleExample.svg" alt="simple example" width="100"/>
+
 SVG (Scalable Vector Graphics) is a W3C standard for vector graphics supported by all modern browsers. It can be edited with graphic design programs like Inkscape. An SVG file doesn't contain a pixel image, but the coordinates and details of lines and curves as text in XML format. The code can also be edited with any editor. Besides editing, the greatest advantages are scalability without loss of quality and the fact that it is a well documented and supported open standard.  
 
 Because both the data source and the target are each an XML file, XSLT is ideal as a tool for transformation. This language was designed for transforming XML files and is written in XML format itself. XSLT is a W3C standard, too.  
