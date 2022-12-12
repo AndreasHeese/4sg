@@ -20,5 +20,4 @@ Project files:
 
 Some real life examples are available in the examples directory, each with a raw XML data file and the generated SVG file. If you use 4sg.xsl the contribution of examples is very appreciated.
 
-See also [www.heese.net/4sg](https://www.heese.net/4sg/readme.en.html) (english), some of it on [GitHub Pages](https://andreasheese.github.io/4sg/),  
-and [www.heese.net/4sg](https://www.heese.net/4sg/index.html) (german)
+See also [GitHub Pages](https://andreasheese.github.io/4sg/).
