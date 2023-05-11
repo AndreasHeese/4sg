@@ -55,13 +55,15 @@
 		<p>The easiest way to transform with <span class="bold">Saxon</span> is using a batch file, because Saxon is a command line tool. Saxon supports XSLT 3.0 since version 9.8. The program call differs for the .NET and Java version of Saxon.</p>
 		<p>The batch file for Saxon Java <span class="bold">Saxon Java</span> looks like this:</p>
 		<p class="code">java net.sf.saxon.Transform -s:SimpleExample.xml -xsl:4sg.xsl -o:SimpleExample.svg</p>
-		<p>This batch file is used for <span class="bold">Saxon .NET</span>:</p>
+		<p>This batch file is used for <span class="bold">Saxon .NET</span> (which is no longer free):</p>
 		<p class="code">Transform -s:SimpleExample.xml -xsl:4sg.xsl -o:SimpleExample.svg</p>
 		<p>The parameters have the following meaning:<br>
 		-s = source file<br>
 		-xsl = script file<br>
 		-o = output file</p>
 		<p>The installation path must be accessible or be specified at the beginning of the command line. „SimpleExample.xml‟ is used here as the data file name.</p>
+		<!-- Setup example for .NET Version dropped as it isn't available as a free version anymore -->
+		<!--
 		<h3 id="Setup example">Setup example</h3>
 			<p>If Saxon HE 10 for .NET on Windows is used, setup for the example goes like this:</p>
 			<ol>
@@ -78,5 +80,6 @@
 				<li>Run the batch file <span class="code">SimpleExample.bat</span> by double-clicking.</li>
 				<li>Open the newly created graphics file <span class="code hint3">SimpleExample.svg</span> with the browser.</li>
 			</ol>
+		-->
 	</body>
 </html>
