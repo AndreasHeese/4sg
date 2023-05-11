@@ -10,8 +10,8 @@ SVG (Scalable Vector Graphics) is a W3C standard for vector graphics supported b
 Because both the data source and the target are each an XML file, XSLT is ideal as a tool for transformation. This language was designed for transforming XML files and is written in XML format itself. XSLT is a W3C standard, too.  
 
 To run the XSLT script a processor that masters XSLT 3.0 is required. There are two of them, the script has been tested with both:  
-- Saxon HE ([www.saxonica.com](https://www.saxonica.com), for Java or .NET, hosted free at Sourceforge, the commercial PE or EE version isn't required) and  
-- XMLSpy ([www.altova.com/xmlspy-xml-editor](https://www.altova.com/xmlspy-xml-editor), commercial).  
+- Saxon HE ([www.saxonica.com](https://www.saxonica.com)) home edition for Java hosted free here at [Github](https://github.com/Saxonica/Saxon-HE), the commercial PE or EE version isn't required but there is an .NET Version in EE enterprise edition, and  
+- XMLSpy ([www.altova.com/xmlspy-xml-editor](https://www.altova.com/xmlspy-xml-editor)), commercial.  
 
 Project files:
 - 4sg.xsl: Script
