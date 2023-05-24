@@ -53,11 +53,31 @@
 	<xsl:variable name="value-height">500</xsl:variable>
 	
 	<!-- ===== initialization ===== -->
-	<xsl:variable name="factor" select="$value-height div max(for $p in /root/piles/pile return sum(for $b in $p/box return max((fn:boxsum('from',$b/@id), fn:boxsum('to',$b/@id)))))"/>
-	<xsl:variable name="piles" select="/root/piles"/>
-	<xsl:variable name="flows" select="/root/flows"/>
+	<xsl:variable name="data">
+		<xsl:apply-templates select="/root" mode="data"/>
+	</xsl:variable>
+	<xsl:template match="box/@id" mode="data">
+		<xsl:variable name="id" select="."/>
+		<xsl:choose>
+			<xsl:when test="preceding::box[@id = $id]">
+				<xsl:attribute name="id"><xsl:value-of select="$id||'-'||generate-id()"/></xsl:attribute>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:copy/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<xsl:template match="node()|@*" mode="data">
+		<xsl:copy>
+			<xsl:apply-templates select="@*|node()" mode="data"/>
+		</xsl:copy>
+	</xsl:template>
+	
+	<xsl:variable name="factor" select="$value-height div max(for $p in $data/root/piles/pile return sum(for $b in $p/box return max((fn:boxsum('from',$b/@id), fn:boxsum('to',$b/@id)))))"/>
+	<xsl:variable name="piles" select="$data/root/piles"/>
+	<xsl:variable name="flows" select="$data/root/flows"/>
 	<!-- overall width -->
-	<xsl:variable name="width" select="fn:x(/root/piles/pile[last()]) + fn:get(/root/piles/pile[last()],'width') + number(map:get($defaults,'padding'))"/>
+	<xsl:variable name="width" select="fn:x($data/root/piles/pile[last()]) + fn:get($data/root/piles/pile[last()],'width') + number(map:get($defaults,'padding'))"/>
 	
 	<!-- ===== functions ===== -->
 	<xsl:function name="fn:boxsum"><!-- adds the values ​​of a box with a specific id for the specific side, even when using via -->
@@ -214,9 +234,6 @@
 	
 	<!-- ===== root template ===== -->
 	<xsl:template match="root">
-		<xsl:if test="count($piles/pile/box/@id) != count(distinct-values($piles/pile/box/@id))">
-			<xsl:message terminate="yes">MESSAGE: TERMINATED box/@id values are not unique</xsl:message>
-		</xsl:if>
 		<xsl:if test="count($flows/flow[@from and not(@from = $piles/pile/box/@id)]) != 0">
 			<xsl:message terminate="yes">MESSAGE: TERMINATED flow/@from values not contained in box/@id</xsl:message>
 		</xsl:if>
@@ -231,9 +248,9 @@
 			<title>
 				<xsl:value-of select="title"/>
 			</title>
-			<xsl:if test="/root/flows/flow[not(ancestor-or-self::*/@color)]">
+			<xsl:if test="$data/root/flows/flow[not(ancestor-or-self::*/@color)]">
 				<xsl:variable name="gradients">
-					<xsl:for-each select="/root/flows/flow[not(ancestor-or-self::*/@color)]">
+					<xsl:for-each select="$data/root/flows/flow[not(ancestor-or-self::*/@color)]">
 						<xsl:variable name="this" select="."/>
 						<gradient from="{fn:get($piles/pile/box[@id = $this/@from],'color')}" to="{fn:get($piles/pile/box[@id = $this/@to],'color')}">
 							<xsl:value-of select="translate(fn:get($piles/pile/box[@id = $this/@from],'color')||'-'||fn:get($piles/pile/box[@id = $this/@to],'color'),',()#','__')"/>
@@ -249,12 +266,12 @@
 					</xsl:for-each-group>
 				</defs>
 			</xsl:if>
-			<xsl:if test="/root/@background-color">
-				<rect x="0" y="0" width="{$width}" height="{$value-height + max(for $p in $piles/pile return fn:y($p) + sum(for $b in $p/box return fn:get($b,'gap')))}" style="fill:{/root/@background-color}; fill-opacity:{fn:get(.,'opacity')}; stroke:none;"/>
+			<xsl:if test="$data/root/@background-color">
+				<rect x="0" y="0" width="{$width}" height="{$value-height + max(for $p in $piles/pile return fn:y($p) + sum(for $b in $p/box return fn:get($b,'gap')))}" style="fill:{$data/root/@background-color}; fill-opacity:{fn:get(.,'opacity')}; stroke:none;"/>
 			</xsl:if>
-			<xsl:apply-templates select="flows/flow, piles/pile/box" mode="draw"/>
-			<xsl:apply-templates select="flows/flow|flows/flow/text, piles/pile/box, piles/pile/title, text, title"/>
-			<xsl:apply-templates select="svg:*"/>
+			<xsl:apply-templates select="$data/root/flows/flow, $data/root/piles/pile/box" mode="draw"/>
+			<xsl:apply-templates select="$data/root/flows/flow|$data/root/flows/flow/text, $data/root/piles/pile/box, $data/root/piles/pile/title, text, title"/>
+			<xsl:apply-templates select="$data/root/svg:*"/>
 		</svg>
 	</xsl:template>
 	
