@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2019-2021 - 4sg.xsl - Small and Simple SVG Sankey Generator - Andreas Heese - Version 1.2 - MIT-License -->
+<!-- Copyright 2019-2021 - 4sg.xsl - Small and Simple SVG Sankey Generator - Andreas Heese - Version 1.3 - MIT-License -->
 <xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://own.functions" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:map="http://www.w3.org/2005/xpath-functions/map" exclude-result-prefixes="svg xs fn map">
 	<xsl:output method="xml" indent="yes" standalone="no" doctype-public="-//W3C//DTD SVG 1.1//EN" doctype-system="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" media-type="image/svg" />
 	
@@ -244,7 +244,7 @@
 			<xsl:message terminate="yes">MESSAGE: TERMINATED flow/via/@id values not contained in box/@id</xsl:message>
 		</xsl:if>
 		<svg viewBox="0 0 {$width} {$value-height + max(for $p in $piles/pile return fn:y($p) + sum(for $b in $p/box return fn:get($b,'gap'))) + number(map:get($defaults,'padding'))}" preserveAspectRatio="xMidYMin meet">
-			<xsl:comment>SVG sankey graphic file generated using 4sg.xsl version 1.2 - conversion factor from values to coordinates is <xsl:value-of select="$factor"/></xsl:comment>
+			<xsl:comment>SVG sankey graphic file generated using 4sg.xsl version 1.3 - conversion factor from values to coordinates is <xsl:value-of select="$factor"/></xsl:comment>
 			<title>
 				<xsl:value-of select="title"/>
 			</title>
