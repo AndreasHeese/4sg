@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2019-2021 - 4sg.xsl - Small and Simple SVG Sankey Generator - Andreas Heese - Version 1.4 - MIT-License - https://github.com/AndreasHeese/4sg -->
+<!-- Copyright 2019-2026 - 4sg.xsl - Small and Simple SVG Sankey Generator - Andreas Heese - Version 1.4 - MIT-License - https://github.com/AndreasHeese/4sg -->
 <xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://own.functions" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:map="http://www.w3.org/2005/xpath-functions/map" exclude-result-prefixes="svg xs fn map">
 	<xsl:output method="xml" indent="yes" doctype-public="-//W3C//DTD SVG 1.1//EN" doctype-system="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" media-type="image/svg" />
 	
