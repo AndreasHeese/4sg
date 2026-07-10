@@ -244,7 +244,7 @@
 			<xsl:message terminate="yes">MESSAGE: TERMINATED flow/via/@id values not contained in box/@id</xsl:message>
 		</xsl:if>
 		<svg viewBox="0 0 {$width} {$value-height + max(for $p in $piles/pile return fn:y($p) + sum(for $b in $p/box return fn:get($b,'gap'))) + number(map:get($defaults,'padding'))}" preserveAspectRatio="xMidYMin meet">
-			<xsl:comment>SVG sankey graphic file generated using 4sg.xsl https://github.com/AndreasHeese/4sg - conversion factor from values to coordinates is <xsl:value-of select="$factor"/></xsl:comment>
+			<xsl:comment>SVG sankey graphic file generated using https://github.com/AndreasHeese/4sg - conversion factor from values to coordinates is <xsl:value-of select="$factor"/></xsl:comment>
 			<title>
 				<xsl:value-of select="title"/>
 			</title>
