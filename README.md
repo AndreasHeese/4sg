@@ -18,6 +18,15 @@ Project files:
 - SimpleExample.xml: Source data  
 - SimpleExample.svg: Generated Sankey Diagram  
 
-Some real life examples are available in the examples directory, each with a raw XML data file and the generated SVG file. If you use 4sg.xsl the contribution of examples is very appreciated.
+As the Saxon processor is also available running in browsers on javascript, there is now a third option available.
+
+Project files:
+- 4sg.html: Complete solution in one file
+- 4sg.sef.son: Compiled version of the 4sg.xsl stylesheet in json format for use with SaxonJS 3, already embedded in the html file, no need to download
+- SaxonJS3.rt.js: XSLT 3.0 javascript processor provided by Saxonica Ltd, not provided as a separate file in this repository but embedded in the html file
+
+Using 4sg.html you just need this file and a XML data file that matches 4sg specifications. No need to install a XSLT 3.0 processor as that is already embedded in the html file.
+
+Some real life examples are available in the examples directory. If you use 4sg the contribution of examples is very appreciated.
 
 See also [GitHub Pages](https://andreasheese.github.io/4sg/).
