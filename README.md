@@ -29,4 +29,4 @@ Using 4sg.html you just need this file and a XML data file that matches 4sg spec
 
 Some real life examples are available in the examples directory. If you use 4sg the contribution of examples is very appreciated.
 
-See also [GitHub Pages](https://andreasheese.github.io/4sg/) (Browser version not available there yet but soon to come).
+See also [GitHub Pages](https://andreasheese.github.io/4sg/) and try live 4sg.html browser version. You have to download a XML data file from the examples folder first to be able to select the file.
