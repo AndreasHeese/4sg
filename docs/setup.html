@@ -49,7 +49,10 @@
 	</head>
 	<body>
 		<h2>Setup</h2>
-		<p>Although easy to use, 4sg.xsl not a "point-and-click"-solution. There is no user interface. The XML data file must be edited with an editor like Notepad ++ (<a href="https://notepad-plus-plus.org" target="_blank" rel="noopener noreferrer">notepad-plus-plus.org</a>, free) or XMLSpy (<a href="https://www.altova.com/xmlspy-xml-editor" target="_blank" rel="noopener noreferrer">www.altova.com/xmlspy-xml-editor</a>, commercial). The easiest attempt is to adapt an existing example.</p>
+		<p>Although easy to use, 4sg.xsl not a "point-and-click"-solution. There is no XML data file  user interface. It must be edited with an editor like Notepad ++ (<a href="https://notepad-plus-plus.org" target="_blank" rel="noopener noreferrer">notepad-plus-plus.org</a>, free) or XMLSpy (<a href="https://www.altova.com/xmlspy-xml-editor" target="_blank" rel="noopener noreferrer">www.altova.com/xmlspy-xml-editor</a>, commercial). The easiest attempt is to adapt an existing example.</p>
+		<h3>Use 4sg.html file with embedded processor and script</h3>
+		<p>Just download 4sg.html file or use it live on GitHub Pages. Select the XML data file to generate a SVG sankey diagram from. To use a XML example file you will have to download it in either case.</p>
+		<h3>Install XSLT processor for use of 4sg.xsl script</h3>
 		<p>To run the XSLT script a processor that masters XSLT 3.0 is required. There are two of them: Saxon HE (<a href="https://www.saxonica.com" target="_blank" rel="noopener noreferrer">www.saxonica.com</a>, for Java or .NET, hosted free at Sourceforge, the commercial PE or EE version isn't required) and XMLSpy (<a href="https://www.altova.com/xmlspy-xml-editor" target="_blank" rel="noopener noreferrer">www.altova.com/xmlspy-xml-editor</a>, commercial). The script has been tested with both.</p>
 		<p>Because both the data source and the SVG target are each an XML file, XSLT is ideal as a tool for transformation. This language was designed for transforming XML files and is written in XML format itself. XSLT is a W3C standard, too.</p>
 		<p>With <span class="bold">XMLSpy</span>, the transformation for the displayed XML file is started by pressing the F10 key. The script file 4sg.xsl must be accessible for XMLSpy, ideally in the same directory. XMLSpy supports XSLT 3.0 since version 2018 to the extent required.</p>
